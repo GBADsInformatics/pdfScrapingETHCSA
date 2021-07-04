@@ -1,0 +1,59 @@
+Notes on the Tables produced by the Cattle Pipeline - 2016
+
+July 4, 2021
+% wc 2016_T*.csv 
+      76     122    5318 2016_Table_3-1.csv
+      76     125    3851 2016_Table_3-14.csv
+      76     125    5123 2016_Table_3-19a.csv
+      78     126    6231 2016_Table_3-2.csv
+      79     125    6059 2016_Table_3-20a.csv
+      76     125    4577 2016_Table_3-21.csv
+      76     125    3743 2016_Table_3-23a.csv
+      77     134    3942 2016_Table_3-24.csv
+      76     125    3561 2016_Table_3-25.csv
+      76     125    4153 2016_Table_3-26a.csv
+      76     125    3812 2016_Table_3-26b.csv
+      76     125    4366 2016_Table_3-27a.csv
+      76     125    5044 2016_Table_3-7.csv
+
+Table 3-2
+ - Problem: Many region and zones have hard to see number that bleed over column lines so PDFTable conversion
+   was confused about the number of columns.
+ - Action: Manual fixes - some are hard to tell what the numbers are so the replacement numbers are quesses.
+   Affected rows:
+      - Ethiopia
+      - Amhara
+      - Oromia
+      - Somale
+      - Somale, Jijiga
+      - Somale, Liben
+      - Benshangul-Gumuz
+      - Benshangul-Gumuz, Metekel
+      - Benshangul-Gumuz, Asosa
+      - SNNP
+      - SNNP, Gurage
+      - SNNP, Hadiya
+      - SNNP, Kembata Tembaro
+      - SNNP, Sidama 
+      - SNNP, Wolayita 
+      - SNNP, Shaka 
+      - SNNP, Kaffa 
+      - SNNP, Gamo Gofa 
+      - SNNP, Bench Maji
+      - SNNP, Dawro
+      - SNNP, Konta Sp. Wereda 
+      - SNNP, Silte
+      - SNNP, Alaba Sp. Wereda
+      - Gambela Region
+      - Gambela Region, Nuware
+
+Table 3-23a
+ - Problem: after zone there is a blank column for the rows from the 1st page of the table.  The rows from the
+   2nd page are fine.  This was inserted by the PDFTable conversion program.
+ - Action: manually removed the blank column in affected rows.
+
+Table 3-24
+ - Problem: Extra line at bottom of first page: "Draught animals in this table refer to Horses, Donkeys, and, Mules"
+ - Action: removed line
+
+--- End of 2016 notes ---
