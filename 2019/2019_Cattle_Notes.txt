@@ -1,0 +1,44 @@
+Notes on the Tables produced by the Cattle Pipeline - 2019
+
+July 3, 2021
+% wc 2019_T*.csv 
+      93     151    6309 2019_Table_3-1.csv
+      93     151    4696 2019_Table_3-14.csv
+      93     151    5930 2019_Table_3-19a.csv
+      93     151    7620 2019_Table_3-2.csv
+      98     151    6966 2019_Table_3-20a.csv
+      93     151    5755 2019_Table_3-21.csv
+      93     151    4259 2019_Table_3-23a.csv
+      94     155    4563 2019_Table_3-24.csv
+      93     151    4060 2019_Table_3-25.csv
+      93     151    4800 2019_Table_3-26a.csv
+      93     151    4542 2019_Table_3-26b.csv
+      93     151    5281 2019_Table_3-27a.csv
+      93     151    6117 2019_Table_3-7.csv
+
+Table 3-20a
+ - Problem: has 5 extra lines so instead of 92 rows there were 97
+   - Afar, Zone_2 (Kelbetiresu) - spread over 2 lines
+   - Amhara, Oromiya Liyu Zone - spread over 2 lines
+   - Oromia, Debub Mirab Shewa - spread over 2 lines
+   - Oromia, Oromiya Liyu Zone  - spread over 2 lines
+   - Oromia, Horo Guduru Wollega - spread over 2 lines
+- Action: removed extra lines 
+
+Table 3-24
+ - Problem: Table 24: at bottom of first page there was the line: "Note: Draught animals in this table refer to
+   Horses, Donkeys, and Mules." which added an extra row to the table.  Thus instead of 93 lines there were 94.
+ - Action: remove the extra line.
+
+Problem: The region Dire Dawa Astedader is spelled three ways:
+   - Dire Dawa Astedader
+   - DirDawaAstedader
+   - Dire Dawa Astedadar
+and Harari sometimes appears as Hareri and Somale sometimes appears as Somalie.
+To combat these "typos" before the addRegionsZones.py program, sed is used to find misspellings and change them
+to a standard form: "Harari", "Somale", and "Dire Dawa Astedader".
+Action: The addition of these sed commands corrects the problems that the typos cause.
+Note: the sed commands are of the form: sed -i '' "s/Hareri/Harari/g" <filename> because this was developed under
+Mac OS X.  On a Linux system they need to be of the form sed -i "s/Hareri/Harari/g" <filename>.
+
+--- End of 2019 notes ---

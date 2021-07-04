@@ -1,0 +1,49 @@
+Notes on the Tables produced by the Cattle Pipeline - 2020
+
+July 3, 2021
+
+% wc 2020_T*.csv 
+      92     154    6391 2020_Table_3-1.csv
+      92     153    4786 2020_Table_3-14.csv
+      92     153    5922 2020_Table_3-19a.csv
+      92     154    7818 2020_Table_3-2.csv
+      97     153    7034 2020_Table_3-20a.csv
+      92     153    5557 2020_Table_3-21.csv
+      92     153    4151 2020_Table_3-23a.csv
+      93     162    4415 2020_Table_3-24.csv
+      92     153    3906 2020_Table_3-25.csv
+      92     153    4602 2020_Table_3-26a.csv
+      92     153    5261 2020_Table_3-26b.csv
+      92     153    5367 2020_Table_3-27a.csv
+      91     151    6174 2020_Table_3-7.csv
+    1201    1998   71384 total
+
+Table 3-7
+ - Problem: Missing Region: Oromiya, Zone:West Guji - appears in all other tables, thus Table 7 has 91 rows and all other tables have 92
+ - Action: nothing - just noted
+
+Table 3-24
+ - Problem: Table 24: at bottom of first page (page 131) there was the line: "Note: Draught animals in this table refer to 
+   Horses, Donkeys, and Mules." which added an extra row to the table.  Thus instead of 92 lines there were 93.
+ - Action: remove the extra line.
+
+Table 20a
+ - Problem: has 5 extra lines so instead of 92 rows there were 97
+   - Tigray, South Western Tigra - spread over 2 lines + missing y in South Western Tigray
+   - Afar, Zone_2 (Kelbetiresu - spread over 2 lines + missing ")" so there is an extra line in the file
+   - Amhara, Oromiya Special Zon - spread over 2 lines + missing e in Oromiya Special Zone
+   - Oromiya, Oromiya Special Zon - spread over 2 lines + missing e in Oromiya Special Zone
+   - Oromiya,Horo Guduru Wollega - spread over 2 lines
+- Action: removed extra lines and corrected spellings
+
+Noticed that some files had (Kelbetiresu instead of (Kelbetiresu)
+2020_Table_3-21.csv:Afar,Zone_2 (Kelbetiresu,-1,17987,2.01,7,6742517,34256,34268,3.35,10,10
+2020_Table_3-23a.csv:Afar,Zone_2 (Kelbetiresu,0,0,0,0,0,0
+2020_Table_3-24.csv:Afar,Zone_2 (Kelbetiresu,11801,161650,418386,2497,12146,12146
+2020_Table_3-25.csv:Afar,Zone_2 (Kelbetiresu,-1,-1,-1,0,-1,-1
+2020_Table_3-26a.csv:Afar,Zone_2 (Kelbetiresu,9549,142766,361075,0,1764,0,9776,9776
+2020_Table_3-26b.csv:Afar,Zone_2 (Kelbetiresu,4806,49457,203705,4806,49457,203705,4806,4806
+2020_Table_3-27a.csv:Afar,Zone_2 (Kelbetiresu,59065,48773,3051,2458,2525,2011,2011
+ - all typos corrected
+
+--- End of 2020 notes ---
