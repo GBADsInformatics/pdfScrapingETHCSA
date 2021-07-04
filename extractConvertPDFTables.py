@@ -16,8 +16,8 @@
 #    in a file for security.
 #
 # Libraries
-import sys, getopt
-import PyPDF2
+import sys
+import getopt
 from PyPDF2 import PdfFileWriter, PdfFileReader
 import pdftables_api
 #
@@ -28,70 +28,70 @@ import pdftables_api
 #    start = Start page
 #    end = End page
 #
-inputFile = ""
-outputFile = ""
-csvFile = ""
-startPage = 0
-endPage = 0
+input_file = ""
+output_file = ""
+csv_file = ""
+start_page = 0
+end_page = 0
 
 def main ( argv ):
-	try:
-		opts, args = getopt.getopt ( argv,"hi:o:c:s:e:",["ifile=","ofile=","csvfile=","start=","end="] )
-	except getopt.GetoptError:
-		print ( "extractConvertPDFTables.py -i <inputfile> -o <outputfile> -c <csvfile> -s <start page number> -e <end page number>" )
-		sys.exit(2)
-	for opt, arg in opts:
-		if opt == '-h':
-			print ( "extractConvertPDFTables.py -i <inputfile> -o <outputfile> -c <csvfile> -s <start page number> -e <end page number>" )
-			sys.exit()
-		elif opt in ("-i", "--ifile"):
-			inputFile = arg
-		elif opt in ("-o", "--ofile"):
-			outputFile = arg
-		elif opt in ("-c", "--csvfile"):
-			outCSV = arg
-		elif opt in ("-s", "--start"):
-			startPage = int(arg)
-		elif opt in ("-e", "--end"):
-			endPage = int(arg)
+    try:
+        (opts, _) = getopt.getopt ( argv,"hi:o:c:s:e:",["ifile=","ofile=","csvfile=","start=","end="] )
+    except getopt.GetoptError:
+        print ( "extractConvertPDFTables.py -i <inputfile> -o <outputfile> -c <csvfile> -s <start page number> -e <end page number>" )
+        sys.exit(2)
+    for opt, arg in opts:
+        if opt == '-h':
+            print ( "extractConvertPDFTables.py -i <inputfile> -o <outputfile> -c <csvfile> -s <start page number> -e <end page number>" )
+            sys.exit()
+        elif opt in ("-i", "--ifile"):
+            input_file = arg
+        elif opt in ("-o", "--ofile"):
+            output_file = arg
+        elif opt in ("-c", "--csvfile"):
+            csv_file = arg
+        elif opt in ("-s", "--start"):
+            start_page = int(arg)
+        elif opt in ("-e", "--end"):
+            end_page = int(arg)
 
-	print ( 'Processing PDF ( ' + inputFile + ' ) to extract pages ',startPage,' to ',endPage,' and save in ' + outputFile )
+    print ( 'Processing PDF ( ' + input_file + ' ) to extract pages ',start_page,' to ',end_page,' and save in ' + output_file )
 
 #
-# Extract pages from PDF file (inputFile) and move to their own PDF file (outputFile)
+# Extract pages from PDF file (input_file) and move to their own PDF file (output_file)
 #    Call PdfFile functions to find pages and put them in their own PDF file
 #
-	inputReader = PdfFileReader(open(inputFile, 'rb'))
-	numPages = inputReader.getNumPages()
+    inputReader = PdfFileReader(open(input_file, 'rb'))
 
-	outputWriter = PdfFileWriter()
-	for pageNum in range (startPage, endPage+1):
-        	page = inputReader.getPage(pageNum-1)
-        	outputWriter.addPage(page)
-        	print ( 'Extracting page ',pageNum )
+    outputWriter = PdfFileWriter()
+    for pageNum in range (start_page, end_page+1):
+        page = inputReader.getPage(pageNum-1)
+        outputWriter.addPage(page)
+        print ( 'Extracting page ',pageNum )
 
-	with open(outputFile, 'wb') as f:
-        	outputWriter.write(f)       
-	f.close()
+    with open(output_file, 'wb') as f:
+        outputWriter.write(f)       
+    f.close()
 #
 # Convert from PDF pages to CSV file using PDFTables API
 #    Get the API key from key file .PDFTablesKey
 #
-	f = open(".PDFTablesKey", "r")
-	myKey = f.readline()
-	myKey = myKey.strip()
-	f.close()
+    f = open(".PDFTablesKey", "r")
+    myKey = f.readline()
+    myKey = myKey.strip()
+    f.close()
 #
 # Use the PDFtables API to convert PDF outputfile to CSV
 #
-	convert = pdftables_api.Client ( myKey )     # PDFtables API key is linked to GBADs/dastacey account
+    convert = pdftables_api.Client ( myKey )     # PDFtables API key is linked to GBADs/dastacey account
 
-	inFile = outputFile
-	convert.csv ( inFile, outCSV )
-	print ("Conversion complete")
+    convert.csv ( output_file, csv_file )
+    print ("Conversion complete")
+
 
 if __name__ == "__main__":
-	main ( sys.argv[1:] )
+    main ( sys.argv[1:] )
+
 
 #
 # End of extractConvertPDFTables.py
