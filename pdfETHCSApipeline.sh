@@ -29,9 +29,9 @@ python3 extractConvertPDFTables.py -i $inputfile -o $outputfile -c $csvfile -s $
 echo "Cleaning..."
 python3 cleanTable.py -i $csvfile -o $cleanoutput
 rm $outputfile
-sed -i '' "s/Hareri/Harari/g" $cleanoutput
-sed -i '' "s/DirDawaAstedader/Dire Dawa Astedader/g" $cleanoutput
-sed -i '' "s/Somalie/Somale/g" $cleanoutput
+sed -i --in-place "s/Hareri/Harari/g" $cleanoutput
+sed -i --in-place "s/DirDawaAstedader/Dire Dawa Astedader/g" $cleanoutput
+sed -i --in-place "s/Somalie/Somale/g" $cleanoutput
 echo "Adding Regions and Zones to $cleanoutput to create $regionzone"
 python3 addRegionsZones.py -y $year -i $cleanoutput -o $regionzone
 rm $cleanoutput
