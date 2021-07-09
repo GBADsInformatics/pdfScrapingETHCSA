@@ -17,29 +17,29 @@
 #    TABLE 3-27a: NUMBER OF HOLDINGS BY SIZE OF CATTLE
 #
 echo "TABLE 3-1: NUMBER OF LIVESTOCK BY TYPE OF ANIMAL, ZONE, AND REGION"
-./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-1.csv 40 40 tmpTable.csv 2009_Table_3-1.csv 2009 1
+./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-1.csv 40 40 tmpTable.csv 2009_Table_3-1.csv 2009
 echo "TABLE 3-2: NUMBER OF CATTLE BY AGE AND SEX OF ANIMAL, ZONE, ZONE, AND REGION"
-./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-2.csv 40 40 tmpTable.csv 2009_Table_3-2.csv 2009 2
+./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-2.csv 40 40 tmpTable.csv 2009_Table_3-2.csv 2009
 echo "TABLE 3-7: CATTLE AGED 3 – 10 YEARS BY SEX, PURPOSE, ZONE, AND REGION"
-./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-7.csv 43 43 tmpTable.csv 2009_Table_3-7.csv 2009 1
+./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-7.csv 43 43 tmpTable.csv 2009_Table_3-7.csv 2009
 echo "TABLE 3-14: NUMBER OF CATTLE BY SEX, BREED, ZONE, AND REGION"
-./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-14.csv 46 46 tmpTable.csv 2009_Table_3-14.csv 2009 2
+./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-14.csv 46 46 tmpTable.csv 2009_Table_3-14.csv 2009
 echo "TABLE 3–19a: ESTIMATED NUMBERS OF BIRTHS, PURCHASES, AND ACQUIRED ANIMALS DURING THE REFERENCE PERIOD BY ZONE AND REGION - Cattle"
-./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-19a.csv 50 50 tmpTable.csv 2009_Table_3-19a.csv 2009 2
+./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-19a.csv 50 50 tmpTable.csv 2009_Table_3-19a.csv 2009
 echo "TABLE 3–20a: ESTIMATED NUMBERS OF SALES, SLAUGHTERS, DEATHS, AND OFFERED ANIMALS DURING THE REFERENCE PERIOD BY ZONE AND REGION - Cattle"
-./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-20a.csv 54 54 tmpTable.csv 2009_Table_3-20a.csv 2009 2
+./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-20a.csv 54 54 tmpTable.csv 2009_Table_3-20a.csv 2009
 echo "TABLE 3-21: NUMBER OF DAIRY ANIMALS, MILK PRODUCTION, AND LACTATION PERIOD BY ZONE AND REGION"
-./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-21.csv 58 58 tmpTable.csv 2009_Table_3-21.csv 2009 2
+./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-21.csv 58 58 tmpTable.csv 2009_Table_3-21.csv 2009
 echo "TABLE 3-23a: ESTIMATED NUMBER OF VACCINATED LIVESTOCK BY ZONE AND REGION - Cattle"
-./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-23a.csv 60 60 tmpTable.csv 2009_Table_3-23a.csv 2009 2
+./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-23a.csv 60 60 tmpTable.csv 2009_Table_3-23a.csv 2009
 echo "TABLE 3-24: ESTIMATED NUMBER OF LIVESTOCK AFFLICTED/DISEASED BY ZONE AND REGION"
-./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-24.csv 62 62 tmpTable.csv 2009_Table_3-24.csv 2009 2
+./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-24.csv 62 62 tmpTable.csv 2009_Table_3-24.csv 2009
 echo "TABLE 3-25: ESTIMATED NUMBER OF LIVESTOCK TREATED BY ZONE AND REGION"
-./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-25.csv 63 63 tmpTable.csv 2009_Table_3-25.csv 2009 1
+./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-25.csv 63 63 tmpTable.csv 2009_Table_3-25.csv 2009
 echo "TABLE 3-26a: ESTIMATED NUMBER OF LIVESTOCK DIED FROM DISEASE BY ZONE AND REGION"
-./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-26a.csv 63 63 tmpTable.csv 2009_Table_3-26a.csv 2009 2
+./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-26a.csv 63 63 tmpTable.csv 2009_Table_3-26a.csv 2009
 echo "TABLE 3-26b: ESTIMATED NUMBER OF LIVESTOCK DIED FROM OTHER CAUSES BY ZONE AND REGION"
-./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-26b.csv 64 64 tmpTable.csv 2009_Table_3-26b.csv 2009 1
+./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-26b.csv 64 64 tmpTable.csv 2009_Table_3-26b.csv 2009
 echo "TABLE 3-27a: NUMBER OF HOLDINGS BY SIZE OF CATTLE"
-./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-27a.csv 64 64 tmpTable.csv 2009_Table_3-27a.csv 2009 2
+./pdfETHCSApipeline.sh 2009-Livestock.pdf pages.pdf table3-27a.csv 64 64 tmpTable.csv 2009_Table_3-27a.csv 2009
 echo "2009 Cattle tables complete"
