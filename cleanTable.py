@@ -54,6 +54,8 @@ def main ( argv ):
     firstLine = True
     ignoreTable = False
     tableId = input_file[5:].replace(".csv","").replace("a", "-a").replace("b", "-b") # Isolate for tableId
+    lineCount = 0
+    copyRange = []
     myline = f.readline()
     while myline:   
         myline = myline.strip()
@@ -71,6 +73,12 @@ def main ( argv ):
                     if tablelineId[len(tablelineId)-1] not in "ab" and tableId[len(tableId)-1] in "ab":
                         tableId = tableId.replace(tableId[len(tableId)-2:], "")
                     ignoreTable = tableId not in tablelineId
+                    # Start copy range
+                    if not ignoreTable:
+                        copyRange.append(lineCount)
+                    # End copy range
+                    if ignoreTable and len(copyRange) > 0:
+                        copyRange.append(lineCount)
                 else:
                     ignoreTable = False
                 flag = 0
@@ -88,9 +96,45 @@ def main ( argv ):
                 outline = lineout.replace(",,",",")
                 lineout = outline.replace(",,",",")
                 print(lineout, file=fout)
+        lineCount += 1
         myline = f.readline()
+    # End copy range if not ended
+    if len(copyRange) == 1:
+        copyRange.append(lineCount)
     f.close()
     fout.close()
+
+    # For only 2017 and 2018, copy range of lines from input to tmp file
+    # Then overwrite input file with tmp file, so only a single table is kept
+    if year == "2017" or year == "2018":
+        f = open ( input_file, "r" )
+        tmp = open ('tmp.csv', 'w')
+        lineCount = 0
+        myline = f.readline()
+        while myline:
+            if lineCount >= copyRange[0] and lineCount < copyRange[1]:
+                print(myline, file=tmp, end='')
+            lineCount += 1
+            myline = f.readline()
+        f.close()
+        tmp.close()
+        if os.path.exists ( input_file ):
+            os.remove ( input_file )
+        else:
+            print ( "Error: csv file does not exist and thus cannot be removed." )
+        tmp = open ('tmp.csv', 'r')
+        f = open (input_file, 'w')
+        myline = tmp.readline()
+        while myline:
+            print(myline, file=f, end='')
+            myline = tmp.readline()
+        f.close()
+        tmp.close()
+        if os.path.exists ( 'tmp.csv' ):
+            os.remove ( 'tmp.csv' )
+        else:
+            print ( "Error: tmp csv file does not exist and thus cannot be removed." )
+
 
     lineCount = 0
     fout = open ( output_file, "w" )
