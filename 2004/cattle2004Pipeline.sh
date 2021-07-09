@@ -24,7 +24,7 @@ echo "TABLE 3-2: NUMBER OF CATTLE BY AGE AND SEX OF ANIMAL, ZONE, ZONE, AND REGI
 echo "TABLE 3-7: CATTLE AGED 3 – 10 YEARS BY SEX, PURPOSE, ZONE, AND REGION"
 ./pdfETHCSApipeline.sh 2004-Livestock.pdf pages.pdf table3-7.csv 49 50 tmpTable.csv 2004_Table_3-7.csv 2004
 echo "TABLE 3-14: NUMBER OF CATTLE BY SEX, BREED, ZONE, AND REGION"
-./pdfETHCSApipeline.sh 2004-Livestock.pdf pages.pdf table3-14.csv 66 67 tmpTable.csv 2004_Table_3-14.csv 2004
+./pdfETHCSApipeline.sh 2004-Livestock.pdf pages.pdf table3-14.csv 63 64 tmpTable.csv 2004_Table_3-14.csv 2004
 echo "TABLE 3-17a: ESTIMATED NUMBER OF NEWBORN LIVESTOCK DURING THE REFERENCE PERIOD BY TYPE, ZONE AND REGION - TOTAL"
 ./pdfETHCSApipeline.sh 2004-Livestock.pdf pages.pdf table3-17a.csv 69 70 tmpTable.csv 2004_Table_3-17a.csv 2004
 echo "TABLE 3-17b: ESTIMATED NUMBER OF NEWBORN LIVESTOCK DURING THE REFERENCE PERIOD BY TYPE, ZONE AND REGION - MALE"
