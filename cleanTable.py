@@ -56,6 +56,7 @@ def main ( argv ):
     tableId = input_file[5:].replace(".csv","").replace("a", "-a").replace("b", "-b") # Isolate for tableId
     lineCount = 0
     copyRange = []
+    multiTableYears = ["2009", "2017", "2018"]
     myline = f.readline()
     while myline:   
         myline = myline.strip()
@@ -66,7 +67,7 @@ def main ( argv ):
             if myline[0:6] == "Somale" or myline[0:7] == "Somalie":
                 flag = 2
             if "TABLE" in myline:
-                if year == "2017" or year == "2018": # Only for 2017 and 2018
+                if year in multiTableYears: # Only for multiTableYears
                     # Isolate for tablelineId from line, remove letter from tableId if tablelineId doesn't have one
                     # Check if correct table, and ignore table if not
                     tablelineId = myline.replace(" ", "").replace("–", "-").split(":")[0]
@@ -82,8 +83,8 @@ def main ( argv ):
                 else:
                     ignoreTable = False
                 flag = 0
-            # Ignore table if first line doesn't contain tableId only for 2017 and 2018
-            elif myline[0:5] != "TABLE" and firstLine and (year == "2017" or year == "2018"):
+            # Ignore table if first line doesn't contain tableId only for multiTableYears
+            elif myline[0:5] != "TABLE" and firstLine and (year in multiTableYears):
                 ignoreTable = True
             if firstLine:
                 firstLine = False
@@ -104,9 +105,9 @@ def main ( argv ):
     f.close()
     fout.close()
 
-    # For only 2017 and 2018, copy range of lines from input to tmp file
+    # For only multiTableYears, copy range of lines from input to tmp file
     # Then overwrite input file with tmp file, so only a single table is kept
-    if year == "2017" or year == "2018":
+    if year in multiTableYears:
         f = open ( input_file, "r" )
         tmp = open ('tmp.csv', 'w')
         lineCount = 0
