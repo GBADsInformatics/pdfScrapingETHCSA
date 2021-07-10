@@ -1,0 +1,39 @@
+Notes on the Tables produced by the Cattle Pipeline - 2014
+
+July 9, 2021
+
+      76   125  3818 2014_Table_3-14.csv
+      76   125  5118 2014_Table_3-19a.csv
+      76   122  5325 2014_Table_3-1.csv
+      79   124  6034 2014_Table_3-20a.csv
+      76   125  4614 2014_Table_3-21.csv
+      76   125  3653 2014_Table_3-23a.csv
+      77   134  3926 2014_Table_3-24.csv
+      76   125  3493 2014_Table_3-25.csv
+      76   125  4141 2014_Table_3-26a.csv
+      76   125  3808 2014_Table_3-26b.csv
+      76   125  4348 2014_Table_3-27a.csv
+      76   126  6202 2014_Table_3-2.csv
+      76   125  5137 2014_Table_3-7.csv
+     992  1631 59617 total
+
+Table 3-2
+ - Problem: Ethiopia, Oromia, SNNP, SNNP Sidama, SNNP South Omo, and SNNP Gammo Gofa rows have two columns that merged into one
+ - Action: manually correct columns, look at original tables from PDF for understanding
+
+Table 3-20a
+ - Problem: North West Tigray, Southern Tigray, and South West Shewa are cut-off which added 3 extra rows to the table. Thus instead of 76 lines there were 79.
+ - Action: Remove blank data rows and correct cut-off name rows that have data
+
+Table 3-23a
+ - Problem: Ethiopia has a column containing "********S".
+ - Action: no action needed.
+ - Problem: some of the row's columns after name are shifted by one column 
+ - Action: manually shift back any columns
+
+Table 3-24
+ - Problem: Table 24: at bottom of first page (page 134) there was the line: "Note: Draught animals in this table refer to 
+   Horses, Donkeys, and Mules." which added an extra row to the table. Thus instead of 76 lines there were 77.
+ - Action: remove the extra line.
+
+--- End of 2014 notes ---
