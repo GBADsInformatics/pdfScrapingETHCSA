@@ -1,0 +1,33 @@
+Notes on the Tables produced by the Cattle Pipeline - 2011
+
+July 12, 2021
+
+Table 3-1
+ - Problem: Gambela region not recognized as a region and instead is a zone. showing incorrect region for following fields.
+
+Table 3-2
+  - Problem: First row has an empty cell in column H that offsets the row.
+
+Table 3-20a
+  - Problem: Some rows have no data as:
+    - Row 40 "Horoguduru" is meant to be a continuation of the previous row zone
+    - Row 46 "Benshangul-" is meant to be the region along with "Gumuz" from the next row for the following entries
+    - Row 55 "Kembata" is meant to be a continuation of the previous row zone
+    - Row 66 "Amaro Sp." is meant to be a continuation of the previous row zone
+    - Row 69 "Kanso Sp." meant to be a continuation of the previous row zone
+    - Row 71 "Derashe Sp." is meant to be a continuation of the previous row zone
+    - Row 74 "Basketo Sp." meant to be a continuation of the previous row zone
+    - Row 76 "Konta Sp." is meant to be a continuation of the previous row zone
+    - Row 79 "Alaba Sp." is meant to be a continuation of the previous row zone
+    - Row 81 "Gambela" is meant to be the region along with Region from the next row for the following entries
+
+Table 3-23a
+  -Problem: First 39 rows, the data has an extra empty column on column C and row 40 does no contain the row data.
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 41 of the table
+
+Table 3-26a
+  - Problem: Empty file
+
+--- End of 2011 notes ---

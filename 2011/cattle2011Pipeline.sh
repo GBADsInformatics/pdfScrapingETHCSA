@@ -37,7 +37,7 @@ echo "TABLE 3-24: ESTIMATED NUMBER OF LIVESTOCK AFFLICTED/DISEASED BY ZONE AND R
 echo "TABLE 3-25: ESTIMATED NUMBER OF LIVESTOCK TREATED BY ZONE AND REGION"
 ./pdfETHCSApipeline.sh 2011-Livestock.pdf pages.pdf table3-25.csv 132 133 tmpTable.csv 2011_Table_3-25.csv 2011
 echo "TABLE 3-26a: ESTIMATED NUMBER OF LIVESTOCK DIED FROM DISEASE BY ZONE AND REGION"
-./pdfETHCSApipeline.sh 2011-Livestock.pdf pages.pdf table3-26a.csv 134 133 tmpTable.csv 2011_Table_3-26a.csv 2011
+./pdfETHCSApipeline.sh 2011-Livestock.pdf pages.pdf table3-26a.csv 134 135 tmpTable.csv 2011_Table_3-26a.csv 2011
 echo "TABLE 3-26b: ESTIMATED NUMBER OF LIVESTOCK DIED FROM OTHER CAUSES BY ZONE AND REGION"
 ./pdfETHCSApipeline.sh 2011-Livestock.pdf pages.pdf table3-26b.csv 136 137 tmpTable.csv 2011_Table_3-26b.csv 2011
 echo "TABLE 3-27a: NUMBER OF HOLDINGS BY SIZE OF CATTLE"

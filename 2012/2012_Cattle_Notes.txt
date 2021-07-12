@@ -1,0 +1,25 @@
+Notes on the Tables produced by the Cattle Pipeline - 2012
+
+July 12, 2021
+
+Table 3-1
+ - Problem: Gambela region not recognized as a region and instead is a zone. showing incorrect region for following fields.
+
+Table 3-20a
+  - Problem: Some rows have no data as:
+    - Row 3 "North West" is meant to be "North West Tigray" as the zone for the data on the next row
+    - Row 7 "Southern" is meant to be "Southern Tigray" as the zone for the data on the next row
+    - Row 38 "South West" is meant to be with "South West Shewa" as the zone for the data on the next row
+
+Table 2-21
+  - Problem: Some rows have number data combined causing a missing data column 
+    - Row 1 has the first 2 number columns combined.
+    - Row 41, 42, and 43 have the 4th and 5th data column combined in column F.
+
+Table 3-23a
+  -Problem: First 40 rows has an extra empty column on column C.
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 41 of the table
+
+--- End of 2012 notes ---

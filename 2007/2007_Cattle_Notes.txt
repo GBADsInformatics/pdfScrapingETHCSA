@@ -1,0 +1,29 @@
+Notes on the Tables produced by the Cattle Pipeline - 2007
+
+July 9, 2021
+
+Table 3-1
+ - Problem: Two rows are offset
+   - Row 56 is offset because column D has a * that should be in the next column and not combined
+   - Row 80 is offset because there is a - that was not recognised by the api on column F
+
+Table 3-19a
+  - Problem: last no contains no data because it was very close to the previous row in the pdf file
+
+Table 3-20a
+  - Problem: Some rows have no data as:
+    - Row 40 "Horoguduru" is meant to be a continuation of the previous row zone
+    - Row 46 "Benshangul-" is meant to be the region along with "Gumuz" from the next row for the following entries
+    - Row 56 "Kembata" is meant to be a continuation of the previous row zone
+    - Row 67 "Amaro Sp." is meant to be a continuation of the previous row zone
+    - Row 70 "Kanso Sp." meant to be a continuation of the previous row zone
+    - Row 72 "Derashe Sp." is meant to be a continuation of the previous row zone
+    - Row 75 "Basketo Sp." meant to be a continuation of the previous row zone
+    - Row 77 "Konta Sp." is meant to be a continuation of the previous row zone
+    - Row 80 "Alaba Sp." is meant to be a continuation of the previous row zone
+    - Row 82 "Gambela" is meant to be the region along with Region from the next row for the following entries
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 41 of the table
+
+--- End of 2007 notes ---
