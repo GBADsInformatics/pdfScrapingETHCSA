@@ -1,0 +1,84 @@
+Notes on the Tables produced by the Cattle Pipeline - 2009
+
+July 14, 2021
+
+  - Problem: Oromia appears as a zone in all tables
+  - Action: Make Oromia the Region and remove zone cell data
+
+Table 3-1
+  - Problem: Missing data rows and - appended to the end rather than on its own cell
+  - Action: Edit file appropriatly. Copy, paste the appropriate rows from the meta file. Usually the appropriate rows are above the region name, replace * with -1 and - with 0
+
+Table 3-2
+  - Problem: Benshangul-Gumuz is misspelled as "Benshangul-Gumz""
+  - Action: Correct the spelling error
+  - Problem: Table contains offset and incorrect values
+  - Action: Correct them from the pdf and meta files as necessary. Replace * with -1 and - with 0
+
+Table 3-7
+  - Problem: Misspelling of Benshangul-Gumuz and " symbol after the next data element
+  - Action Correct misspelling and remove "
+  - Problem: Table contains offset and incorrect values
+  - Action: Correct them from the pdf and meta files as necessary. Replace * with -1 and - with 0
+
+Table 3-14
+  - Problem: Table is offset and there is an empty cell on last column of row 7
+  - Action: Shift the table 1 spot to the left and add a 0 at the end of row 7
+
+Table 3-20a
+  - Problem: Table contains incomplete values
+  - Action: Enter correct values to the table from the pdf/meta
+
+Table 3-21
+  - Problem: Table inconsistent and innacurate values
+  - Action: Enter correct values to the table from the pdf/meta and correct incosistencies such as extra "
+
+Table 3-23a
+  - Problem: Table contains missing and extra characters. 
+  - Action: Enter correct values to the table from the pdf/meta and correct incosistencies such as extra "
+  - Problem: Last row region is supposed to be "Dire Dawa" and have no zone
+  - Action: Correct the region and delete the zone
+
+Table 3-24
+  - Problem: The table data is offset
+  - Action: Shift the table data 1 column left
+  - Problem: Contains a note from the bottom of the pdf in the last line
+  - Action: Delete last row
+  - Problem: Dire Dawa is not correctly on the next line
+  - Action: cut paste in the next line. and use a file editor to remove extra all " characters
+  - Problem: Table contains inconsistent and innacurate values in Row 2 and 11
+  - Action: Enter correct values to the table from the pdf/meta and correct incosistencies such as extra "
+
+Table 3-25
+  - Problem: The table data is offset
+  - Action: Shift the table data 1 column left
+  - Problem: Harari and Dire Dawa are supposed to be the region
+  - Action: Correct the region and remove the zone data
+  - Problem: Table contains missing and innacurate values in Row 10 and 11
+  - Action: Enter correct values to the table from the pdf/meta and correct incosistencies such as extra "
+
+Table 3-26a
+  - Problem: Benshangul-Gumuz is supposed to be in region in Row 9
+  - Action: Make it the region and delete the zone cell and row 8
+  - Problem: SNNP missing
+  - Action: add a row after Benshangul-Gumuz for SNNP and paste the extra values from the benshangul-Gumuz row
+  - Problem: Dire Dawa missing
+  - Action: add a row at the end for Dire Dawa and paste the extra values from the Harari row.
+  - Problem: Table contains inconsistent and innacurate values
+  - Action: Enter correct values to the table from the pdf/meta and correct incosistencies such as extra "
+
+Table 3-26b
+  - Problem: SNNP missing
+  - Action: add a row after Benshangul-Gumuz for SNNP and paste the extra values from the Benshangul-Gumuz row
+  - Problem: Harari missing
+  - Action: add a row after Gambela Region for Harari and paste the extra values from the Gambela Region row. Open the file in a editor to remove extra "
+  - Problem: Table contains inconsistent and innacurate values
+  - Action: Enter correct values to the table from the pdf/meta and correct incosistencies such as extra "
+
+Table 3-27a
+  - Problem: Extra last row and Dire Dawa supposed to be the Region
+  - Action: Delete last row and make "Dire Dawa" the region and remove the zone data
+  - Problem: Table contains inconsistent and innacurate values
+  - Action: Enter correct values to the table from the pdf/meta. replace - with 0 and * with -1
+
+--- End of 2009 notes ---

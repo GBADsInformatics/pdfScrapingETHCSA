@@ -3,8 +3,10 @@ Notes on the Tables produced by the Cattle Pipeline - 2018
 July 12, 2021
 
 Table 3-2
-  - Problem: Benshangul-Gumuz and SNNP is supposed to be the region name not a zone.
-  - Problem: Multiple data cells have been combined.
+  - Problem: Benshangul-Gumuz (row 9) and SNNP (row 10) is supposed to be the region name not a zone.
+  - Action: Make Benshangul-Gumuz and SNNP the appropriate Region name and delete the zone values
+  - Problem: Multiple data cells have been combined
+  - Action: Shift data and find and put correct values
 
 Table 3-14
   - Problem: Note at the end of the pdf comes as data in the table in the last row.
@@ -14,8 +16,10 @@ Table 3-20a
   - Problem: Data cells have been combined offsetting the data in some rows
     - Row 1: the second and third number cells hase been combined in D and the fourth and fifth have been combined in E
     - Row 5: The second and third number cells have been combined in D.
+  - Action: Shift data and find and put correct values
 
 Table 3-23a
-  -Problem: Extra empty column on column C.
+  - Problem: Extra empty column on column C
+  - Action: Shift the number data 1 column to the left
 
 --- End of 2018 notes ---
