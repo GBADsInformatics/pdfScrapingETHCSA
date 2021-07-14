@@ -25,6 +25,10 @@ Table 3-20a
    - Oromia, Horo Guduru Wollega - spread over 2 lines
 - Action: removed extra lines 
 
+Table 3-23a
+ - Problem: some of the columns are shifted by one
+ - Action: manually re-shift the columns back
+
 Table 3-24
  - Problem: Table 24: at bottom of first page there was the line: "Note: Draught animals in this table refer to
    Horses, Donkeys, and Mules." which added an extra row to the table.  Thus instead of 93 lines there were 94.
