@@ -20,7 +20,7 @@ July 9, 2021
 
 Table 3-1
  - Problem: Ethiopia's sheep and goats columns are combined, creating a large number and shift in columns
- - Action: correct the number, add to the missing column and shift the columns back in place
+ - Action: correct the number, add to the missing column and shift the columns back in place (Goats is 14,858,646)
 
 Table 3-22
  - Problem: Table 22: at bottom of first page (page 87) there was the line: "Note: Draught animals in this and the following tables refer to 

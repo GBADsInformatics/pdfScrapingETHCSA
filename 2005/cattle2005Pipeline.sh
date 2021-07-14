@@ -30,8 +30,8 @@ echo "TABLE 3-20a: ESTIMATED NUMBERS OF SALES, SLAUGHTERS, DEATHS, AND OFFERED A
 ./pdfETHCSApipeline.sh 2005-Livestock.pdf pages.pdf table3-20a.csv 97 98 tmpTable.csv 2005_Table_3-20a.csv 2005
 echo "TABLE 3-21: NUMBER OF DAIRY ANIMALS, MILK PRODUCTION, AND LACTATION PERIOD BY ZONE AND REGION"
 ./pdfETHCSApipeline.sh 2005-Livestock.pdf pages.pdf table3-21.csv 113 114 tmpTable.csv 2005_Table_3-21.csv 2005
-echo "TABLE 3-23: ESTIMATED NUMBER OF LIVESTOCK VACCINATED BY ZONE AND REGION - CATTLE"
-./pdfETHCSApipeline.sh 2005-Livestock.pdf pages.pdf table3-23.csv 121 122 tmpTable.csv 2005_Table_3-23.csv 2005
+echo "TABLE 3-23a: ESTIMATED NUMBER OF LIVESTOCK VACCINATED BY ZONE AND REGION - CATTLE"
+./pdfETHCSApipeline.sh 2005-Livestock.pdf pages.pdf table3-23a.csv 121 122 tmpTable.csv 2005_Table_3-23a.csv 2005
 echo "TABLE 3-24: ESTIMATED NUMBER OF LIVESTOCK AFFLICTED/DISEASED BY ZONE AND REGION"
 ./pdfETHCSApipeline.sh 2005-Livestock.pdf pages.pdf table3-24.csv 133 134 tmpTable.csv 2005_Table_3-24.csv 2005
 echo "TABLE 3-25: ESTIMATED NUMBER OF LIVESTOCK TREATED BY ZONE AND REGION"

@@ -36,6 +36,7 @@ Table 3-24
 
 Table 3-27a
  - Problem: Mao Komo, Segen People, Itang Special, and Hundene rows' data is on a blank row instead of being lined up, and is ignored
- - Action: manually re-enter data from PDF or raw CSV file
+ - Action: shift data starting from Benshangul-Gummuz to Kemeshi down, SNNP to Alaba Sp. Wereda down, Gambela Region to Mezhenger down, and
+   Harari down. Manually enter data for Benshangul-Gummuz, SNNP, Gambela Region, and Harari.
 
 --- End of 2013 notes ---
