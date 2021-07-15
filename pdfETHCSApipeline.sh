@@ -25,9 +25,9 @@ regionzone=$7
 year=$8
 echo "Taking pages $start-$end from $inputfile and extracting and cleaning table data and storing in $cleanoutput"
 echo "Extracting and converting..."
-#python3.8 extractConvertPDFTables.py -i $inputfile -o $outputfile -c $csvfile -s $start -e $end
+python3.8 extractConvertPDFTables.py -i $inputfile -o $outputfile -c $csvfile -s $start -e $end
 echo "Cleaning..."
-python3.8 cleanTable.py -i $csvfile -o $cleanoutput -y $year
+python3 cleanTable.py -i $csvfile -o $cleanoutput -y $year
 rm $outputfile
 sed -i --in-place "s/Hareri/Harari/g" $cleanoutput
 sed -i --in-place "s/DirDawaAstedader/Dire Dawa Astedader/g" $cleanoutput
@@ -38,5 +38,5 @@ echo "Adding Regions and Zones to $cleanoutput to create $regionzone"
 python3.8 addRegionsZones.py -y $year -i $cleanoutput -o $regionzone
 rm $cleanoutput
 echo "Adding headers to $regionzone"
-python3.8 addHeader.py -y $year -i $regionzone
+python3 addHeader.py -y $year -i $regionzone
 echo "Datafile: $regionzone"

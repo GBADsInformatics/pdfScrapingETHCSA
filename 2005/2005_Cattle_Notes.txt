@@ -1,0 +1,25 @@
+Notes on the Tables produced by the Cattle Pipeline - 2005
+
+July 9, 2021
+
+      72   122  3452 2005_Table_3-14.csv
+      72   122  4725 2005_Table_3-19a.csv
+      72   122  4877 2005_Table_3-1.csv
+      72   122  5612 2005_Table_3-20a.csv
+      72   122  4261 2005_Table_3-21.csv
+      72   122  3194 2005_Table_3-23.csv
+      73   131  3607 2005_Table_3-24.csv
+      72   122  2987 2005_Table_3-25.csv
+      72   122  3873 2005_Table_3-26a.csv
+      72   122  3500 2005_Table_3-26b.csv
+      72   122  4001 2005_Table_3-27a.csv
+      72   122  5803 2005_Table_3-2.csv
+      72   122  4855 2005_Table_3-7.csv
+     937  1595 54747 total
+
+Table 3-24
+ - Problem: Table 24: at bottom of first page (page 133) there was the line: "Note: Draught animals in this table refer to 
+   Horses, Donkeys, and Mules." which added an extra row to the table. Thus instead of 72 lines there were 73.
+ - Action: remove the extra line.
+
+--- End of 2005 notes ---

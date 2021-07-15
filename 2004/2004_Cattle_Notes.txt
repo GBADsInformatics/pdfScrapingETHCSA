@@ -1,0 +1,30 @@
+Notes on the Tables produced by the Cattle Pipeline - 2004
+
+July 9, 2021
+
+      72   122  3543 2004_Table_3-14.csv
+      72   122  3446 2004_Table_3-17a.csv
+      72   122  3317 2004_Table_3-17b.csv
+      72   122  3323 2004_Table_3-17c.csv
+      72   122  4950 2004_Table_3-1.csv
+      72   122  4354 2004_Table_3-20.csv
+      73   134  3045 2004_Table_3-22.csv
+      72   122  3278 2004_Table_3-23.csv
+      72   122  2835 2004_Table_3-24.csv
+      72   122  3194 2004_Table_3-25a.csv
+      72   122  2987 2004_Table_3-25b.csv
+      72   122  4057 2004_Table_3-26a.csv
+      72   122  5934 2004_Table_3-2.csv
+      72   122  4910 2004_Table_3-7.csv
+    1009  1720 53173 total
+
+Table 3-1
+ - Problem: Ethiopia's sheep and goats columns are combined, creating a large number and shift in columns
+ - Action: correct the number, add to the missing column and shift the columns back in place (Goats is 14,858,646)
+
+Table 3-22
+ - Problem: Table 22: at bottom of first page (page 87) there was the line: "Note: Draught animals in this and the following tables refer to 
+   Horses, Asses, and Mules." which added an extra row to the table. Thus instead of 72 lines there were 73.
+ - Action: remove the extra line.
+
+--- End of 2004 notes ---

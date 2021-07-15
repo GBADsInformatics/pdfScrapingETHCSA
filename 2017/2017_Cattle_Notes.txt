@@ -1,0 +1,47 @@
+Notes on the Tables produced by the Cattle Pipeline - 2017
+
+July 9, 2021
+
+      11   13  540 2017_Table_3-14.csv
+      11   13  714 2017_Table_3-19a.csv
+      11   13  766 2017_Table_3-1.csv
+      11   13  877 2017_Table_3-20a.csv
+      11   13  671 2017_Table_3-21.csv
+      11   13  496 2017_Table_3-23a.csv
+      11   13  513 2017_Table_3-24.csv
+      11   13  470 2017_Table_3-25.csv
+      11   13  572 2017_Table_3-26a.csv
+      11   13  540 2017_Table_3-26b.csv
+      11   13  600 2017_Table_3-27a.csv
+      11   13  819 2017_Table_3-2.csv
+      11   13  722 2017_Table_3-7.csv
+     143  169 8300 total
+
+Table 3-1
+ - Problem: Ethiopia row has all data columns after 4th shifted by one.
+ - Action: manually re-shift back.
+
+Table 3-2
+ - Problem: most of the rows have either missing data, merged columns, name cut-off, and SNNP merged with a row
+ - Action: manually correct columns, look at original tables from PDF for understanding
+
+Table 3-19a
+ - Problem: Ethiopia row has a merged column
+ - Action: look at original table and split into two columns for values
+
+Table 3-20a
+ - Ethiopia and Oromia have merged columns
+ - Action: look at original table and fix columns
+
+Table 3-23a
+ - Problem: empty column for all rows
+ - Action: remove empty column for all rows
+
+Problem: Gambela Region is spelt 2 ways which causes errors:
+   - Gambela region
+   - Gambela
+Action: The addition of 2 sed command corrects the problems that the typos cause. Replace for Gambela and then for Gambela Region.
+Note: the sed commands are of the form: sed -i '' "s/Gambela region/Gambela/g" <filename> because this was developed under
+Mac OS X.  On a Linux system they need to be of the form sed -i "s/Gambela region/Gambela/g" <filename>.
+
+--- End of 2017 notes ---

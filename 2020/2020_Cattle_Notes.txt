@@ -18,14 +18,36 @@ July 3, 2021
       91     151    6174 2020_Table_3-7.csv
     1201    1998   71384 total
 
+Table 3-1
+ - Problem: Zone 5 has a shifted cell
+ - use table from report as reference for manual re-shifting
+
+Table 3-2
+ - Problem: Oromiya row has two shifted cells
+ - Action: re-shift them back
+
 Table 3-7
  - Problem: Missing Region: Oromiya, Zone:West Guji - appears in all other tables, thus Table 7 has 91 rows and all other tables have 92
  - Action: nothing - just noted
+ - Problem: Zone 5 row has some shifted cells
+ - Action: use table from report as reference for manually re-shifting them
+
+Table 3-14
+ - Problem: Male Hybrid data cell is supposed to Female Indigenous data
+ - Action: manually move it
+
+Table 3-23a
+ - Problem: top row is shifted by one
+ - Action: re-shift it back
 
 Table 3-24
  - Problem: Table 24: at bottom of first page (page 131) there was the line: "Note: Draught animals in this table refer to 
    Horses, Donkeys, and Mules." which added an extra row to the table.  Thus instead of 92 lines there were 93.
  - Action: remove the extra line.
+
+Table 3-25
+ - Problem: top row is shifted by one
+ - Action: re-shift it back
 
 Table 20a
  - Problem: has 5 extra lines so instead of 92 rows there were 97
