@@ -1,0 +1,34 @@
+Notes on the Tables produced by the Cattle Pipeline - 2015
+
+July 12, 2021
+
+Table 3-2
+  - Problem: Some rows have data combined creating an offset and incorrect value.
+    - Row 3 has the first 2 data numbers combined in column C.
+    - Row 52 has the column J combined with what should be column K data numbers
+    - Row 56 has the column J combined with what should be column K data numbers
+    - Row 61 has the column J combined with what should be column K data numbers
+    - Row 62 has the column J combined with what should be column K data numbers
+  - Action: Shift the row appropriately and edit the columns to contain the right numbers from the pdf. Row 52 column K becomes 1080697
+
+
+Table 3-7
+  - Problem: Data after row 41 is in the incorrect positions due to missing "-" or "*" symbols in the pdf.
+  - Action: Shift the data and add appropriate values based on the pdf values. Then put 0's on empty cells
+
+Table 3-20a
+  - Problem: Some rows have no data as:
+    - Row 5 "North West" is meant to be "North West Tigray" as the zone for the data on the next row
+    - Row 9 "Southern" is meant to be "Southern Tigray" as the zone for the data on the next row
+    - Row 40 "South West" is meant to be with "South West Shewa" as the zone for the data on the next row
+  - Action: Add the appropriate text to the cells and delete the unnecessary rows
+
+Table 3-23a
+  - Problem: First 41 rows (excluding header) has an extra empty column on column C
+  - Action: Shift the data to remove the empty column C
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 42 of the table
+  - Action: Delete the row
+
+--- End of 2015 notes ---

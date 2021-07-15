@@ -1,0 +1,26 @@
+Notes on the Tables produced by the Cattle Pipeline - 2012
+
+July 12, 2021
+
+Table 3-20a
+  - Problem: Some rows have no data as:
+    - Row 5 "North West" is meant to be "North West Tigray" as the zone for the data on the next row
+    - Row 9 "Southern" is meant to be "Southern Tigray" as the zone for the data on the next row
+    - Row 40 "South West" is meant to be with "South West Shewa" as the zone for the data on the next row
+  - Action: Add the appropriate text to the cells and delete extra rows.
+
+Table 2-21
+  - Problem: Some rows have number data combined causing a missing data column 
+    - Row 2 has the first 2 number columns combined
+    - Row 42, 43, and 44 have the 4th and 5th data column combined in column F
+  - Action: Edit the cells based on the values in the pdf
+
+Table 3-23a
+  - Problem: First 41 rows (excluding the header) has an extra empty column on column C.
+  - Action: Shift the date to remove the empty column C
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 42 of the table
+  - Action: Delete the row
+
+--- End of 2012 notes ---

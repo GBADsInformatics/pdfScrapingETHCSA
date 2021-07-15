@@ -58,7 +58,7 @@ def main ( argv ):
     copyRange = []
     multiTableYears = ["2009", "2017", "2018"]
     myline = f.readline()
-    while myline:   
+    while myline:
         myline = myline.strip()
         in_string = myline[0:1]
         if len(myline) != 0 and not in_string.isdigit() and myline[0] != ",":

@@ -1,0 +1,23 @@
+Notes on the Tables produced by the Cattle Pipeline - 2008
+
+July 9, 2021
+
+Table 3-20a
+  - Problem: Some rows have no data as:
+    - Row 42 "Horoguduru" is meant to be a continuation of the previous row zone
+    - Row 48 "Benshangul-" is meant to be the region along with "Gumuz" from the next row for the following entries
+    - Row 58 "Kembata" is meant to be a continuation of the previous row zone
+    - Row 69 "Amaro Sp." is meant to be a prepended to the next row zone
+    - Row 72 "Kanso Sp." is meant to be a prepended to the next row zone
+    - Row 74 "Derashe Sp." is meant to be a prepended to the next row zone
+    - Row 76 "Basketo Sp." is meant to be a prepended to the next row zone
+    - Row 79 "Konta Sp." is meant to be a prepended to the next row zone
+    - Row 82 "Alaba Sp." is meant to be a prepended to the next row zone
+    - Row 84 is unnecessary and the zone "Region" in the next row is to be deleted
+  - Action: Add the data to the right cells and delete the incorrect cells/rows
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 42 of the table
+  - Action: Delete the row with the note
+
+--- End of 2008 notes ---

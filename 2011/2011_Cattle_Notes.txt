@@ -1,0 +1,31 @@
+Notes on the Tables produced by the Cattle Pipeline - 2011
+
+July 12, 2021
+
+Table 3-2
+  - Problem: Row 3 has an empty cell in column H that offsets the row.
+  - Action: Shift the row from I to N to the left by 1 cell.
+
+Table 3-20a
+  - Problem: Some rows have no data as:
+    - Row 42 "Horoguduru" is meant to be a continuation of the previous row zone
+    - Row 48 "Benshangul-" is meant to be the region along with "Gumuz" from the next row and for the following entries
+    - Row 57 "Kembata" is meant to be a continuation of the previous row zone
+    - Row 68 "Amaro Sp." is meant to be a prepended to the next row zone
+    - Row 71 "Kanso Sp." is meant to be a prepended to the next row zone
+    - Row 73 "Derashe Sp." is meant to be a prepended to the next row zone
+    - Row 76 "Basketo Sp." is meant to be a prepended to the next row zone
+    - Row 78 "Konta Sp." is meant to be a prepended to the next row zone
+    - Row 81 "Alaba Sp." is meant to be a prepended to the next row zone
+    - Row 83 is unnecessary and the zone "Region" in the next row is to be deleted
+  - Action: Add the data to the right cells and delete the incorrect cells/rows
+
+Table 3-23a
+  - Problem: First 40 rows (excluding the header), the data has an extra empty column on column C and row 41 does no contain the row data.
+  - Action: Shift the table to remove the empty column and add the data from table for row 41
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 42 of the table
+  - Action: Delete the row
+
+--- End of 2011 notes ---
