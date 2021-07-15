@@ -27,12 +27,16 @@ echo "Taking pages $start-$end from $inputfile and extracting and cleaning table
 echo "Extracting and converting..."
 python3 extractConvertPDFTables.py -i $inputfile -o $outputfile -c $csvfile -s $start -e $end
 echo "Cleaning..."
-python3 cleanTable.py -i $csvfile -o $cleanoutput
+python3 cleanTable.py -i $csvfile -o $cleanoutput -y $year
 rm $outputfile
-sed -i '' "s/Hareri/Harari/g" $cleanoutput
-sed -i '' "s/DirDawaAstedader/Dire Dawa Astedader/g" $cleanoutput
-sed -i '' "s/Somalie/Somale/g" $cleanoutput
+sed -i --in-place "s/Hareri/Harari/g" $cleanoutput
+sed -i --in-place "s/DirDawaAstedader/Dire Dawa Astedader/g" $cleanoutput
+sed -i --in-place "s/Somalie/Somale/g" $cleanoutput
+sed -i --in-place "s/Gambela region/Gambela/g" $cleanoutput
+sed -i --in-place "s/Gambela\"/Gambela Region\"/g" $cleanoutput
 echo "Adding Regions and Zones to $cleanoutput to create $regionzone"
 python3 addRegionsZones.py -y $year -i $cleanoutput -o $regionzone
 rm $cleanoutput
+echo "Adding headers to $regionzone"
+python3 addHeader.py -y $year -i $regionzone
 echo "Datafile: $regionzone"

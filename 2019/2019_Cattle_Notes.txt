@@ -16,6 +16,10 @@ July 3, 2021
       93     151    5281 2019_Table_3-27a.csv
       93     151    6117 2019_Table_3-7.csv
 
+Table 3-2
+ - Problem: Somale and Sidama's last column was shifted
+ - Action: manually move it back
+
 Table 3-20a
  - Problem: has 5 extra lines so instead of 92 rows there were 97
    - Afar, Zone_2 (Kelbetiresu) - spread over 2 lines
@@ -24,6 +28,10 @@ Table 3-20a
    - Oromia, Oromiya Liyu Zone  - spread over 2 lines
    - Oromia, Horo Guduru Wollega - spread over 2 lines
 - Action: removed extra lines 
+
+Table 3-23a
+ - Problem: some of the columns are shifted by one
+ - Action: manually re-shift the columns back
 
 Table 3-24
  - Problem: Table 24: at bottom of first page there was the line: "Note: Draught animals in this table refer to
