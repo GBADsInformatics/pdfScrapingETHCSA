@@ -39,6 +39,7 @@ def main ( argv ):
     AmharaTotal1 = 0
     OromiaTotal1 = 0
     SomaleTotal1 = 0
+    BenshangulTotal1 = 0
     SNNPTotal1 = 0
     GambelaTotal1 = 0
     HarariTotal1 = 0
@@ -58,6 +59,8 @@ def main ( argv ):
             OromiaTotal1 = float(row[2])
         elif row[0] == "Somale" and row[1] == "":
             SomaleTotal1 = float(row[2])
+        elif row[0] == "Benshangul-Gumuz" and row[1] == "":
+            BenshangulTotal1 = float(row[2])
         elif row[0] == "SNNP" and row[1] == "":
             SNNPTotal1 = float(row[2])
         elif row[0] == "Gambela Region" and row[1] == "":
@@ -69,7 +72,7 @@ def main ( argv ):
     file.close()
     
     #Get sum of regions total
-    tempEthiopiaTotal = TigrayTotal1+AfarTotal1+AmharaTotal1+OromiaTotal1+SomaleTotal1+SNNPTotal1+GambelaTotal1+HarariTotal1+DireTotal1
+    tempEthiopiaTotal = TigrayTotal1+AfarTotal1+AmharaTotal1+OromiaTotal1+SomaleTotal1+BenshangulTotal1+SNNPTotal1+GambelaTotal1+HarariTotal1+DireTotal1
     tempEthiopiaTotal = abs(tempEthiopiaTotal - EthiopiaTotal1)
     print("\nFor "+year + "_Table_3-1.csv the difference between the sum of regions total and Ethiopia total is: "+str(tempEthiopiaTotal))
 
@@ -81,6 +84,7 @@ def main ( argv ):
     AmharaTotal2 = 0
     OromiaTotal2 = 0
     SomaleTotal2 = 0
+    BenshangulTotal2 = 0
     SNNPTotal2 = 0
     GambelaTotal2 = 0
     HarariTotal2 = 0
@@ -91,6 +95,7 @@ def main ( argv ):
     AmharaPerc = 0
     OromiaPerc = 0
     SomalePerc = 0
+    BenshangulPerc = 0
     SNNPPerc = 0
     GambelaPerc = 0
     HarariPerc = 0
@@ -115,6 +120,8 @@ def main ( argv ):
                 OromiaTotal2 = float(row[2])
             elif row[0] == "Somale" and row[1] == "":
                 SomaleTotal2 = float(row[2])
+            elif row[0] == "Benshangul-Gumuz" and row[1] == "":
+                BenshangulTotal2 = float(row[2])
             elif row[0] == "SNNP" and row[1] == "":
                 SNNPTotal2 = float(row[2])
             elif row[0] == "Gambela Region" and row[1] == "":
@@ -126,7 +133,7 @@ def main ( argv ):
         file.close()
             
         #Get sum of regions total
-        tempEthiopiaTotal = TigrayTotal2+AfarTotal2+AmharaTotal2+OromiaTotal2+SomaleTotal2+SNNPTotal2+GambelaTotal2+HarariTotal2+DireTotal2
+        tempEthiopiaTotal = TigrayTotal2+AfarTotal2+AmharaTotal2+OromiaTotal2+SomaleTotal2+BenshangulTotal2+SNNPTotal2+GambelaTotal2+HarariTotal2+DireTotal2
         tempEthiopiaTotal = abs(tempEthiopiaTotal - EthiopiaTotal2)
         print("\nFor "+filename + " the difference between the sum of regions total and Ethiopia total is: "+str(tempEthiopiaTotal))
         
@@ -137,6 +144,7 @@ def main ( argv ):
         AmharaPerc = abs(AmharaTotal1 - AmharaTotal2)/AmharaTotal1*100
         OromiaPerc = abs(OromiaTotal1 - OromiaTotal2)/OromiaTotal1*100
         SomalePerc = abs(SomaleTotal1 - SomaleTotal2)/SomaleTotal1*100
+        BenshangulPerc = abs(BenshangulTotal1 - BenshangulTotal2)/BenshangulTotal1*100
         SNNPPerc = abs(SNNPTotal1 - SNNPTotal2)/SNNPTotal1*100
         GambelaPerc = abs(GambelaTotal1 - GambelaTotal2)/GambelaTotal1*100
         HarariPerc = abs(HarariTotal1 - HarariTotal2)/HarariTotal1*100
@@ -144,16 +152,18 @@ def main ( argv ):
 
         #Print out all the info
         print("\nTotal Cattle Comparison between "+year+"_Table_3-1.csv and "+filename)
-        print("  Percentage difference between Ethiopia totals = "+str(EthiopiaPerc))
-        print("  Percentage difference between Tigray totals = "+str(TigrayPerc))
-        print("  Percentage difference between Afar totals = "+str(AfarPerc))
-        print("  Percentage difference between Amhara totals = "+str(AmharaPerc))
-        print("  Percentage difference between Oromia totals = "+str(OromiaPerc))
-        print("  Percentage difference between Somale totals = "+str(SomalePerc))
-        print("  Percentage difference between SNNP totals = "+str(SNNPPerc))
-        print("  Percentage difference between Gambela Region totals = "+str(GambelaPerc))
-        print("  Percentage difference between Harari totals = "+str(HarariPerc))
-        print("  Percentage difference between Dire Dawar totals = "+str(DirePerc))
+        print("\tLocation\t\tPercentage Difference Between Totals")
+        print("\tEthiopia\t\t"+str(EthiopiaPerc)+"%")
+        print("\tTigray\t\t\t"+str(TigrayPerc)+"%")
+        print("\tAfar\t\t\t"+str(AfarPerc)+"%")
+        print("\tAmhara\t\t\t"+str(AmharaPerc)+"%")
+        print("\tOromia\t\t\t"+str(OromiaPerc)+"%")
+        print("\tSomale\t\t\t"+str(SomalePerc)+"%")
+        print("\tBanshangul-Gumuz\t"+str(BenshangulPerc)+"%")
+        print("\tSNNP\t\t\t"+str(SNNPPerc)+"%")
+        print("\tGambela Region\t\t"+str(GambelaPerc)+"%")
+        print("\tHarari\t\t\t"+str(HarariPerc)+"%")
+        print("\tDire Dawar\t\t"+str(DirePerc)+"%")
     
 if __name__ == "__main__":
     main ( sys.argv[1:] )
