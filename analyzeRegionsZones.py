@@ -21,7 +21,7 @@ def main ():
     # Create csv file
     f1 = open("ethiopiaRegionsZonesAnalysis.csv", "w")
     f2 = open("ethiopiaRegionsZonesTimeline.txt", "w")
-    print('YEAR,REGION,NUMBER OF ZONES', file=f1)
+    print('Year,Region,Number of Zones', file=f1)
     # Go through each year's RegionsZones csv file
     yearStart,yearEnd = 2003,2021
     for year in range(yearStart, yearEnd):
@@ -63,7 +63,7 @@ def main ():
             zoneTotals[year] = zoneTotal
             print('', file=f2)
     # Print zone totals for each year
-    print('\nYEAR,NUMBER OF ZONES', file=f1)
+    print('\nYear,Number of Zones', file=f1)
     for year,total in zoneTotals.items():
         print('{},{}'.format(year,total), file=f1)
 
