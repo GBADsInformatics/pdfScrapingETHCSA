@@ -4,7 +4,9 @@
 # Last Update: July 15, 2021
 # 
 # Actions:
-# - Add the corresponding Headers to the tables
+# - Compares if there are differences in tables where some total values should be the same
+#
+# Note: Currently compatible for file with the same zones as used below
 #
 # Libraries
 import sys
@@ -28,11 +30,10 @@ def main ( argv ):
         elif opt in ("-y", "--year"):
             year = arg
 
-    #open first file year_Table_3-1 to get the data
+#--------------GET THE DATA FROM THE FIRST FILE year_Table_3-1--------------
     file = open(year + "_Table_3-1.csv", "r")
     csv_reader = csv.reader(file, delimiter=',')
-    lineNo = 0
-    #set initial elements to 0
+    #set initial elements to 0 for the zone variables
     EthiopiaTotal1 = 0
     TigrayTotal1 = 0
     AfarTotal1 = 0
@@ -73,10 +74,10 @@ def main ( argv ):
     
     #Get sum of regions total
     tempEthiopiaTotal = TigrayTotal1+AfarTotal1+AmharaTotal1+OromiaTotal1+SomaleTotal1+BenshangulTotal1+SNNPTotal1+GambelaTotal1+HarariTotal1+DireTotal1
-    tempEthiopiaTotal = abs(tempEthiopiaTotal - EthiopiaTotal1)
+    tempEthiopiaTotal = abs(tempEthiopiaTotal - EthiopiaTotal1)/tempEthiopiaTotal*100
     print("\nFor "+year + "_Table_3-1.csv the difference between the sum of regions total and Ethiopia total is: "+str(tempEthiopiaTotal))
 
-    # TO GET DATA FROM THE REST OF THE TABLES
+# --------------TO GET DATA FROM THE REST OF THE TABLES--------------
     #set initial elements to 0
     EthiopiaTotal2 = 0
     TigrayTotal2 = 0
@@ -134,7 +135,7 @@ def main ( argv ):
             
         #Get sum of regions total
         tempEthiopiaTotal = TigrayTotal2+AfarTotal2+AmharaTotal2+OromiaTotal2+SomaleTotal2+BenshangulTotal2+SNNPTotal2+GambelaTotal2+HarariTotal2+DireTotal2
-        tempEthiopiaTotal = abs(tempEthiopiaTotal - EthiopiaTotal2)
+        tempEthiopiaTotal = abs(tempEthiopiaTotal - EthiopiaTotal2)/tempEthiopiaTotal*100
         print("\nFor "+filename + " the difference between the sum of regions total and Ethiopia total is: "+str(tempEthiopiaTotal))
         
         #Calculate the differences
@@ -165,6 +166,65 @@ def main ( argv ):
         print("\tHarari\t\t\t"+str(HarariPerc)+"%")
         print("\tDire Dawar\t\t"+str(DirePerc)+"%")
     
+#--------Check if all the rows add up to the total---------#
+    tables = [year+"_Table_3-2.csv", year+"_Table_3-7.csv", year+"_Table_3-14.csv", year+"_Table_3-19a.csv", year+"_Table_3-20a.csv", year+"_Table_3-23a.csv", year+"_Table_3-27a.csv"]
+    #open next file to get the data
+    for filename in tables:
+        print("\nRow Data for file "+filename+"\n\tRow No\t% Difference for Totals")
+        start = False
+        lineNo = 1
+        file = open(filename, "r")
+        csv_reader = csv.reader(file, delimiter=',')
+        
+        #get the totals for each place from the table
+        if filename == year+"_Table_3-19a.csv" or filename ==  year+"_Table_3-20a.csv":
+            for row in csv_reader:
+                if row[0] == "Ethiopia" and row[1] == "":
+                    start = True
+                elif row[0] == "":
+                    start = False
+                
+                if start == True:
+                    n = 2
+                    print("\t"+str(lineNo), end = "")
+                    while n < len(row):
+                        rowTotal = float(row[n])
+                        if rowTotal != 0 and rowTotal != -1:
+                            rowSum = 0
+                            for x in range(n+1,n+3):
+                                if x<len(row) and row[x] != "-1" and row[x] != "":
+                                    rowSum += float(row[x])
+                            #print if the perc difference of the total and the actual sum
+                            rowPerc = abs(rowTotal - rowSum)/rowTotal*100
+                            print("\t"+"{:.0f}".format(rowPerc)+"%", end = "")
+                        n += 3
+                    print()
+                lineNo += 1
+            
+            file.close()
+        else:
+            for row in csv_reader:
+                if row[0] == "Ethiopia" and row[1] == "":
+                    start = True
+                elif row[0] == "":
+                    start = False
+                
+                if start == True:
+                    rowTotal = float(row[2])
+                    if rowTotal != 0 and rowTotal != -1:
+                        rowSum = 0
+                        for x in range(3,len(row)):
+                            if row[x] != "-1" and row[x] != "":
+                                rowSum += float(row[x])
+                        #print if the perc difference of the total and the actual sum
+                        rowPerc = abs(rowTotal - rowSum)/rowTotal*100
+                        print("\t"+str(lineNo)+"\t"+"{:.0f}".format(rowPerc)+"%")
+                
+                lineNo += 1
+            
+            file.close()
+
+
 if __name__ == "__main__":
     main ( sys.argv[1:] )
 
