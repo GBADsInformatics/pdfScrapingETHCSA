@@ -29,6 +29,10 @@ Table 3-20a
    - Oromia, Horo Guduru Wollega - spread over 2 lines
 - Action: removed extra lines 
 
+Table 3-20a
+ - Problem: SNNP row has 1 for its first column
+ - Action: replace with 1,022,491 by using table
+
 Table 3-23a
  - Problem: some of the columns are shifted by one
  - Action: manually re-shift the columns back
