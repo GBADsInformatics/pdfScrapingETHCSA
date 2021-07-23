@@ -1,0 +1,6 @@
+Flagged Errors and inconsistencies in the files - 2007
+
+July 22, 2021
+
+Table 3-19a
+  -Last row's number of Number of Births does not add up to column C total
