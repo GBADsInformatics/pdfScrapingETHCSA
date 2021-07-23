@@ -2,6 +2,10 @@ Notes on the Tables produced by the Cattle Pipeline - 2012
 
 July 12, 2021
 
+table 3-2
+ - Problem: Row 51 cell J contains combined data
+ - Action: Move the appropriate cells and fix the table from the pdf
+
 Table 3-20a
   - Problem: Some rows have no data as:
     - Row 5 "North West" is meant to be "North West Tigray" as the zone for the data on the next row
@@ -9,7 +13,7 @@ Table 3-20a
     - Row 40 "South West" is meant to be with "South West Shewa" as the zone for the data on the next row
   - Action: Add the appropriate text to the cells and delete extra rows.
 
-Table 2-21
+Table 3-21
   - Problem: Some rows have number data combined causing a missing data column 
     - Row 2 has the first 2 number columns combined
     - Row 42, 43, and 44 have the 4th and 5th data column combined in column F

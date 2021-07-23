@@ -19,6 +19,8 @@ Table 3-20a
     - Row 81 "Alaba Sp." is meant to be a prepended to the next row zone
     - Row 83 is unnecessary and the zone "Region" in the next row is to be deleted
   - Action: Add the data to the right cells and delete the incorrect cells/rows
+  - Problem: Row 52 contains incomplete values when the cell numbers are just 2
+  - Action: replace the first with 1268282 (column c) and the second with 109032 (column F)
 
 Table 3-23a
   - Problem: First 40 rows (excluding the header), the data has an extra empty column on column C and row 41 does no contain the row data.

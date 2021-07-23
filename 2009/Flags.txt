@@ -1,0 +1,5 @@
+Flagged Errors and inconsistencies in the files - 2009
+
+July 22, 2021
+
+In table 3-14 the total for Oromia is 10127447 which should be 22475349 as in table 3-1 and 3-2. The row does not add up.

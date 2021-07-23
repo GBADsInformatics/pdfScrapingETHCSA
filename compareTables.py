@@ -77,7 +77,7 @@ def main ( argv ):
     #Get sum of regions total
     tempEthiopiaTotal = TigrayTotal1+AfarTotal1+AmharaTotal1+OromiaTotal1+SomaleTotal1+BenshangulTotal1+SNNPTotal1+GambelaTotal1+HarariTotal1+DireTotal1+AddisTotal1
     tempEthiopiaTotal = abs(tempEthiopiaTotal - EthiopiaTotal1)/tempEthiopiaTotal*100
-    print("\nFor "+year + "_Table_3-1.csv the difference between the sum of regions total and Ethiopia total is: "+str(tempEthiopiaTotal))
+    print("\nFor "+year + "_Table_3-1.csv the difference between the sum of regions total and Ethiopia total is: "+"{:.0f}".format(tempEthiopiaTotal)+"%")
 
 # --------------TO GET DATA FROM THE REST OF THE TABLES--------------
     #set initial elements to 0
@@ -146,7 +146,7 @@ def main ( argv ):
         #Get sum of regions total
         tempEthiopiaTotal = TigrayTotal2+AfarTotal2+AmharaTotal2+OromiaTotal2+SomaleTotal2+BenshangulTotal2+SNNPTotal2+GambelaTotal2+HarariTotal2+DireTotal2+AddisTotal1
         tempEthiopiaTotal = abs(tempEthiopiaTotal - EthiopiaTotal2)/tempEthiopiaTotal*100
-        print("\nFor "+filename + " the difference between the sum of regions total and Ethiopia total is: "+str(tempEthiopiaTotal))
+        print("\nFor "+filename + " the difference between the sum of regions total and Ethiopia total is: "+"{:.0f}".format(tempEthiopiaTotal)+"%")
         
         #Calculate the differences
         EthiopiaPerc = abs(EthiopiaTotal1 - EthiopiaTotal2)/EthiopiaTotal1*100
