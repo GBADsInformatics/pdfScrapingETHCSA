@@ -1,12 +1,11 @@
 # 
-# Author: Rehan Nagoor
+# Author: Rehan Nagoor & Maxim Brochin
 # 
-# Last Update: July 15, 2021
+# Last Update: July 23, 2021
 # 
 # Actions:
 # - Compares if there are differences in tables where some total values should be the same
 #
-# Note: Currently compatible for file with the same zones as used below
 #
 # Libraries
 import sys
@@ -44,11 +43,12 @@ def main ( argv ):
     SNNPTotal1 = 0
     GambelaTotal1 = 0
     HarariTotal1 = 0
+    AddisTotal1 = 0
     DireTotal1 = 0
     tempEthiopiaTotal = 0
     #get the totals for each place from the table
     for row in csv_reader:
-        if row[0] == "Ethiopia" and row[1] == "":
+        if (row[0] == "Ethiopia" or row[0] == "National") and row[1] == "":
             EthiopiaTotal1 = float(row[2])
         elif row[0] == "Tigray" and row[1] == "":
             TigrayTotal1 = float(row[2])
@@ -56,24 +56,26 @@ def main ( argv ):
             AfarTotal1 = float(row[2])
         elif row[0] == "Amhara" and row[1] == "":
             AmharaTotal1 = float(row[2])
-        elif row[0] == "Oromia" and row[1] == "":
+        elif (row[0] == "Oromia" or row[0] == "Oromiya") and row[1] == "":
             OromiaTotal1 = float(row[2])
         elif row[0] == "Somale" and row[1] == "":
             SomaleTotal1 = float(row[2])
-        elif row[0] == "Benshangul-Gumuz" and row[1] == "":
+        elif (row[0] == "Benshangul-Gumuz" or row[0] == "Benishangul Gumuz") and row[1] == "":
             BenshangulTotal1 = float(row[2])
-        elif row[0] == "SNNP" and row[1] == "":
+        elif (row[0] == "SNNP" or row[0] == "S.N.N.P.R") and row[1] == "":
             SNNPTotal1 = float(row[2])
-        elif row[0] == "Gambela Region" and row[1] == "":
+        elif (row[0].lower() == "gambela region" or row[0] == "Gambela") and row[1] == "":
             GambelaTotal1 = float(row[2])
         elif row[0] == "Harari" and row[1] == "":
             HarariTotal1 = float(row[2])
-        elif row[0] == "Dire Dawa" and row[1] == "":
+        elif row[0] == "Addis Ababa" and row[1] == "":
+            AddisTotal1 = float(row[2])
+        elif (row[0] == "Dire Dawa" or row[0] == "Dire Dawa Astedader") and row[1] == "":
             DireTotal1 = float(row[2])
     file.close()
     
     #Get sum of regions total
-    tempEthiopiaTotal = TigrayTotal1+AfarTotal1+AmharaTotal1+OromiaTotal1+SomaleTotal1+BenshangulTotal1+SNNPTotal1+GambelaTotal1+HarariTotal1+DireTotal1
+    tempEthiopiaTotal = TigrayTotal1+AfarTotal1+AmharaTotal1+OromiaTotal1+SomaleTotal1+BenshangulTotal1+SNNPTotal1+GambelaTotal1+HarariTotal1+DireTotal1+AddisTotal1
     tempEthiopiaTotal = abs(tempEthiopiaTotal - EthiopiaTotal1)/tempEthiopiaTotal*100
     print("\nFor "+year + "_Table_3-1.csv the difference between the sum of regions total and Ethiopia total is: "+str(tempEthiopiaTotal))
 
@@ -89,6 +91,7 @@ def main ( argv ):
     SNNPTotal2 = 0
     GambelaTotal2 = 0
     HarariTotal2 = 0
+    AddisTotal2 = 0
     DireTotal2 = 0
     EthiopiaPerc = 0
     TigrayPerc = 0
@@ -100,8 +103,13 @@ def main ( argv ):
     SNNPPerc = 0
     GambelaPerc = 0
     HarariPerc = 0
+    AddisPerc = 0
     DirePerc = 0
-    tables = [year+"_Table_3-2.csv", year+"_Table_3-14.csv"]
+    tables = None
+    if year == "2003":
+        tables = [year+"_Table_3-2.csv", year+"_Table_3-18.csv"]
+    else:
+        tables = [year+"_Table_3-2.csv", year+"_Table_3-14.csv"]
     #open next file to get the data
     for filename in tables:
         file = open(filename, "r")
@@ -109,7 +117,7 @@ def main ( argv ):
         
         #get the totals for each place from the table
         for row in csv_reader:
-            if row[0] == "Ethiopia" and row[1] == "":
+            if (row[0] == "Ethiopia" or row[0] == "National") and row[1] == "":
                 EthiopiaTotal2 = float(row[2])
             elif row[0] == "Tigray" and row[1] == "":
                 TigrayTotal2 = float(row[2])
@@ -117,24 +125,26 @@ def main ( argv ):
                 AfarTotal2 = float(row[2])
             elif row[0] == "Amhara" and row[1] == "":
                 AmharaTotal2 = float(row[2])
-            elif row[0] == "Oromia" and row[1] == "":
+            elif (row[0] == "Oromia" or row[0] == "Oromiya") and row[1] == "":
                 OromiaTotal2 = float(row[2])
             elif row[0] == "Somale" and row[1] == "":
                 SomaleTotal2 = float(row[2])
-            elif row[0] == "Benshangul-Gumuz" and row[1] == "":
+            elif (row[0] == "Benshangul-Gumuz" or row[0] == "Benishangul Gumuz") and row[1] == "":
                 BenshangulTotal2 = float(row[2])
-            elif row[0] == "SNNP" and row[1] == "":
+            elif (row[0] == "SNNP" or row[0] == "S.N.N.P.R") and row[1] == "":
                 SNNPTotal2 = float(row[2])
-            elif row[0] == "Gambela Region" and row[1] == "":
+            elif (row[0].lower() == "gambela region" or row[0] == "Gambela") and row[1] == "":
                 GambelaTotal2 = float(row[2])
             elif row[0] == "Harari" and row[1] == "":
                 HarariTotal2 = float(row[2])
-            elif row[0] == "Dire Dawa" and row[1] == "":
+            elif row[0] == "Addis Ababa" and row[1] == "":
+                AddisTotal2 = float(row[2])
+            elif (row[0] == "Dire Dawa" or row[0] == "Dire Dawa Astedader") and row[1] == "":
                 DireTotal2 = float(row[2])
         file.close()
             
         #Get sum of regions total
-        tempEthiopiaTotal = TigrayTotal2+AfarTotal2+AmharaTotal2+OromiaTotal2+SomaleTotal2+BenshangulTotal2+SNNPTotal2+GambelaTotal2+HarariTotal2+DireTotal2
+        tempEthiopiaTotal = TigrayTotal2+AfarTotal2+AmharaTotal2+OromiaTotal2+SomaleTotal2+BenshangulTotal2+SNNPTotal2+GambelaTotal2+HarariTotal2+DireTotal2+AddisTotal1
         tempEthiopiaTotal = abs(tempEthiopiaTotal - EthiopiaTotal2)/tempEthiopiaTotal*100
         print("\nFor "+filename + " the difference between the sum of regions total and Ethiopia total is: "+str(tempEthiopiaTotal))
         
@@ -147,8 +157,11 @@ def main ( argv ):
         SomalePerc = abs(SomaleTotal1 - SomaleTotal2)/SomaleTotal1*100
         BenshangulPerc = abs(BenshangulTotal1 - BenshangulTotal2)/BenshangulTotal1*100
         SNNPPerc = abs(SNNPTotal1 - SNNPTotal2)/SNNPTotal1*100
-        GambelaPerc = abs(GambelaTotal1 - GambelaTotal2)/GambelaTotal1*100
+        if int(year) >= 2007:
+            GambelaPerc = abs(GambelaTotal1 - GambelaTotal2)/GambelaTotal1*100
         HarariPerc = abs(HarariTotal1 - HarariTotal2)/HarariTotal1*100
+        if int(year) <= 2006:
+            AddisPerc = abs(AddisTotal1 - AddisTotal2)/AddisTotal1*100
         DirePerc = abs(DireTotal1 - DireTotal2)/DireTotal1*100
 
         #Print out all the info
@@ -162,12 +175,20 @@ def main ( argv ):
         print("\tSomale\t\t\t"+str(SomalePerc)+"%")
         print("\tBanshangul-Gumuz\t"+str(BenshangulPerc)+"%")
         print("\tSNNP\t\t\t"+str(SNNPPerc)+"%")
-        print("\tGambela Region\t\t"+str(GambelaPerc)+"%")
+        if int(year) >= 2007:
+            print("\tGambela Region\t\t"+str(GambelaPerc)+"%")
         print("\tHarari\t\t\t"+str(HarariPerc)+"%")
+        if int(year) <= 2006:
+            print("\tAddis Ababa\t\t"+str(AddisPerc)+"%")
         print("\tDire Dawar\t\t"+str(DirePerc)+"%")
     
 #--------Check if all the rows add up to the total---------#
-    tables = [year+"_Table_3-2.csv", year+"_Table_3-7.csv", year+"_Table_3-14.csv", year+"_Table_3-19a.csv", year+"_Table_3-20a.csv", year+"_Table_3-23a.csv", year+"_Table_3-27a.csv"]
+    if year == "2003":
+        tables = [year+"_Table_3-2.csv", year+"_Table_3-7.csv", year+"_Table_3-18.csv", year+"_Table_3-21.csv"]
+    elif year == "2004":
+        tables = [year+"_Table_3-2.csv", year+"_Table_3-7.csv", year+"_Table_3-14.csv"]
+    else:
+        tables = [year+"_Table_3-2.csv", year+"_Table_3-7.csv", year+"_Table_3-14.csv", year+"_Table_3-19a.csv", year+"_Table_3-20a.csv", year+"_Table_3-23a.csv", year+"_Table_3-27a.csv"]
     #open next file to get the data
     for filename in tables:
         print("\nRow Data for file "+filename+"\n\tRow No\t% Difference for Totals")
@@ -177,9 +198,9 @@ def main ( argv ):
         csv_reader = csv.reader(file, delimiter=',')
         
         #get the totals for each place from the table
-        if filename == year+"_Table_3-19a.csv" or filename ==  year+"_Table_3-20a.csv":
+        if filename == year+"_Table_3-19a.csv" or filename == year+"_Table_3-20a.csv":
             for row in csv_reader:
-                if row[0] == "Ethiopia" and row[1] == "":
+                if (row[0] == "Ethiopia" or row[0] == "National") and row[1] == "":
                     start = True
                 elif row[0] == "":
                     start = False
@@ -195,7 +216,7 @@ def main ( argv ):
                                 if x<len(row) and row[x] != "-1" and row[x] != "":
                                     rowSum += float(row[x])
                             #print if the perc difference of the total and the actual sum
-                            rowPerc = abs(rowTotal - rowSum)/rowTotal*100
+                            rowPerc = (rowTotal - rowSum)/rowTotal*100
                             print("\t"+"{:.0f}".format(rowPerc)+"%", end = "")
                         n += 3
                     print()
@@ -204,7 +225,7 @@ def main ( argv ):
             file.close()
         else:
             for row in csv_reader:
-                if row[0] == "Ethiopia" and row[1] == "":
+                if (row[0] == "Ethiopia" or row[0] == "National") and row[1] == "":
                     start = True
                 elif row[0] == "":
                     start = False
@@ -217,7 +238,7 @@ def main ( argv ):
                             if row[x] != "-1" and row[x] != "":
                                 rowSum += float(row[x])
                         #print if the perc difference of the total and the actual sum
-                        rowPerc = abs(rowTotal - rowSum)/rowTotal*100
+                        rowPerc = (rowTotal - rowSum)/rowTotal*100
                         print("\t"+str(lineNo)+"\t"+"{:.0f}".format(rowPerc)+"%")
                 
                 lineNo += 1

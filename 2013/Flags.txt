@@ -1,0 +1,8 @@
+Flagged Errors and inconsistencies in the files - 2013
+
+July 23, 2021
+
+Row Data for file 2013_Table_3-20a.csv
+  - Row adds up to a number greater than the total
+	Row No	% Difference for Totals
+	24	0%	-1%	0%	0%
