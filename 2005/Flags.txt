@@ -1,0 +1,28 @@
+Flagged Errors and inconsistencies in the files - 2005
+
+July 23, 2021
+
+Table 3-23a
+  - Most of the rows add up to a number greater than the total
+	Row No	% Difference for Totals
+	2	-13%
+	3	-13%
+	5	-5%
+	6	-75%
+	10	-1%
+	12	-9%
+	22	-2%
+	23	-13%
+	29	-1%
+	30	-51%
+	31	-3%
+	36	-4%
+	46	-16%
+	50	-2%
+	54	-27%
+	57	-1%
+	60	-21%
+	64	-64%
+	65	-2%
+	70	-29%
+	71	-27%

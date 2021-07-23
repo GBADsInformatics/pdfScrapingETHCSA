@@ -1,0 +1,64 @@
+Flagged Errors and inconsistencies in the files - 2019
+
+July 23, 2021
+
+Table 3-2
+  - Some of the rows add up to a number greater than or less than the total
+	Row No	% Difference for Totals
+	2	7%
+	3	-78%
+	30	-17%
+	50	10%
+	67	11%
+
+Table 3-7
+  - Row adds up to a number less than the total
+	Row No	% Difference for Totals
+	3	-13%
+
+Table 3-23a
+  - Most of the rows add up to a number greater than the total and row 55 adds up to a number less than
+	Row No	% Difference for Totals
+	2	-19%
+	3	-31%
+	4	-12%
+	5	-11%
+	6	-54%
+	7	-47%
+	9	-50%
+	16	-16%
+	17	-18%
+	19	-32%
+	20	-30%
+	22	-11%
+	24	-16%
+	29	-17%
+	30	-16%
+	31	-6%
+	32	-7%
+	33	-3%
+	34	-5%
+	35	-13%
+	36	-31%
+	38	-26%
+	42	-32%
+	54	-100%
+	55	100%
+	56	-114%
+	62	-17%
+	64	-21%
+	67	-20%
+	68	-22%
+	69	-7%
+	70	-5%
+	74	-7%
+	77	-5%
+	79	-9%
+	81	-10%
+
+Table 3-27a
+  - Rows add up to a number less than the total
+	Row No	% Difference for Totals
+	54	16%
+	55	7%
+	60	15%
