@@ -27,7 +27,7 @@ Table 3-20a
 
 Table 3-23a
  - Problem: Ethiopia has a column containing "********S".
- - Action: no action needed.
+ - Action: replace with 10009138 by calculating difference between total and remaining columns.
  - Problem: some of the row's columns after name are shifted by one column 
  - Action: manually shift back any columns
 
