@@ -24,8 +24,6 @@ Table 3-1
 Table 3-2
  - Problem: most of the rows have either missing data, merged columns, name cut-off, and SNNP merged with a row
  - Action: manually correct columns, look at original tables from PDF for understanding
- - Problem: Tigray is displayed as "Tigray"""
- - Action: remove the quotes
 
 Table 3-19a
  - Problem: Ethiopia row has a merged column

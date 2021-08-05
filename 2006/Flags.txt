@@ -1,8 +1,0 @@
-Flagged Errors and inconsistencies in the files - 2006
-
-July 23, 2021
-
-Table 3-20a
-  - Row adds up to number greater than total
-	Row No	% Difference for Totals
-	43	0%	-1%	0%	0%
