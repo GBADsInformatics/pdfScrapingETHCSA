@@ -1,0 +1,14 @@
+Flagged Errors and inconsistencies in the files - 2016
+
+July 23, 2021
+
+Table 3-2
+  - Rows add up to a number less than the total
+	Row No	% Difference for Totals
+	2	54%
+	51	10%
+
+Table 3-20a
+  - Rows add up to a number less than the total
+	Row No	% Difference for Totals
+	3	30%	67%	0%	0%
