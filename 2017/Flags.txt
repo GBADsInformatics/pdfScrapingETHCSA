@@ -1,0 +1,8 @@
+Flagged Errors and inconsistencies in the files - 2017
+
+July 23, 2021
+
+Table 3-2
+  - Row adds up to a number greater than total
+	Row No	% Difference for Totals
+	2	-2%

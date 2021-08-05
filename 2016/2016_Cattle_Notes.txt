@@ -46,6 +46,8 @@ Table 3-2
       - SNNP, Alaba Sp. Wereda
       - Gambela Region
       - Gambela Region, Nuware
+ - Problem: SNNP, Sidama row has a * instead of a -1
+ - Action: change to -1
 
 Table 3-23a
  - Problem: after zone there is a blank column for the rows from the 1st page of the table.  The rows from the
