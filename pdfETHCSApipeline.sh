@@ -32,6 +32,8 @@ rm $outputfile
 sed -i --in-place "s/Hareri/Harari/g" $cleanoutput
 sed -i --in-place "s/DirDawaAstedader/Dire Dawa Astedader/g" $cleanoutput
 sed -i --in-place "s/Somalie/Somale/g" $cleanoutput
+sed -i --in-place "s/Werst Arsi/West Arsi/g" $cleanoutput
+sed -i --in-place "s/Benishangul Gumuz/Benshangul-Gumuz/g" $cleanoutput
 sed -i --in-place "s/Gambela region/Gambela/g" $cleanoutput
 sed -i --in-place "s/Gambela\"/Gambela Region\"/g" $cleanoutput
 echo "Adding Regions and Zones to $cleanoutput to create $regionzone"
