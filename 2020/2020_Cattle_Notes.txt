@@ -41,6 +41,8 @@ Table 3-14
 Table 3-23a
  - Problem: top row is shifted by one
  - Action: re-shift it back
+ - Problem: row 45 zone is spelt wrong: "Oromiya Special Zon"
+ - Action: change to "Oromiya Special Zone"
 
 Table 3-24
  - Problem: Table 24: at bottom of first page (page 131) there was the line: "Note: Draught animals in this table refer to 
