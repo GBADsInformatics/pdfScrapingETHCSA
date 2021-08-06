@@ -30,4 +30,6 @@ Table 3-24
   - Problem: The note at the bottom of the pdf page appears in row 42 of the table
   - Action: Delete the row with the note
 
+Argoba Special is spelt "Argoba S. W." for a lot of years, added sed command to pipeline as fix
+
 --- End of 2007 notes ---

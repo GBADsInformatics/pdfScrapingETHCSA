@@ -48,6 +48,10 @@ Table 3-2
       - Gambela Region, Nuware
  - Problem: SNNP, Sidama row has a * instead of a -1
  - Action: change to -1
+ - Problem: North West Tigray row was spelled "North West"
+ - Action: manually fix
+ - Problem: Row 37, South West Shewa is spelt "South West"
+ - Action: manually fix
 
 Table 3-23a
  - Problem: after zone there is a blank column for the rows from the 1st page of the table.  The rows from the

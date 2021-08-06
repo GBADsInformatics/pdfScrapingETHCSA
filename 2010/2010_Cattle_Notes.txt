@@ -27,4 +27,6 @@ Table 3-27
   - Problem: row 80 has offset data because "-" on column G not recognized as another coumn
   - Action: Remove the "-" and add a 0 on the last column
 
+Pawe Special is missing from most tables, added it after Kemeshi row with cells containing zeroes
+
 --- End of 2010 notes ---

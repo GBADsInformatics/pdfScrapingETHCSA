@@ -36,6 +36,7 @@ sed -i --in-place "s/Werst Arsi/West Arsi/g" $cleanoutput
 sed -i --in-place "s/Benishangul Gumuz/Benshangul-Gumuz/g" $cleanoutput
 sed -i --in-place "s/Gambela region/Gambela/g" $cleanoutput
 sed -i --in-place "s/Gambela\"/Gambela Region\"/g" $cleanoutput
+sed -i --in-place "s/Argoba S. W./Argoba Special Wereda/g" $cleanoutput
 echo "Adding Regions and Zones to $cleanoutput to create $regionzone"
 python3.8 addRegionsZones.py -y $year -i $cleanoutput -o $regionzone
 rm $cleanoutput
