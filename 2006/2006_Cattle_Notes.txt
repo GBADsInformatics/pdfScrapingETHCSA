@@ -17,6 +17,10 @@ July 9, 2021
       75   128  5047 2006_Table_3-7.csv
      976  1673 57482 total
 
+Table 3-23a
+ - Problem: Metekel row has an empty cell
+ - Action: fix empty cell with -1
+
 Table 3-24
  - Problem: Table 24: at bottom of first page (page 133) there was the line: "Note: Draught animals in this table refer to 
    Horses, Donkeys, and Mules." which added an extra row to the table. Thus instead of 75 lines there were 76.

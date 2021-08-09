@@ -17,6 +17,10 @@ July 9, 2021
       72   122  4855 2005_Table_3-7.csv
      937  1595 54747 total
 
+Table 3-23a
+ - Problem: row 14 has an empty cell near the end
+ - Action: compare with original table and value before it should be moved to end and empty cell is zero
+
 Table 3-24
  - Problem: Table 24: at bottom of first page (page 133) there was the line: "Note: Draught animals in this table refer to 
    Horses, Donkeys, and Mules." which added an extra row to the table. Thus instead of 72 lines there were 73.
