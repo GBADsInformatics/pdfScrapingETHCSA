@@ -14,7 +14,8 @@ Table 3-20a
   - Action: Add the appropriate text to the cells and delete extra rows.
 
 Table 3-21
-  - Problem: Some rows have number data combined causing a missing data column 
+  - Problem: Some rows have number data combined causing a missing data column
+    - Row 1 has the some incorrect numbers and remaining numbers shifted
     - Row 2 has the first 2 number columns combined
     - Row 42, 43, and 44 have the 4th and 5th data column combined in column F
   - Action: Edit the cells based on the values in the pdf
