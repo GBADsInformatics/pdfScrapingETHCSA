@@ -20,7 +20,7 @@
 #    TABLE 3-27f: NUMBER OF HOLDINGS BY SIZE OF POULTRY
 #
 echo "TABLE 3-1: NUMBER OF LIVESTOCK BY TYPE OF ANIMAL, ZONE, AND REGION"
-#./pdfETHCSApipeline.sh 2005-Livestock.pdf pages.pdf table3-1.csv 39 40 tmpTable.csv 2005_Table_3-1.csv 2005
+./pdfETHCSApipeline.sh 2005-Livestock.pdf pages.pdf table3-1.csv 39 40 tmpTable.csv 2005_Table_3-1.csv 2005
 echo "TABLE 3-17a: POULTRY INVENTORY BY TYPE, ZONE, AND REGION - All"
 ./pdfETHCSApipeline.sh 2005-Livestock.pdf pages.pdf table3-17a.csv 71 72 tmpTable.csv 2005_Table_3-17a.csv 2005
 echo "TABLE 3-17b: POULTRY INVENTORY BY TYPE, ZONE, AND REGION - Indigenous Breeds"
@@ -42,13 +42,13 @@ echo "TABLE 3–22c: TOTAL EGG PRODUCTION BY ZONE, AND REGION - Exotic Breeds"
 echo "TABLE 3-23f: ESTIMATED NUMBER OF VACCINATED LIVESTOCK BY ZONE AND REGION - Poultry"
 ./pdfETHCSApipeline.sh 2005-Livestock.pdf pages.pdf table3-23f.csv 131 132 tmpTable.csv 2005_Table_3-23f.csv 2005
 echo "TABLE 3-24: ESTIMATED NUMBER OF LIVESTOCK AFFLICTED/DISEASED BY ZONE AND REGION"
-#./pdfETHCSApipeline.sh 2005-Livestock.pdf pages.pdf table3-24.csv 133 134 tmpTable.csv 2005_Table_3-24.csv 2005
+./pdfETHCSApipeline.sh 2005-Livestock.pdf pages.pdf table3-24.csv 133 134 tmpTable.csv 2005_Table_3-24.csv 2005
 echo "TABLE 3-25: ESTIMATED NUMBER OF LIVESTOCK TREATED BY ZONE AND REGION"
-#./pdfETHCSApipeline.sh 2005-Livestock.pdf pages.pdf table3-25.csv 135 136 tmpTable.csv 2005_Table_3-25.csv 2005
+./pdfETHCSApipeline.sh 2005-Livestock.pdf pages.pdf table3-25.csv 135 136 tmpTable.csv 2005_Table_3-25.csv 2005
 echo "TABLE 3-26a: ESTIMATED NUMBER OF LIVESTOCK DIED FROM DISEASE BY ZONE AND REGION"
-#./pdfETHCSApipeline.sh 2005-Livestock.pdf pages.pdf table3-26a.csv 137 138 tmpTable.csv 2005_Table_3-26a.csv 2005
+./pdfETHCSApipeline.sh 2005-Livestock.pdf pages.pdf table3-26a.csv 137 138 tmpTable.csv 2005_Table_3-26a.csv 2005
 echo "TABLE 3-26b: ESTIMATED NUMBER OF LIVESTOCK DIED FROM OTHER CAUSES BY ZONE AND REGION"
-#./pdfETHCSApipeline.sh 2005-Livestock.pdf pages.pdf table3-26b.csv 139 140 tmpTable.csv 2005_Table_3-26b.csv 2005
+./pdfETHCSApipeline.sh 2005-Livestock.pdf pages.pdf table3-26b.csv 139 140 tmpTable.csv 2005_Table_3-26b.csv 2005
 echo "TABLE 3-27f: NUMBER OF HOLDINGS BY SIZE OF POULTRY"
 ./pdfETHCSApipeline.sh 2005-Livestock.pdf pages.pdf table3-27f.csv 151 152 tmpTable.csv 2005_Table_3-27f.csv 2005
 echo "2005 Poultry tables complete"
