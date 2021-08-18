@@ -1,0 +1,18 @@
+Notes on the Tables produced by the Poultry Pipeline - 2013
+
+August 17, 2021
+
+Table 3-22b
+ - Problem: Table contains empty cells and rows in wrong lines
+ - Action: Add and move the data in the correct cells by checking the pdf. copy paste hard to see values
+
+Table 3-22c
+ - Problem: Last row with Oromia as the region is an extra row
+ - Action: Delete the row (above the first Somale region row) which has blank data cells
+
+Table 3-24
+ - Problem: Table 24: at bottom of first page (page 134) there was the line: "Note: Draught animals in this table refer to 
+   Horses, Donkeys, and Mules." which added an extra row to the table. Thus instead of 76 lines there were 77.
+ - Action: remove the extra line.
+
+--- End of 2013 notes ---

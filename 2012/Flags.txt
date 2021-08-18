@@ -1,4 +1,6 @@
 Flagged Errors and inconsistencies in the files - 2012
 
-July 22, 2021
+August 17, 2021
 
+Table 3-27f
+ - PDF contains rows where there is no data. Rows with Regions of Tigray, Afar, Amhara, Oromia

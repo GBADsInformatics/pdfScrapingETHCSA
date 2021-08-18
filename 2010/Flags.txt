@@ -1,4 +1,7 @@
 Flagged Errors and inconsistencies in the files - 2010
 
-July 22, 2021
+August 17, 2021
 
+Table 3-22a and Table 3-22c
+ - Data contains shifted rows and blank row on Afar row 3
+ - Table 3-22c Afar data does not add up. Afar value contains a 0 when the zone 1 value contains a 1
