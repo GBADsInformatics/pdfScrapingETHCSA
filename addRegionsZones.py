@@ -98,7 +98,10 @@ def main ( argv ):
                 for i in range(1, len(row)-1):
                     print ( row[i],end=",",file=f )
                 i = i + 1
-                print ( row[i],file=f )
+                if i > len(row)-1:
+                    print(row[1],file=f)
+                else:
+                    print ( row[i],file=f )
             else:  
                 x = 0
                 stopFlag = 0
@@ -123,7 +126,10 @@ def main ( argv ):
                 for i in range(1, len(row)-1):
                     print ( row[i],end=",",file=f )
                 i = i + 1
-                print ( row[i],file=f )
+                if i > len(row)-1:
+                    print(row[1],file=f)
+                else:
+                    print ( row[i],file=f )
     f.close()
 
 
