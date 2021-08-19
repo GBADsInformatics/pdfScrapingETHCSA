@@ -120,7 +120,10 @@ def main ( argv ):
                                 harariFlag = 1               # the Harari region record has been found
                     x = x + 1
                 if stopFlag != 1:               # this is not a region record, use previous region for this zone
-                    print ( reg+","+row[0],end=",",file=f )
+                    try:
+                        print ( reg+","+row[0],end=",",file=f )
+                    except:
+                        pass
                     if row[0] == "Harari" and year == "2019":                   # the Harari zone has been found 
                         harariFlag = 0
                 for i in range(1, len(row)-1):

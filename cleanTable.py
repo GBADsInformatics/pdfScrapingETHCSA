@@ -53,7 +53,9 @@ def main ( argv ):
     flag = 0
     firstLine = True
     ignoreTable = False
-    tableId = input_file[5:].replace(".csv","").replace("a", "-a").replace("b", "-b") # Isolate for tableId
+    tableId = input_file[5:].replace(".csv","").replace("a", "-a").replace("b", 
+        "-b").replace("c", "-c").replace("d", "-d").replace("e", "-e").replace("f", 
+        "-f").replace("g", "-g").replace("h", "-h") # Isolate for tableId
     lineCount = 0
     copyRange = []
     multiTableYears = ["2009", "2017", "2018"]
@@ -61,7 +63,7 @@ def main ( argv ):
     while myline:
         myline = myline.strip()
         in_string = myline[0:1]
-        if len(myline) != 0 and not in_string.isdigit() and myline[0] != ",":
+        if len(myline) != 0 and not in_string.isdigit() and (myline[0] != "," or myline[0:3] == ",b."):
             if myline[0:8] == "Ethiopia" or myline[0:8] == "National":
                 flag = 1
             if myline[0:6] == "Somale" or myline[0:7] == "Somalie":
@@ -71,18 +73,34 @@ def main ( argv ):
                     # Isolate for tablelineId from line, remove letter from tableId if tablelineId doesn't have one
                     # Check if correct table, and ignore table if not
                     tablelineId = myline.replace(" ", "").replace("–", "-").split(":")[0]
-                    if tablelineId[len(tablelineId)-1] not in "ab" and tableId[len(tableId)-1] in "ab":
+                    if tablelineId[len(tablelineId)-1] not in "abcdefgh" and tableId[len(tableId)-1] in "abcdefgh":
                         tableId = tableId.replace(tableId[len(tableId)-2:], "")
                     ignoreTable = tableId not in tablelineId
+                    print(f"""{tableId} not in {tablelineId} {ignoreTable}""")
                     # Start copy range
                     if not ignoreTable:
                         copyRange.append(lineCount)
                     # End copy range
-                    if ignoreTable and len(copyRange) > 0:
+                    if ignoreTable and len(copyRange) == 1:
                         copyRange.append(lineCount)
                 else:
                     ignoreTable = False
                 flag = 0
+            # Look for letters when in multiTableYears (special case if table id has b)
+            elif (myline[0:2] in "a.b.c.d.e.f.g.h." or myline[0:3] == ",b.") and year in multiTableYears:
+                ignoreTable = input_file[len(input_file)-5] != myline[0]
+                # Start copy range (special case if table is ignored but id is same)
+                if not ignoreTable and len(copyRange) == 0 or (ignoreTable and input_file[len(input_file)-5] == myline[1]):
+                    copyRange.append(lineCount)
+                    if ignoreTable and input_file[len(input_file)-5] == myline[1]:
+                        ignoreTable = False
+                # End copy range
+                if ignoreTable and len(copyRange) == 1:
+                    # If table and letter were copied and aren't part of actual range, clear it
+                    if lineCount == 1:
+                        copyRange = []
+                    else:
+                        copyRange.append(lineCount)
             # Ignore table if first line doesn't contain tableId only for multiTableYears
             elif myline[0:5] != "TABLE" and firstLine and (year in multiTableYears):
                 ignoreTable = True
