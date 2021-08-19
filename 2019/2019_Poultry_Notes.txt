@@ -1,0 +1,46 @@
+Notes on the Tables produced by the Poultry Pipeline - 2019
+
+August 17, 2021
+% wc 2019_T*.csv 
+   94   156  5651 2019_Table_3-17a.csv
+   94   156  5469 2019_Table_3-17b.csv
+   94   156  4286 2019_Table_3-17c.csv
+   94   156  3884 2019_Table_3-17d.csv
+   94   162  3235 2019_Table_3-19h.csv
+   94   152  6479 2019_Table_3-1.csv
+   94   161  3686 2019_Table_3-20h.csv
+   94   168  3753 2019_Table_3-22a.csv
+   93   167  3417 2019_Table_3-22b.csv
+   94   168  3384 2019_Table_3-22c.csv
+   94   148  4635 2019_Table_3-24.csv
+   94   153  4216 2019_Table_3-25.csv
+   94   152  4961 2019_Table_3-26a.csv
+   94   152  4703 2019_Table_3-26b.csv
+   94   165  4020 2019_Table_3-27f.csv
+ 1409  2372 65779 total
+
+Table 3-22b
+ - Problem: Missing row after Somale,Dollo,0,0,0,0,0
+ - Action: Add a row after with Somale,Afder,0,0,0,0,0
+
+Table 3-22c
+ - Problem: Last row with Oromia as the region is an extra row
+ - Action: Delete the row (above the first Somale region row) which has blank data cells
+
+Table 3-24
+ - Problem: Table 24: at bottom of first page there was the line: "Note: Draught animals in this table refer to
+   Horses, Donkeys, and Mules." which added an extra row to the table.  Thus instead of 93 lines there were 94.
+ - Action: remove the extra line.
+
+Problem: The region Dire Dawa Astedader is spelled three ways:
+   - Dire Dawa Astedader
+   - DirDawaAstedader
+   - Dire Dawa Astedadar
+and Harari sometimes appears as Hareri and Somale sometimes appears as Somalie.
+To combat these "typos" before the addRegionsZones.py program, sed is used to find misspellings and change them
+to a standard form: "Harari", "Somale", and "Dire Dawa Astedader".
+Action: The addition of these sed commands corrects the problems that the typos cause.
+Note: the sed commands are of the form: sed -i '' "s/Hareri/Harari/g" <filename> because this was developed under
+Mac OS X.  On a Linux system they need to be of the form sed -i "s/Hareri/Harari/g" <filename>.
+
+--- End of 2019 notes ---

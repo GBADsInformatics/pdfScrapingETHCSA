@@ -1,0 +1,54 @@
+Notes on the Tables produced by the Poultry Pipeline - 2020
+
+August 17, 2021
+
+Table 3-1
+ - Problem: Zone 5 has a shifted cell
+ - use table from report as reference for manual re-shifting
+
+Table 3-17a
+ - Problem: Missing row after Afar,Zone_1 (Awsiresu),0,0,0,0,0,-1,0
+ - Action: Add row after with Afar,Zone_2 (Kelbetiresu),0,0,0,0,0,0,0
+
+Table 3-22a 
+ - Problem: Doesnt contain data for some rows
+ - Action: Add -1's where data is missing
+
+Table 3-22c
+ - Problem: Last row with Oromiya as the region is extra row
+ - Action: Delete the row (above the first Somale region row)
+
+Table 3-24
+ - Problem: Table 24: at bottom of first page (page 131) there was the line: "Note: Draught animals in this table refer to 
+   Horses, Donkeys, and Mules." which added an extra row to the table.  Thus instead of 92 lines there were 93.
+ - Action: remove the extra line.
+
+Table 3-25
+ - Problem: top row is shifted by one
+ - Action: re-shift it back
+
+Table 20h
+ - Problem: 
+   - Tigray, South Western Tigra - missing y in South Western Tigray
+   - Afar, Zone_2 (Kelbetiresu - should be (Kelbetiresu)
+   - Amhara, Oromiya Special Zon - missing e in Oromiya Special Zone
+   - Oromiya, Oromiya Special Zon - missing e in Oromiya Special Zone
+- Action: corrected spellings
+
+Table 3-22a, 3-22b, 3-22c, 3-27f
+ - Problem: incorrect spelling "Oromiya Special Zon" instad of "Oromiya Special Zone"
+ - Action: change to "Oromiya Special Zone"
+
+Noticed that some files had (Kelbetiresu instead of (Kelbetiresu)
+2020_Table_3-20h.csv:Afar,Zone_2 (Kelbetiresu,-1,-1,-1,0
+2020_Table_3-22a.csv:Afar,Zone_2 (Kelbetiresu,-1,-1,-1,-1,-1
+2020_Table_3-22b.csv:Afar,Zone_2 (Kelbetiresu,-1,-1,-1,-1,-1
+2020_Table_3-22c.csv:Afar,Zone_2 (Kelbetiresu,-1,0,-1,-1,-1
+2020_Table_3-24.csv:Afar,Zone_2 (Kelbetiresu,11801,161650,418386,2497,12146,12146
+2020_Table_3-25.csv:Afar,Zone_2 (Kelbetiresu,-1,-1,-1,0,-1,-1
+2020_Table_3-26a.csv:Afar,Zone_2 (Kelbetiresu,9549,142766,361075,0,1764,0,9776,9776
+2020_Table_3-26b.csv:Afar,Zone_2 (Kelbetiresu,4806,49457,203705,4806,49457,203705,4806,4806
+2020_Table_3-27f.csv:Afar,Zone_2 (Kelbetiresu,56649,2233,183,0,0,0
+ - all typos corrected
+
+--- End of 2020 notes ---

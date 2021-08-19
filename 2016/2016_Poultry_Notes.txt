@@ -1,0 +1,14 @@
+Notes on the Tables produced by the Poultry Pipeline - 2016
+
+August 17, 2021
+% wc 2016_T*.csv 
+
+Table 3-22c
+ - Problem: Last row with Oromia as the region is an extra row
+ - Action: Delete the row (above the first Somale region row) which has blank data cells
+
+Table 3-24
+ - Problem: Extra line at bottom of first page: "Draught animals in this table refer to Horses, Donkeys, and, Mules"
+ - Action: removed line
+
+--- End of 2016 notes ---

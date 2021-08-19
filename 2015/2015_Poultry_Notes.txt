@@ -1,0 +1,13 @@
+Notes on the Tables produced by the Poultry Pipeline - 2015
+
+August 17, 2021
+
+Table 3-22c
+ - Problem: Last row with Oromia as the region is an extra row
+ - Action: Delete the row (above the first Somale region row) which has blank data cells
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 42 of the table
+  - Action: Delete the row
+
+--- End of 2015 notes ---
