@@ -38,6 +38,10 @@ Table 3-17d
  - Problem: Ethiopia row has some columns shifted and some double quotes
  - Action: shift back and remove quotes
 
+Table 3-19h
+ - Problem: data columns are shifted right by 1
+ - Action: shift left by 1
+
 Table 3-20h
  - Problem: data columns are shifted right by 1
  - Action: shift left by 1
