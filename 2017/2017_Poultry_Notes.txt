@@ -1,0 +1,64 @@
+Notes on the Tables produced by the Poultry Pipeline - 2017
+
+August 18, 2021
+
+      11   13  629 2017_Table_3-17a.csv
+      13   17  720 2017_Table_3-17b.csv
+      11   13  448 2017_Table_3-17c.csv
+      13   17  558 2017_Table_3-17d.csv
+      11   13  350 2017_Table_3-19h.csv
+      11   13  766 2017_Table_3-1.csv
+      11   13  421 2017_Table_3-20h.csv
+      11   13  360 2017_Table_3-22a.csv
+      11   13  326 2017_Table_3-22b.csv
+      11   13  351 2017_Table_3-22c.csv
+      11   13  513 2017_Table_3-24.csv
+      11   13  470 2017_Table_3-25.csv
+      11   13  572 2017_Table_3-26a.csv
+      11   13  540 2017_Table_3-26b.csv
+      11   13  434 2017_Table_3-27f.csv
+     169  203 7458 total
+
+ - Problem: Table 3-22b when initally extracted doesn't properly parse
+ - Action: rerun script for cleaning the meta table file
+
+Table 3-1
+ - Problem: Ethiopia row has all data columns after 4th shifted by one.
+ - Action: manually re-shift back.
+
+Table 3-17b
+ - Problem: first two rows are leftovers
+ - Action: remove the rows
+ - Problem: Ethiopia row has some columns shifted and some double quotes
+ - Action: shift back and remove quotes
+
+Table 3-17d
+ - Problem: first two rows are leftovers
+ - Action: remove the rows
+ - Problem: Ethiopia row has some columns shifted and some double quotes
+ - Action: shift back and remove quotes
+
+Table 3-20h
+ - Problem: data columns are shifted right by 1
+ - Action: shift left by 1
+
+Table 3-22b
+ - Problem: data columns are shifted right by 1
+ - Action: shift left by 1
+
+Table 3-22c
+ - Problem: data columns are shifted right by 1
+ - Action: shift left by 1
+
+Table 3-27f
+ - Problem: data columns are shifted right by 1
+ - Action: shift left by 1
+
+Problem: Gambela Region is spelt 2 ways which causes errors:
+   - Gambela region
+   - Gambela
+Action: The addition of 2 sed command corrects the problems that the typos cause. Replace for Gambela and then for Gambela Region.
+Note: the sed commands are of the form: sed -i '' "s/Gambela region/Gambela/g" <filename> because this was developed under
+Mac OS X.  On a Linux system they need to be of the form sed -i "s/Gambela region/Gambela/g" <filename>.
+
+--- End of 2017 notes ---
