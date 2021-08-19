@@ -58,16 +58,23 @@ def main ( argv ):
         f.write("Region,Zone,Total,Male Indigenous,Male Hybrid,Male Exotic,Female Indigenous,Female Hybrid,Female Exotic\n")
     elif "3-16." in input_file and year == "2003":
         f.write("Region,Zone,Number Of Dairy Cows,Number Of Milking Cows,Average Daily Milk Prod.,Average Lactation Period (Months),Total Milk Production (LT),Number Of Dairy Camels,Number Of Milking Camels,Average Daily Milk Prod.,Average Lactation Period (Months),Total Milk Production\n")
-    elif ("3-17a." in input_file or "3-17b." in input_file or "3-17c." in input_file) and year == "2004":
-        f.write("Region,Zone,Calves,Lambs,Goat-Kids,Horses/Mules,Asses,Camels\n")
+    elif "3-17a." in input_file or "3-17b." in input_file or "3-17c." in input_file or "3-17d." in input_file:
+        if year == "2004" and not "3-17d." in input_file:
+            f.write("Region,Zone,Calves,Lambs,Goat-Kids,Horses/Mules,Asses,Camels\n")
+        else:
+            f.write("Region,Zone,Total Poultry,Cocks,Cockerels,Pullets,Non-Laying Hens,Chicks, Laying Hens\n")
     elif "3-18." in input_file and year == "2003":
         f.write("Region,Zone,Total,Male Indigenous,Male Hybrid,Male Exotic,Female Indigenous,Female Hybrid,Female Exotic\n")
     elif "3-19a." in input_file:
         f.write(",,Number Of Births,,,Number Of Purchases,,,Acquired By Any Other Means,,\nRegion,Zone,Total,Male,Female,Total,Male,Female,Total,Male,Female\n")
+    elif "3-19h." in input_file:
+        f.write("Region,Zone,Total Number of Births,Total Number of Purchases,Total Acquired by Other Means\n")
     elif "3-20." in input_file and year == "2004":
         f.write("Region,Zone,Number Of Dairy Cows,Number Of Milking Cows,Average Daily Milk Prod.,Average Lactation Period (Months),Total Milk Production (LT),Number Of Dairy Camels,Number Of Milking Camels,Average Daily Milk Prod.,Average Lactation Period (Months),Total Milk Production\n")
     elif "3-20a." in input_file:
         f.write(",,Number Of Sales,,,Number Of Slaughters,,,Number Of Deaths,,,Offerings,,\nRegion,Zone,Total,Male,Female,Total,Male,Female,Total,Male,Female,Total,Male,Female\n")
+    elif "3-20h." in input_file:
+        f.write("Region,Zone,Total Number of Sales,Total Number of Slaughters,Total Number of Deaths,Offerings\n")
     elif "3-21." in input_file:
         if year == "2003":
             f.write("Region,Zone,Cattle,Sheep,Goats,Draught Animals,Camels,Poultry\n")
@@ -75,6 +82,8 @@ def main ( argv ):
             f.write("Region,Zone,Number Of Dairy Cows,Number Of Milking Cows,Average Daily Milk Prod.,Average Lactation Period (Months),Total Milk Production (Lt),Number Of Dairy Camels,Number Of Milking Camels,Average Daily Milk Prod.,Average Lactation Period (Months),Total Milk Production (Lt)\n")
     elif "3-22." in input_file or "3-23." in input_file:
         f.write("Region,Zone,Cattle,Sheep,Goats,Draught Animals,Camels,Poultry\n")
+    elif "3-22a." in input_file or "3-22b." in input_file or "3-22c." in input_file:
+        f.write("Region,Zone,Total Laying Hens,Average Number of Egg-Laying Period/Year,Average Length of a Period,Average Number of Eggs/Hen/Period,Total Egg Production (Number)\n")
     elif "3-23a." in input_file:
         if int(year) >= 2006 and int(year) <= 2009:
             f.write("Region,Zone,Total Vaccinated,Anthrax,Blackleg,Pleuro-Pneumonia,Hemorrhagic Septicemia,Rinderpest,Others\n")
@@ -91,7 +100,9 @@ def main ( argv ):
         if year == "2019" or year == "2020":
             f.write("Region,Zone,ALL Holding,Holding With No Cattle,1-2 Head,3-4 Head,5-9 Head,10-19 Head,20-49 Head\n")
         else:
-            f.write("Region,Zone,Holding With No Cattle,1-2 Head,3-4 Head,5-9 Head,10-19 Head,20-49 Head,50-99 Head,100-199 Head,>=200 Head\n")
+            f.write("Region,Zone,Holdings With No Cattle,1-2 Head,3-4 Head,5-9 Head,10-19 Head,20-49 Head,50-99 Head,100-199 Head,>=200 Head\n")
+    elif "3-27f." in input_file:
+            f.write("Region,Zone,Holdings With No Poultry,1-9 Head,10-49 Head,50-99 Head,100-199 Head,>=200 Head\n")
 
 # add the original content after the header
     f.write(temp)

@@ -1,0 +1,28 @@
+Notes on the Tables produced by the Poultry Pipeline - 2010
+
+August 17, 2021
+
+Table 3-17c
+ - Problem: Row from Alaba Sp. Wereda is empty
+ - Action: Rows from Gambela region to Gambela Region Itang Special should be shifted 1 row up and
+           the new empty row is to be filled from the row above Harari from the pdf.
+
+Table 3-22a and 3-22c
+ - Problem: There are empty data rows and offset rows. (since rows are offset in the pdf)
+ - Action: - Afar, Zone 3 rows should be filled with -1's
+           - All data cells from Amhara to Amhara, Oromia should be shifted down by one.
+             The now empty Amhara row is to be filled with values from the row above Amhara from the pdf.
+           - All data cells from Oromia to Oromia, Kelem Wellega should be be shifted down by one.
+             The now empty Oromia row is to be filled with values from the row above Oromia from the pdf.
+
+Table 3-22c
+ - Problem: Last row with Oromia as the region is an extra row
+ - Action: Delete the row (above the first Somale region row) which has blank data cells
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 42 of the table
+  - Action: Delete the row
+
+Pawe Special is missing from most tables, added it after Kemeshi row with cells containing zeros
+
+--- End of 2010 notes ---
