@@ -6,6 +6,10 @@ Table 3-1
  - Problem: Zone 5 has a shifted cell
  - use table from report as reference for manual re-shifting
 
+Table 3-17a
+ - Problem: Missing row after Afar,Zone_1 (Awsiresu),0,0,0,0,0,-1,0
+ - Action: Add row after with Afar,Zone_2 (Kelbetiresu),0,0,0,0,0,0,0
+
 Table 3-22a 
  - Problem: Doesnt contain data for some rows
  - Action: Add -1's where data is missing
