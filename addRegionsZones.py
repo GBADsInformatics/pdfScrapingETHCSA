@@ -98,7 +98,10 @@ def main ( argv ):
                 for i in range(1, len(row)-1):
                     print ( row[i],end=",",file=f )
                 i = i + 1
-                print ( row[i],file=f )
+                if i > len(row)-1:
+                    print(row[1],file=f)
+                else:
+                    print ( row[i],file=f )
             else:  
                 x = 0
                 stopFlag = 0
@@ -117,13 +120,19 @@ def main ( argv ):
                                 harariFlag = 1               # the Harari region record has been found
                     x = x + 1
                 if stopFlag != 1:               # this is not a region record, use previous region for this zone
-                    print ( reg+","+row[0],end=",",file=f )
+                    try:
+                        print ( reg+","+row[0],end=",",file=f )
+                    except:
+                        pass
                     if row[0] == "Harari" and year == "2019":                   # the Harari zone has been found 
                         harariFlag = 0
                 for i in range(1, len(row)-1):
                     print ( row[i],end=",",file=f )
                 i = i + 1
-                print ( row[i],file=f )
+                if i > len(row)-1:
+                    print(row[1],file=f)
+                else:
+                    print ( row[i],file=f )
     f.close()
 
 

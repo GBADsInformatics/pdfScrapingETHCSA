@@ -1,0 +1,53 @@
+Notes on the Tables produced by the Poultry Pipeline - 2018
+
+August 18, 2021
+
+      11   13  633 2018_Table_3-17a.csv
+      13   17  724 2018_Table_3-17b.csv
+      11   13  474 2018_Table_3-17c.csv
+      13   17  566 2018_Table_3-17d.csv
+      11   13  349 2018_Table_3-19h.csv
+      11   13  764 2018_Table_3-1.csv
+      11   13  416 2018_Table_3-20h.csv
+      11   13  361 2018_Table_3-22a.csv
+      11   13  317 2018_Table_3-22b.csv
+      11   13  352 2018_Table_3-22c.csv
+      11   13  514 2018_Table_3-24.csv
+      11   13  478 2018_Table_3-25.csv
+      11   13  584 2018_Table_3-26a.csv
+      11   13  538 2018_Table_3-26b.csv
+      11   13  445 2018_Table_3-27f.csv
+     169  203 7515 total
+
+ - Problem: Table 3-22b when initally extracted doesn't properly parse
+ - Action: rerun script for cleaning the meta table file
+
+Table 3-17b
+ - Problem: first two rows are leftovers
+ - Action: remove the rows
+ - Problem: Ethiopia row has some columns shifted and some double quotes
+ - Action: shift back and remove quotes
+
+Table 3-17d
+ - Problem: first two rows are leftovers
+ - Action: remove the rows
+ - Problem: Ethiopia row has some columns shifted and some double quotes
+ - Action: shift back and remove quotes
+
+Table 3-19h
+ - Problem: data columns are shifted right by 1
+ - Action: shift columns left by 1
+
+Table 3-20h
+ - Problem: data columns are shifted right by 1
+ - Action: shift columns left by 1
+
+Table 3-22c
+ - Problem: data columns are shifted right by 1
+ - Action: shift columns left by 1
+
+Table 3-27f
+ - Problem: data columns are shifted right by 1
+ - Action: shift columns left by 1
+
+--- End of 2018 notes ---

@@ -1,0 +1,34 @@
+Notes on the Tables produced by the Poultry Pipeline - 2008
+
+August 18, 2021
+
+    80   137  4796 2008_Table_3-17a.csv
+    80   137  4788 2008_Table_3-17b.csv
+    80   137  3168 2008_Table_3-17c.csv
+    80   137  2927 2008_Table_3-17d.csv
+    80   137  2775 2008_Table_3-19h.csv
+    81   139  5597 2008_Table_3-1.csv
+    80   137  3260 2008_Table_3-20h.csv
+    80   137  3103 2008_Table_3-22a.csv
+    80   137  2748 2008_Table_3-22b.csv
+    80   137  2523 2008_Table_3-22c.csv
+    81   139  3850 2008_Table_3-24.csv
+    81   139  3493 2008_Table_3-25.csv
+    81   138  4570 2008_Table_3-26a.csv
+    81   138  4176 2008_Table_3-26b.csv
+    80   137  3321 2008_Table_3-27f.csv
+  1205  2063 55095 total
+
+Table 3-17d
+ - Problem: Gamo Gofa row's cells are empty
+ - Action: add zeroes to each cell
+
+Table 3-17d
+ - Problem: Kemeshi row's cells are empty
+ - Action: add zeroes to each cell
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 42 of the table
+  - Action: Delete the row with the note
+
+--- End of 2008 notes ---

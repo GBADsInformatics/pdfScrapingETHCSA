@@ -1,0 +1,36 @@
+Notes on the Tables produced by the Poultry Pipeline - 2006
+
+August 18, 2021
+
+      75   128  4464 2006_Table_3-17a.csv
+      75   128  4456 2006_Table_3-17b.csv
+      75   128  3192 2006_Table_3-17c.csv
+      75   128  2677 2006_Table_3-17d.csv
+      75   128  2563 2006_Table_3-19h.csv
+      76   129  5251 2006_Table_3-1.csv
+      75   128  3024 2006_Table_3-20h.csv
+      75   128  2871 2006_Table_3-22a.csv
+      75   128  2555 2006_Table_3-22b.csv
+      75   128  2403 2006_Table_3-22c.csv
+      75   128  1473 2006_Table_3-23f.csv
+      76   130  3820 2006_Table_3-24.csv
+      76   130  3279 2006_Table_3-25.csv
+      76   129  4200 2006_Table_3-26a.csv
+      76   129  3863 2006_Table_3-26b.csv
+      75   128  3060 2006_Table_3-27f.csv
+    1205  2055 53151 total
+
+Table 3-17d
+ - Problem: Sidama and Amaro rows have blank cells
+ - Action: change to zeroes
+
+Table 3-23f
+ - Problem: large portion of column is shifted to the right by one
+ - Action: shift the cells to the left by 1
+
+Table 3-24
+ - Problem: Table 24: at bottom of first page (page 133) there was the line: "Note: Draught animals in this table refer to 
+   Horses, Donkeys, and Mules." which added an extra row to the table. Thus instead of 75 lines there were 76.
+ - Action: remove the extra line.
+
+--- End of 2006 notes ---

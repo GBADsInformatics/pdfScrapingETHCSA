@@ -1,0 +1,38 @@
+Notes on the Tables produced by the Poultry Pipeline - 2007
+
+August 18, 2021
+
+    80   137  4820 2007_Table_3-17a.csv
+    80   137  4815 2007_Table_3-17b.csv
+    80   137  3303 2007_Table_3-17c.csv
+    80   137  2882 2007_Table_3-17d.csv
+    80   137  2773 2007_Table_3-19h.csv
+    81   139  5591 2007_Table_3-1.csv
+    80   137  3254 2007_Table_3-20h.csv
+    80   137  3116 2007_Table_3-22a.csv
+    80   137  2745 2007_Table_3-22b.csv
+    80   137  2539 2007_Table_3-22c.csv
+    81   139  3853 2007_Table_3-24.csv
+    81   139  3490 2007_Table_3-25.csv
+    81   138  4502 2007_Table_3-26a.csv
+    81   138  4134 2007_Table_3-26b.csv
+    80   137  3321 2007_Table_3-27f.csv
+  1205  2063 55138 total
+
+Table 3-1
+ - Problem: Two rows are offset
+   - Row 57 is offset because column D has a * that should be in the next column and not combined.
+   - Row 81 is offset because there is a - that was not recognised by the api on column F
+ - Action: Put the data in the right column. Remove the * and - and replace -1 and 0 respectively.
+
+Table 3-17c
+ - Problem: Argoba Special row's last column is empty
+ - Action: replace with zero
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 42 of the table
+  - Action: Delete the row with the note
+
+Argoba Special is spelt "Argoba S. W." for a lot of years, added sed command to pipeline as fix
+
+--- End of 2007 notes ---
