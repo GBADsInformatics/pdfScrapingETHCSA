@@ -9,6 +9,8 @@ Table 3-1
 Table 3-17a
  - Problem: Missing row after Afar,Zone_1 (Awsiresu),0,0,0,0,0,-1,0
  - Action: Add row after with Afar,Zone_2 (Kelbetiresu),0,0,0,0,0,0,0
+ - Problem: Row 80 has a typo for zone name
+ - Action: manually fix typo to "Segen Peoples’"
 
 Table 3-22a 
  - Problem: Doesnt contain data for some rows

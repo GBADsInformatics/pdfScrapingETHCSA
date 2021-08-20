@@ -2,6 +2,22 @@ Notes on the Tables produced by the Poultry Pipeline - 2015
 
 August 17, 2021
 
+Table 3-17a
+ - Problem: Row 73 "Mezhenge r" is a typo
+ - Action: manually fix typo to "Mezhenger"
+
+Table 3-17b
+ - Problem: Row 73 "Mezhenge r" is a typo
+ - Action: manually fix typo to "Mezhenger"
+
+Table 3-17c
+ - Problem: Row 73 "Mezhenge r" is a typo
+ - Action: manually fix typo to "Mezhenger"
+
+Table 3-17d
+ - Problem: Row 73 "Mezhenge r" is a typo
+ - Action: manually fix typo to "Mezhenger"
+
 Table 3-22c
  - Problem: Last row with Oromia as the region is an extra row
  - Action: Delete the row (above the first Somale region row) which has blank data cells
