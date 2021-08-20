@@ -5,6 +5,8 @@ August 17, 2021
 Table 3-22b
  - Problem: Table contains empty cells and rows in wrong lines
  - Action: Add and move the data in the correct cells by checking the pdf. copy paste hard to see values
+ - Problem: Files contains values wrapped in double quotes when opened in a text editor
+ - Action: Remove the " symbols and the , in between the wrapped quotes using a text editor
 
 Table 3-22c
  - Problem: Last row with Oromia as the region is an extra row

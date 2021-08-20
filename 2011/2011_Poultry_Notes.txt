@@ -5,6 +5,8 @@ August 17, 2021
 Table 3-20h
  - Problem: Row 41 "Horoguduru Wellega" is missing data
  - Action: use pdf report to fill in data manually (122224, 136808, 484683, 2473)
+ - Problem: row Oromia,Horoguduru Wellega has a value wrapped in quotes
+ - Action: replace "484,683" with 484683 when the file is open with a text editor
 
 Table 3-22a
  - Problem: Row 41 "Horoguduru Wellega" is missing data

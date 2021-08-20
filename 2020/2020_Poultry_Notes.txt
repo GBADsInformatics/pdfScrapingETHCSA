@@ -12,9 +12,17 @@ Table 3-17a
  - Problem: Row 80 has a typo for zone name
  - Action: manually fix typo to "Segen Peoples’"
 
+Table 3-17d
+ - Problem: Row Amhara,Oromiya Special Zone,(,0,0,0,0,0,0 contains a '(' which is invalid
+ - Action: replace the '(' with a 0.
+
 Table 3-22a 
  - Problem: Doesnt contain data for some rows
  - Action: Add -1's where data is missing
+
+Table 3-22b
+ - Problem: Some values are decimal values with .00 at the end
+ - Action: replace with only the whole value. remove the .00
 
 Table 3-22c
  - Problem: Last row with Oromiya as the region is extra row
