@@ -16,6 +16,10 @@ August 31, 2021
       80   137  4455 2008_Table_3-8.csv
      966  1652 53672 total
 
+Table 3-20b
+ - Problem: Row Horoguduru is cut-off and continues on the next row (row is empty)
+ - Action: delete row and fix Wellega to "Horoguduru Wellega"
+
 Table 3-23b
  - Problem: Row 54 has missing column
  - Action: change column to zero

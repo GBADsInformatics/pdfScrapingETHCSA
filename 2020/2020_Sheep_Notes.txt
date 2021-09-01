@@ -4,6 +4,9 @@ August 30, 2021
 
 % wc 2020_T*.csv 
 
+ - Problem: several tables have "Oromiya Special Zon" typo (3-19b, 3-20b, 3-23b, 3-24, 3-25, 3-26a, 3-26b, 3-27b)
+ - Action: correct to "Oromiya Special Zone"
+
 Table 3-1
  - Problem: Zone 5 has a shifted cell
  - use table from report as reference for manual re-shifting

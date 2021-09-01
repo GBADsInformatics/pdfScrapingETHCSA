@@ -7,6 +7,10 @@ Table 3-3
  - Problem: First data row contain shifted element
  - Action: shift the elements to the correct position by 1 cell to the left
 
+Table 3-15
+ - Problem: Dire Dawa is missing its zone row
+ - Action: copy and paste Dire Dawa region row and make a new zone row: Dire Dawa Astedader,Dire Dawa,65462,18219,0,0,47243,0,0
+
 Table 3-20
  - Problem: Rows split due to zone name split on different lines on the pdf and often have last character missing
  - Action: remove empty cell rows and combine the zone names based on the pdf 
