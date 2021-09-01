@@ -16,7 +16,7 @@
 #    TABLE 3-27b: NUMBER OF HOLDINGS BY SIZE OF SHEEP
 #
 echo "TABLE 3-1: NUMBER OF LIVESTOCK BY TYPE OF ANIMAL, ZONE, AND REGION"
-#./pdfETHCSApipeline.sh 2006-Livestock.pdf pages.pdf table3-1.csv 39 40 tmpTable.csv 2006_Table_3-1.csv 2006
+./pdfETHCSApipeline.sh 2006-Livestock.pdf pages.pdf table3-1.csv 39 40 tmpTable.csv 2006_Table_3-1.csv 2006
 echo "TABLE 3-3: NUMBER OF SHEEP BY AGE AND SEX OF ANIMAL, ZONE, AND REGION"
 ./pdfETHCSApipeline.sh 2006-Livestock.pdf pages.pdf table3-3.csv 43 44 tmpTable.csv 2006_Table_3-3.csv 2006
 echo "TABLE 3-8: SHEEP AGED 2 YEARS AND OLDER BY SEX, PURPOSE, ZONE, AND REGION"
@@ -30,13 +30,13 @@ echo "TABLE 3–20b: ESTIMATED NUMBERS OF SALES, SLAUGHTERS, DEATHS, AND OFFERED
 echo "TABLE 3-23b: ESTIMATED NUMBER OF VACCINATED LIVESTOCK BY ZONE AND REGION - Sheep"
 ./pdfETHCSApipeline.sh 2006-Livestock.pdf pages.pdf table3-23b.csv 123 124 tmpTable.csv 2006_Table_3-23b.csv 2006
 echo "TABLE 3-24: ESTIMATED NUMBER OF LIVESTOCK AFFLICTED/DISEASED BY ZONE AND REGION"
-#./pdfETHCSApipeline.sh 2006-Livestock.pdf pages.pdf table3-24.csv 133 134 tmpTable.csv 2006_Table_3-24.csv 2006
+./pdfETHCSApipeline.sh 2006-Livestock.pdf pages.pdf table3-24.csv 133 134 tmpTable.csv 2006_Table_3-24.csv 2006
 echo "TABLE 3-25: ESTIMATED NUMBER OF LIVESTOCK TREATED BY ZONE AND REGION"
-#./pdfETHCSApipeline.sh 2006-Livestock.pdf pages.pdf table3-25.csv 135 136 tmpTable.csv 2006_Table_3-25.csv 2006
+./pdfETHCSApipeline.sh 2006-Livestock.pdf pages.pdf table3-25.csv 135 136 tmpTable.csv 2006_Table_3-25.csv 2006
 echo "TABLE 3-26a: ESTIMATED NUMBER OF LIVESTOCK DIED FROM DISEASE BY ZONE AND REGION"
-#./pdfETHCSApipeline.sh 2006-Livestock.pdf pages.pdf table3-26a.csv 137 138 tmpTable.csv 2006_Table_3-26a.csv 2006
+./pdfETHCSApipeline.sh 2006-Livestock.pdf pages.pdf table3-26a.csv 137 138 tmpTable.csv 2006_Table_3-26a.csv 2006
 echo "TABLE 3-26b: ESTIMATED NUMBER OF LIVESTOCK DIED FROM OTHER REASONS BY ZONE AND REGION"
-#./pdfETHCSApipeline.sh 2006-Livestock.pdf pages.pdf table3-26b.csv 139 140 tmpTable.csv 2006_Table_3-26b.csv 2006
+./pdfETHCSApipeline.sh 2006-Livestock.pdf pages.pdf table3-26b.csv 139 140 tmpTable.csv 2006_Table_3-26b.csv 2006
 echo "TABLE 3-27b: NUMBER OF HOLDINGS BY SIZE OF SHEEP"
 ./pdfETHCSApipeline.sh 2006-Livestock.pdf pages.pdf table3-27b.csv 143 144 tmpTable.csv 2006_Table_3-27b.csv 2006
 echo "2006 Sheep tables complete"
