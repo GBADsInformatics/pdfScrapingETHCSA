@@ -1,0 +1,21 @@
+Notes on the Tables produced by the Sheep Pipeline - 2016
+
+August 30, 2021
+% wc 2016_T*.csv 
+
+Table 20b
+ - Problem: Some data cells have combined data leaving some other cells empty
+ - Action: Correct and add the data to the table based on the values from the pdf.
+ - Problem: Data rows until Somale are shifted to the right
+ - Action: Shift the data cells up to Somale to the left by one
+
+Table 3-23b
+ - Problem: after zone there is a blank column for the rows from the 1st page of the table.  The rows from the
+   2nd page are fine.  This was inserted by the PDFTable conversion program.
+ - Action: manually removed the blank column in affected rows.
+
+Table 3-24
+ - Problem: Extra line at bottom of first page: "Draught animals in this table refer to Horses, Donkeys, and, Mules"
+ - Action: removed line
+
+--- End of 2016 notes ---

@@ -1,0 +1,26 @@
+Notes on the Tables produced by the Sheep Pipeline - 2010
+
+August 31, 2021
+
+Table 3-20b
+  - Problem: Some rows have no data as:
+    - Row with "Horoguduru" is meant to be a continuation of the next row zone
+  - Action: Add the data to the right cells and delete the incorrect cells/rows
+
+Table 3-23b
+  - Problem: Rows above Somale are shifted to the right by one.
+  - Action: Shift the table to the left by one cell to remove the empty column
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 42 of the table
+  - Action: Delete the row
+  - Problem: Row with SNNP,Alaba Sp. Wereda contains empty cells
+  - Action shift the data cells in appropriately and add -1 to the appropriate columns based on the pdf
+
+Table 3-27b
+  - Problem: last row has offset data because "-" on column G not recognized as another column
+  - Action: Remove the "-" and add a 0 on the last column
+
+Pawe Special is missing from most tables, added it after Kemeshi row with cells containing zeroes
+
+--- End of 2010 notes ---

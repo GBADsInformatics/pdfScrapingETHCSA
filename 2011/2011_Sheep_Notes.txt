@@ -1,0 +1,21 @@
+Notes on the Tables produced by the Sheep Pipeline - 2011
+
+August 30, 2021
+
+Table 3-20b
+  - Problem: Some rows have no data as:
+    - Row with zone "North West" is meant to be "North West Tigray" as the zone for the data on the next row
+    - Row with zone "South West" is meant to be with "South West Shewa" as the zone for the data on the next row
+  - Action: Add the appropriate text to the cells and delete the unnecessary rows
+  - Problem: Last row contains empty cell due to an empty cell in the pdf and has been offset
+  - Action: shift the data cells to the appropriate place based on the pdf and enter 0 on the empty cell
+
+Table 3-23b
+  - Problem: First 40 rows (excluding the header), the data has an extra empty column on column C.
+  - Action: Shift the table to remove the empty column
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 42 of the table
+  - Action: Delete the row
+
+--- End of 2011 notes ---
