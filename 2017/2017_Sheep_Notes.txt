@@ -1,0 +1,20 @@
+Notes on the Tables produced by the Sheep Pipeline - 2017
+
+August 31, 2021
+
+Table 3-20b
+  - Problem: Multiple data cells have been combined and offset from the scraping
+  - Action: Shift data and manually find and put correct values from the pdf.
+
+Table 3-23b
+  - Problem: Extra empty column on column C
+  - Action: Shift the number data 1 column to the left
+
+Problem: Gambela Region is spelt 2 ways which causes errors:
+   - Gambela region
+   - Gambela
+Action: The addition of 2 sed command corrects the problems that the typos cause. Replace for Gambela and then for Gambela Region.
+Note: the sed commands are of the form: sed -i '' "s/Gambela region/Gambela/g" <filename> because this was developed under
+Mac OS X.  On a Linux system they need to be of the form sed -i "s/Gambela region/Gambela/g" <filename>.
+
+--- End of 2017 notes ---

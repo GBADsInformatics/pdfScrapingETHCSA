@@ -1,0 +1,13 @@
+Notes on the Tables produced by the Sheep Pipeline - 2018
+
+August 31, 2021
+
+Table 3-20b
+  - Problem: Multiple data cells have been combined and offset from the scraping
+  - Action: Shift data and manually find and put correct values from the pdf.
+
+Table 3-23b
+  - Problem: Extra empty column on column C
+  - Action: Shift the number data 1 column to the left
+
+--- End of 2018 notes ---

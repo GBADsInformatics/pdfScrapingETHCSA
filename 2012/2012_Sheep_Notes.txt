@@ -1,0 +1,18 @@
+Notes on the Tables produced by the Sheep Pipeline - 2012
+
+August 30, 2021
+
+Table 3-20b
+  - Problem: Some rows have no data as:
+    - Row "Horoguduru" is meant to be "Horoguduru Wellega" as the zone for the data on the next row
+  - Action: Add the appropriate text to the cells and delete extra rows.
+
+Table 3-23b
+  - Problem: First 41 rows (excluding the header) has an extra empty column on column C.
+  - Action: Shift the date to remove the empty column C
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 42 of the table
+  - Action: Delete the row
+
+--- End of 2012 notes ---

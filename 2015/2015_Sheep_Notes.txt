@@ -1,0 +1,25 @@
+Notes on the Tables produced by the Sheep Pipeline - 2015
+
+August 30, 2021
+
+Table 3-8, 3-15
+  - Problem: row 73 zone is spelt "Mezhenge r"
+  - Action: manually fix to "Mezhenger"
+
+Table 3-20b
+  - Problem: Some rows have no data as:
+    - Row with zone "North West" is meant to be "North West Tigray" as the zone for the data on the next row
+    - Row with zone "South West" is meant to be with "South West Shewa" as the zone for the data on the next row
+    - Row with zone "Horoguduru" is meant to be with "Horoguduru Wellega" as the zone for the data on the next row
+  - Action: Add the appropriate text to the cells and delete the unnecessary rows
+
+
+Table 3-23b
+ - Problem: Rows above region Somale have the data rows shifted one to the right
+ - Action: Shifted them back one to the left
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 42 of the table
+  - Action: Delete the row
+
+--- End of 2015 notes ---
