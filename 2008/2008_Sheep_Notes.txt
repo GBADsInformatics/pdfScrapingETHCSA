@@ -1,0 +1,29 @@
+Notes on the Tables produced by the Sheep Pipeline - 2008
+
+August 31, 2021
+
+      80   137  3617 2008_Table_3-15.csv
+      80   137  5074 2008_Table_3-19b.csv
+      81   139  5597 2008_Table_3-1.csv
+      81   137  6300 2008_Table_3-20b.csv
+      80   137  3203 2008_Table_3-23b.csv
+      81   139  3850 2008_Table_3-24.csv
+      81   139  3493 2008_Table_3-25.csv
+      81   138  4570 2008_Table_3-26a.csv
+      81   138  4176 2008_Table_3-26b.csv
+      80   137  3842 2008_Table_3-27b.csv
+      80   137  5495 2008_Table_3-3.csv
+      80   137  4455 2008_Table_3-8.csv
+     966  1652 53672 total
+
+Table 3-23b
+ - Problem: Row 54 has missing column
+ - Action: change column to zero
+ - Problem: Row 58 has missing column
+ - Action: shift last two columns and change empty cell to 0
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 42 of the table
+  - Action: Delete the row with the note
+
+--- End of 2008 notes ---

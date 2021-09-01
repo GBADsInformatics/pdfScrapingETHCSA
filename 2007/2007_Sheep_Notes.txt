@@ -1,0 +1,33 @@
+Notes on the Tables produced by the Sheep Pipeline - 2007
+
+August 31, 2021
+
+      80   137  3620 2007_Table_3-15.csv
+      80   137  5111 2007_Table_3-19b.csv
+      81   139  5591 2007_Table_3-1.csv
+      81   137  6261 2007_Table_3-20b.csv
+      80   137  3212 2007_Table_3-23b.csv
+      81   139  3853 2007_Table_3-24.csv
+      81   139  3490 2007_Table_3-25.csv
+      81   138  4502 2007_Table_3-26a.csv
+      81   138  4134 2007_Table_3-26b.csv
+      80   137  3891 2007_Table_3-27b.csv
+      80   137  5554 2007_Table_3-3.csv
+      80   137  4525 2007_Table_3-8.csv
+     966  1652 53744 total
+
+Table 3-1
+ - Problem: Two rows are offset
+   - Row 57 is offset because column D has a * that should be in the next column and not combined.
+   - Row 81 is offset because there is a - that was not recognised by the api on column F
+ - Action: Put the data in the right column. Remove the * and - and replace -1 and 0 respectively.
+
+Table 3-20b
+ - Problem: Row 40 is cutoff and is on row 41 instead
+ - Action: delete duplicate row and change zone name to Horoguduru Wellega
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 42 of the table
+  - Action: Delete the row with the note
+
+--- End of 2007 notes ---

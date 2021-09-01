@@ -1,0 +1,36 @@
+Notes on the Tables produced by the Sheep Pipeline - 2005
+
+August 31, 2021
+
+      72   122  3183 2005_Table_3-15.csv
+      72   122  4498 2005_Table_3-19b.csv
+      73   123  5026 2005_Table_3-1.csv
+      72   122  5437 2005_Table_3-20b.csv
+      72   122  2554 2005_Table_3-23b.csv
+      73   124  3658 2005_Table_3-24.csv
+      73   124  3122 2005_Table_3-25.csv
+      73   123  4013 2005_Table_3-26a.csv
+      73   123  3640 2005_Table_3-26b.csv
+      72   122  3400 2005_Table_3-27b.csv
+      72   122  4882 2005_Table_3-3.csv
+      72   122  3948 2005_Table_3-8.csv
+     869  1471 47361 total
+
+Table 3-19b
+ - Problem: SNNP has 3rd last column cut-off and last 2 missing
+ - Action: fix columns according to PDF (107526, 19445, 88082)
+ - Problem: Gurage row has the zone as the region and the region column has the data value along with a double quote
+ - Action: add SNNP to region, move Gurage to zone column, and move the rest of the columns and remove the double quotes
+
+Table 3-23b
+ - Problem: Row 50 has missing column
+ - Action: move last column to the right by 1 and change missing cell to 0
+ - Problem: Row 63 has missing last column
+ - Action: change column to 0
+
+Table 3-24
+ - Problem: Table 24: at bottom of first page (page 133) there was the line: "Note: Draught animals in this table refer to 
+   Horses, Donkeys, and Mules." which added an extra row to the table. Thus instead of 72 lines there were 73.
+ - Action: remove the extra line.
+
+--- End of 2005 notes ---

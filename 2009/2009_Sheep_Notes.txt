@@ -1,0 +1,84 @@
+Notes on the Tables produced by the Sheep Pipeline - 2009
+
+August 31, 2021
+
+      11   13  459 2009_Table_3-15.csv
+      11   13  695 2009_Table_3-19b.csv
+      12   14  807 2009_Table_3-1.csv
+      11   13  728 2009_Table_3-20b.csv
+      11   13  454 2009_Table_3-23b.csv
+      12   15  589 2009_Table_3-24.csv
+      12   15  529 2009_Table_3-25.csv
+      12   14  667 2009_Table_3-26a.csv
+      12   14  613 2009_Table_3-26b.csv
+      11   13  519 2009_Table_3-27b.csv
+      11   13  747 2009_Table_3-3.csv
+      11   13  581 2009_Table_3-8.csv
+     137  163 7388 total
+
+  - Problem: Oromia appears as a zone in all tables
+  - Action: Make Oromia the Region and remove zone cell data
+
+Table 3-1
+  - Problem: Missing data rows and - appended to the end rather than on its own cell
+  - Action: Edit file appropriatly. Copy, paste the appropriate rows from the meta file. Usually the appropriate rows are above the region name, replace * with -1 and - with 0
+
+Table 3-8
+ - Problem: Table contains missing values
+ - Action: Enter correct values to the table from the pdf/meta
+
+Table 3-20b
+ - Problem: Row 1, 2, 4, 5, 6, 8 have cut-off values
+ - Action: replace rows with correct values from report (listed respectively):
+    Ethiopia,,6283985,32421863,3014822,3314765,2427347,887418,6963566,2159750,4803816,233207,62396,170811
+    Tigray,,311432,149014,162419,190314,136426,53888,341654,145461,196193,331816,89800,242015
+    Amhara,,2323601,1133620,1189981,2077898,1495346,582552,3037758,910074,2127683,92502,23992,68510
+    Oromia,,2587032,1420162,1166870,762863,578481,184382,2208985,723889,1485096,74106,21455,52651
+    Somale,,171396,114844,56552,54310,40428,13882,218997,77026,141972,233207,62396,170811
+    SNNP,,732088,335656,396432,188279,147333,40946,851193,265351,585842,48008,11430,36578
+
+Table 3-23b
+ - Problem: Row 3 and 4 have incorrect values along with Oromia being a zone
+ - Action: manually change values
+
+Table 3-24
+  - Problem: The table data is offset
+  - Action: Shift the table data 1 column left
+  - Problem: Contains a note from the bottom of the pdf in the last line
+  - Action: Delete last row
+  - Problem: Dire Dawa is not correctly on the next line
+  - Action: cut paste in the next line. and use a file editor to remove extra all " characters
+  - Problem: Table contains inconsistent and innacurate values in Row 2 and 11
+  - Action: Enter correct values to the table from the pdf/meta and correct incosistencies such as extra "
+
+Table 3-25
+  - Problem: The table data is offset
+  - Action: Shift the table data 1 column left
+  - Problem: Harari and Dire Dawa are supposed to be the region
+  - Action: Correct the region and remove the zone data
+  - Problem: Table contains missing and innacurate values in Row 10 and 11
+  - Action: Enter correct values to the table from the pdf/meta and correct incosistencies such as extra "
+
+Table 3-26a
+  - Problem: Benshangul-Gumuz is supposed to be in region in Row 9
+  - Action: Make it the region and delete the zone cell and row 8
+  - Problem: SNNP missing
+  - Action: add a row after Benshangul-Gumuz for SNNP and paste the extra values from the benshangul-Gumuz row
+  - Problem: Dire Dawa missing
+  - Action: add a row at the end for Dire Dawa and paste the extra values from the Harari row.
+  - Problem: Table contains inconsistent and innacurate values
+  - Action: Enter correct values to the table from the pdf/meta and correct incosistencies such as extra "
+
+Table 3-26b
+  - Problem: SNNP missing
+  - Action: add a row after Benshangul-Gumuz for SNNP and paste the extra values from the Benshangul-Gumuz row
+  - Problem: Harari missing
+  - Action: add a row after Gambela Region for Harari and paste the extra values from the Gambela Region row. Open the file in a editor to remove extra "
+  - Problem: Table contains inconsistent and innacurate values
+  - Action: Enter correct values to the table from the pdf/meta and correct incosistencies such as extra "
+
+Table 3-27b
+ - Problem: Table contains inconsistent and innacurate values
+ - Action: Enter correct values to the table from the pdf/meta and correct incosistencies such as extra "
+
+--- End of 2009 notes ---
