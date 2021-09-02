@@ -5,6 +5,8 @@ August 31, 2021
 Table 3-20b
   - Problem: Multiple data cells have been combined and offset from the scraping
   - Action: Shift data and manually find and put correct values from the pdf.
+  - Problem: Value that shows "E" is incorrect
+  - Action: Change the value to the correct value based on the pdf
 
 Table 3-23b
   - Problem: Extra empty column on column C

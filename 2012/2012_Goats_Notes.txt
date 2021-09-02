@@ -1,0 +1,19 @@
+Notes on the Tables produced by the Goats Pipeline - 2012
+
+September 01, 2021
+
+Table 3-20c
+  - Problem: Some rows have no data as:
+    - Row "North West" is meant to be "North West Tigray" as the zone for the data on the next row
+    - Row "South West" is meant to be "south West Shewa" as the zone for the data on the next row
+  - Action: Add the appropriate text to the cells and delete extra rows.
+
+Table 3-23c
+  - Problem: First 41 rows (excluding the header) has an extra empty column on column C.
+  - Action: Shift the date to remove the empty column C
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 42 of the table
+  - Action: Delete the row
+
+--- End of 2012 notes ---

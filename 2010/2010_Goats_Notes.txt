@@ -1,0 +1,26 @@
+Notes on the Tables produced by the Goats Pipeline - 2010
+
+September 01, 2021
+
+Table 3-4
+  - Problem: Multiple rows hava some of the data values shifted due to incorrect * being put in the same cell as another number and some data cells have been combined.
+  - Action: shift the data to the appropriate location based on the pdf. Remove the "*" and add -1 to the new empty cell
+
+Table 3-20c
+  - Problem: Some rows have no data as:
+    - Row with "Horoguduru" is meant to be a continuation of the next row zone
+  - Action: Add the data to the right cells and delete the incorrect cells/rows
+
+Table 3-23c
+  - Problem: Data rows above Somale are shifted to the right by one.
+  - Action: Shift the table to the left by one cell to remove the empty column
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 42 of the table
+  - Action: Delete the row
+  - Problem: Row with SNNP,Alaba Sp. Wereda contains empty cells
+  - Action shift the data cells in appropriately and add -1 to the appropriate columns based on the pdf
+
+Pawe Special is missing from most tables, added it after Kemeshi row with cells containing zeroes
+
+--- End of 2010 notes ---

@@ -1,0 +1,22 @@
+Notes on the Tables produced by the Goats Pipeline - 2014
+
+September 01, 2021
+
+Table 3-20c
+  - Problem: Some rows have no data as:
+    - Row with zone "North West" is meant to be "North West Tigray" as the zone for the data on the next row
+    - Row with zone "South West" is meant to be with "South West Shewa" as the zone for the data on the next row
+  - Action: Add the appropriate text to the cells and delete the unnecessary rows
+  - Problem: First data row contains merged cells and empty cell due to this
+  - Action: Shift the cells to the correct place and edit the data based on the pdf
+
+Table 3-23c
+ - Problem: Data rows above region Somale have the data rows shifted one to the right
+ - Action: Shifted them back one to the left
+
+Table 3-24
+ - Problem: Table 24: at bottom of first page (page 134) there was the line: "Note: Draught animals in this table refer to 
+   Horses, Donkeys, and Mules." which added an extra row to the table. Thus instead of 76 lines there were 77.
+ - Action: remove the extra line.
+
+--- End of 2014 notes ---

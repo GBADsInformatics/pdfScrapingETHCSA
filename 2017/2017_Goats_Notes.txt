@@ -1,0 +1,40 @@
+Notes on the Tables produced by the Goats Pipeline - 2017
+
+September 02, 2021
+
+Table 3-4
+  - Problem: First data row contains combined data cells
+  - Action: Split the data to the appropriate cells based on the pdf
+
+Table 3-19c
+  - Problem: Table contains 2 extra rows after the header and extra " characters
+  - Action: Remove row 3 and 4 and extra " characters
+  - Problem: Ethiopia data row is offset to the left
+  - Action: Shift the row to the right by one
+
+Table 3-20c
+  - Problem: Multiple data cells have been combined and offset from the scraping
+  - Action: Shift data and manually find and put correct values from the pdf.
+  - Problem: Table contains 3 extra rows after the header and " characters
+  - Action: Remove row 3, 4 and 5 and extra " characters
+  - Problem: Ethiopia data row is offset to the left and missing the Ethiopia in the region column
+  - Action: Shift the row to the right by one and insert approriate data
+  - Problem: Extra row with Benshangul- supposed to be the region name for the next row
+  - Action: Remove extra row and make the appropriate row Banshangul-Gumuz
+
+Table 3-23c
+  - Problem: Table contains 1 extra rows after the header
+  - Action: Remove row 3
+  - Problem: Ethiopia data row is offset to the left and missing the Ethiopia in the region column
+  - Action: Shift the row to the right by one and insert approriate data
+  - Problem: Extra empty column on column C
+  - Action: Shift the number data 1 column to the left
+
+Problem: Gambela Region is spelt 2 ways which causes errors:
+   - Gambela region
+   - Gambela
+Action: The addition of 2 sed command corrects the problems that the typos cause. Replace for Gambela and then for Gambela Region.
+Note: the sed commands are of the form: sed -i '' "s/Gambela region/Gambela/g" <filename> because this was developed under
+Mac OS X.  On a Linux system they need to be of the form sed -i "s/Gambela region/Gambela/g" <filename>.
+
+--- End of 2017 notes ---

@@ -1,0 +1,18 @@
+Notes on the Tables produced by the Goats Pipeline - 2011
+
+September 01, 2021
+
+Table 3-20b
+  - Problem: Some rows have no data as:
+    - Row with zone "Horoguduru" is meant to be "Horoguduru Wellega" as the zone for the data on the next row
+  - Action: Add the appropriate text to the cells and delete the unnecessary rows
+
+Table 3-23c
+  - Problem: First 40 rows (excluding the header), the data has an extra empty column on column C.
+  - Action: Shift the table to remove the empty column
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 42 of the table
+  - Action: Delete the row
+
+--- End of 2011 notes ---

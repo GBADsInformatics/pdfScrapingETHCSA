@@ -1,0 +1,28 @@
+Notes on the Tables produced by the Goats Pipeline - 2015
+
+September 01, 2021
+
+Table 3-4
+  - Problem: Multiple rows have combined data and empty cells
+  - Action: Enter the right values in the cells based on the pdf and add 0 on empty cells with no data in the pdf
+
+Table 3-9, 3-16
+  - Problem: row 73 zone is spelt "Mezhenge r"
+  - Action: manually fix to "Mezhenger"
+
+Table 3-20c
+  - Problem: Some rows have no data as:
+    - Row with zone "North West" is meant to be "North West Tigray" as the zone for the data on the next row
+    - Row with zone "South West" is meant to be with "South West Shewa" as the zone for the data on the next row
+  - Action: Add the appropriate text to the cells and delete the unnecessary rows
+
+
+Table 3-23c
+ - Problem: Rows above region Somale have the data rows shifted one to the right
+ - Action: Shifted them back one to the left
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 42 of the table
+  - Action: Delete the row
+
+--- End of 2015 notes ---

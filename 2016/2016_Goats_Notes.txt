@@ -1,17 +1,17 @@
-Notes on the Tables produced by the Sheep Pipeline - 2016
+Notes on the Tables produced by the Goats Pipeline - 2016
 
-August 30, 2021
+September 01, 2021
 % wc 2016_T*.csv 
 
-Table 20b
+Table 3-4
+ - Problem: First data row contains a combined cell in J
+ - Action: split the value to the correct cells based on the pdf
+
+Table 20c
  - Problem: Some data cells have combined data leaving some other cells empty
  - Action: Correct and add the data to the table based on the values from the pdf.
- - Problem: Data rows until Somale are shifted to the right
- - Action: Shift the data cells up to Somale to the left by one
- - Problem: Row 13 has an incorrect value with "E" in it
- - Action: Change it to the correct value from the pdf
 
-Table 3-23b
+Table 3-23c
  - Problem: after zone there is a blank column for the rows from the 1st page of the table.  The rows from the
    2nd page are fine.  This was inserted by the PDFTable conversion program.
  - Action: manually removed the blank column in affected rows.
