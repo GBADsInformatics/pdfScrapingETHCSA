@@ -1,0 +1,37 @@
+Notes on the Tables produced by the Goats Pipeline - 2007
+
+September 1, 2021
+
+      81   144  3696 2007_Table_3-16.csv
+      82   147  5203 2007_Table_3-19c.csv
+      81   139  5591 2007_Table_3-1.csv
+      83   145  6398 2007_Table_3-20c.csv
+      81   140  3262 2007_Table_3-23c.csv
+      81   139  3853 2007_Table_3-24.csv
+      81   139  3490 2007_Table_3-25.csv
+      81   138  4502 2007_Table_3-26a.csv
+      81   138  4134 2007_Table_3-26b.csv
+      81   148  4044 2007_Table_3-27c.csv
+      81   170  5712 2007_Table_3-4.csv
+      81   145  4319 2007_Table_3-9.csv
+     975  1732 54204 total
+
+Table 3-1
+ - Problem: Two rows are offset
+   - Row 57 is offset because column D has a * that should be in the next column and not combined.
+   - Row 81 is offset because there is a - that was not recognised by the api on column F
+ - Action: Put the data in the right column. Remove the * and - and replace -1 and 0 respectively.
+
+Table 3-20c
+ - Problem: Row 42 is cutoff and is on row 43 instead
+ - Action: delete duplicate row and change zone name to Horoguduru Wellega
+
+Table 3-23c
+ - Problem: Row 74-81 is missing last column
+ - Action: change each missing value to zero
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 42 of the table
+  - Action: Delete the row with the note
+
+--- End of 2007 notes ---

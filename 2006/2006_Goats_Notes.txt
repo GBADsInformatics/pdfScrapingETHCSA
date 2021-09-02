@@ -1,0 +1,34 @@
+Notes on the Tables produced by the Goats Pipeline - 2006
+
+September 1, 2021
+
+      76   135  3426 2006_Table_3-16.csv
+      77   138  4825 2006_Table_3-19c.csv
+      76   129  5251 2006_Table_3-1.csv
+      77   136  5876 2006_Table_3-20c.csv
+      76   131  2957 2006_Table_3-23c.csv
+      76   130  3820 2006_Table_3-24.csv
+      76   130  3279 2006_Table_3-25.csv
+      76   129  4200 2006_Table_3-26a.csv
+      76   129  3863 2006_Table_3-26b.csv
+      76   139  3716 2006_Table_3-27c.csv
+      76   161  5321 2006_Table_3-4.csv
+      76   136  3981 2006_Table_3-9.csv
+      914  1623 50515 total
+
+Table 3-20c
+ - Problem: Row 57 has missing columns and last cell before missing is missing a 5
+ - Action: use PDF to fix values
+ - Problem: Row 58 has no region column and is shifted left by 1 along with having quotations in values
+ - Action: remove inconsistencies, shift all columns to right by 1 and add SNNP to region column
+
+Table 3-23c
+ - Problem: Row 46 has missing column
+ - Action: shift every column after 2nd data column by 1 to right and change empty cell to 0
+
+Table 3-24
+ - Problem: Table 24: at bottom of first page (page 133) there was the line: "Note: Draught animals in this table refer to 
+   Horses, Donkeys, and Mules." which added an extra row to the table. Thus instead of 75 lines there were 76.
+ - Action: remove the extra line.
+
+--- End of 2006 notes ---
