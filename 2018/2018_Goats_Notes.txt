@@ -30,4 +30,8 @@ Table 3-23c
   - Problem: Extra empty column on column C
   - Action: Shift the number data 1 column to the left
 
+Table 3-27b
+ - Problem: rows had an extra column
+ - Action: remove extra column at the end
+
 --- End of 2018 notes ---
