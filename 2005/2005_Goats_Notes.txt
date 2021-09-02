@@ -1,0 +1,28 @@
+Notes on the Tables produced by the Goats Pipeline - 2005
+
+September 1, 2021
+
+      73   129  3277 2005_Table_3-16.csv
+      74   132  4609 2005_Table_3-19c.csv
+      73   123  5026 2005_Table_3-1.csv
+      74   130  5604 2005_Table_3-20c.csv
+      73   125  2652 2005_Table_3-23c.csv
+      73   124  3658 2005_Table_3-24.csv
+      73   124  3122 2005_Table_3-25.csv
+      73   123  4013 2005_Table_3-26a.csv
+      73   123  3640 2005_Table_3-26b.csv
+      73   133  3542 2005_Table_3-27c.csv
+      73   155  5084 2005_Table_3-4.csv
+      73   130  3820 2005_Table_3-9.csv
+     878  1551 48047 total
+
+Table 3-23c
+ - Problem: Row Basketo Sp. Wereda has missing columns
+ - Action: manually fix missing columns to zeroes
+
+Table 3-24
+ - Problem: Table 24: at bottom of first page (page 133) there was the line: "Note: Draught animals in this table refer to 
+   Horses, Donkeys, and Mules." which added an extra row to the table. Thus instead of 72 lines there were 73.
+ - Action: remove the extra line.
+
+--- End of 2005 notes ---

@@ -27,6 +27,8 @@ Table 3-23b
  - Action: move last column to the right by 1 and change missing cell to 0
  - Problem: Row 63 has missing last column
  - Action: change column to 0
+ - Problem: Amhara South Gonder row has a missing column
+ - Action: fix manually using values: Amhara,South Gonder,50877,-1,-1,-1,0,21497
 
 Table 3-24
  - Problem: Table 24: at bottom of first page (page 133) there was the line: "Note: Draught animals in this table refer to 

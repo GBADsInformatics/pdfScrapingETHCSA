@@ -5,7 +5,7 @@
 # 
 # Author: Rehan Nagoor & Maxim Brochin
 # 
-# Last Update: August 31, 2021
+# Last Update: September 1, 2021
 # 
 # Actions:
 # - Add the corresponding Headers to the tables
@@ -113,8 +113,12 @@ def main ( argv ):
         f.write("Region,Zone,Total Vaccinated\n")
     elif "3-24." in input_file or "3-25." in input_file or "3-25a." in input_file or "3-25b." in input_file:
         f.write("Region,Zone,Cattle,Sheep,Goats,Draught Animals,Camels,Poultry\n")
-    elif "3-26a." in input_file or "3-26b." in input_file:
-        if year == "2004":
+    elif "3-26a." in input_file or "3-26b." in input_file or "3-26c." in input_file:
+        if year == "2004" and "3-26b." in input_file:
+            f.write("Region,Zone,Holdings With No Sheep,1-4 Head,5-9 Head,10-49 Head,50-99 Head,100-199 Head,200-499 Head,>=500 Head\n")
+        elif year == "2004" and "3-26c." in input_file:
+            f.write("Region,Zone,Holdings With No Goats,1-4 Head,5-9 Head,10-49 Head,50-99 Head,100-199 Head,200-499 Head,>=500 Head\n")
+        elif year == "2004":
             f.write("Region,Zone,Holdings With No Cattle,1-2 Head,3-4 Head,5-9 Head,10-19 Head,20-49 Head,50-99 Head,100-199 Head,>=200 Head\n")
         else:
             f.write("Region,Zone,Cattle,Sheep,Goats,Horses,Donkeys,Mules,Camels,Poultry\n")
