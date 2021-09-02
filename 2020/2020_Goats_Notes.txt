@@ -7,6 +7,10 @@ September 02, 2021
  - Problem: several tables have "Oromiya Special Zon" typo (3-23c, 3-24, 3-25, 3-26a, 3-26b, 3-27c)
  - Action: correct to "Oromiya Special Zone"
 
+Table 3-9
+ - Problem: Empty cell in the table for North Shewa
+ - Action: Insert 0 into that cell
+
 Table 3-16
  - Problem: Afar, Zone_5 (Hariresu) contains empty cells and misplaced data
  - Action: Put the values in the correct place from the pdf and added 0's to the empty cell locations

@@ -14,7 +14,7 @@ Table 3-19c
 
 Table 3-20c
   - Problem: Multiple data cells have been combined and offset from the scraping
-  - Action: Shift data and manually find and put correct values from the pdf.
+  - Action: Shift data and manually find and put correct values from the pdf replace data with "E" in a text editor.
   - Problem: Table contains 3 extra rows after the header and " characters
   - Action: Remove row 3, 4 and 5 and extra " characters
   - Problem: Ethiopia data row is offset to the left and missing the Ethiopia in the region column

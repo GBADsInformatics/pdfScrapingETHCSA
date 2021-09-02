@@ -15,6 +15,8 @@ Table 3-20c
     - Row with zone "North West" is meant to be "North West Tigray" as the zone for the data on the next row
     - Row with zone "South West" is meant to be with "South West Shewa" as the zone for the data on the next row
   - Action: Add the appropriate text to the cells and delete the unnecessary rows
+  - Problem: First row contains combined data
+  - Action: Change the data appropriately based on the pdf
 
 
 Table 3-23c
