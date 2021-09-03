@@ -13,4 +13,8 @@ Table 3-24
   - Problem: The note at the bottom of the pdf page appears in row 42 of the table
   - Action: Delete the row
 
+Table 3-27e
+ - Problem: Row 63 is missing a column
+ - Action: add 0 to empty cell
+
 --- End of 2011 notes ---

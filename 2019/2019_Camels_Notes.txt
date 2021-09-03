@@ -3,6 +3,10 @@ Notes on the Tables produced by the Camels Pipeline - 2019
 September 02, 2021
 % wc 2019_T*.csv 
 
+Table 3-19g
+ - Problem: Row 43 has empty columns
+ - Action: change to zeroes
+
 Table 3-20g
  - Problem: Benshangul-Gumuz line contains no data
 - Action: add 0's to the row

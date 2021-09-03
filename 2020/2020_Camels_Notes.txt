@@ -1,8 +1,11 @@
 Notes on the Tables produced by the Camels Pipeline - 2020
 
-September 02, 2021
+September 03, 2021
 
 % wc 2020_T*.csv 
+
+ - Problem: several tables have "Oromiya Special Zon" typo (3-23d, 3-24, 3-25, 3-26a, 3-26b, 3-27e)
+ - Action: correct to "Oromiya Special Zone"
 
 Table 3-1
  - Problem: Zone 5 has a shifted cell
@@ -42,6 +45,8 @@ Table 3-25
 Table 3-27e
  - Problem: row 45, zone is spelt wrong: "Oromiya Special Zon"
  - Action: change to "Oromiya Special Zone"
+ - Problem: row 33 has an empty cell
+ - Action: change to 0
 
 Noticed that some files had (Kelbetiresu instead of (Kelbetiresu)
 2020_Table_3-20g.csv:Afar,Zone_2 (Kelbetiresu,11509,10703,-1,-1,-1,-1,17869,5834,12035,0,0,0
