@@ -1,0 +1,56 @@
+Notes on the Tables produced by the Camels Pipeline - 2020
+
+September 02, 2021
+
+% wc 2020_T*.csv 
+
+Table 3-1
+ - Problem: Zone 5 has a shifted cell
+ - use table from report as reference for manual re-shifting
+
+Table 3-6
+ - Problem: Oromiya row has two shifted cells
+ - Action: re-shift them back
+
+Table 3-13
+ - Problem: Rows contain incorrect and shifted values
+ - Action: Shift the rows to the correct position and enter correct values
+
+Table 3-19g
+ - Problem: Rows contain incorrect and shifted values
+ - Action: Shift the rows to the correct position and enter correct values
+
+Table 3-20g
+ - Problem: South Western Tigra is misspelled
+ - Action: Change spelling to South Western Tigray
+ - Problem: row 45 and 26, zone is spelt wrong: "Oromiya Special Zon"
+ - Action: change to "Oromiya Special Zone"
+
+Table 3-23d
+ - Problem: row 45 and 26, zone is spelt wrong: "Oromiya Special Zon"
+ - Action: change to "Oromiya Special Zone"
+
+Table 3-24
+ - Problem: Table 24: at bottom of first page (page 131) there was the line: "Note: Draught animals in this table refer to 
+   Horses, Donkeys, and Mules." which added an extra row to the table.  Thus instead of 92 lines there were 93.
+ - Action: remove the extra line.
+
+Table 3-25
+ - Problem: top row is shifted by one
+ - Action: re-shift it back
+
+Table 3-27e
+ - Problem: row 45, zone is spelt wrong: "Oromiya Special Zon"
+ - Action: change to "Oromiya Special Zone"
+
+Noticed that some files had (Kelbetiresu instead of (Kelbetiresu)
+2020_Table_3-20g.csv:Afar,Zone_2 (Kelbetiresu,11509,10703,-1,-1,-1,-1,17869,5834,12035,0,0,0
+2020_Table_3-23g.csv:Afar,Zone_2 (Kelbetiresu,0,0,0,0,0
+2020_Table_3-24.csv:Afar,Zone_2 (Kelbetiresu,11801,161650,418386,2497,12146,12146
+2020_Table_3-25.csv:Afar,Zone_2 (Kelbetiresu,-1,-1,-1,0,-1,-1
+2020_Table_3-26a.csv:Afar,Zone_2 (Kelbetiresu,9549,142766,361075,0,1764,0,9776,9776
+2020_Table_3-26b.csv:Afar,Zone_2 (Kelbetiresu,4806,49457,203705,4806,49457,203705,4806,4806
+2020_Table_3-27e.csv:Afar,Zone_2 (Kelbetiresu),59065,0,0,0,0,32681,9291,6888,7699,2506
+ - all typos corrected
+
+--- End of 2020 notes ---

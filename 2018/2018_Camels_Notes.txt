@@ -1,0 +1,21 @@
+Notes on the Tables produced by the Camels Pipeline - 2018
+
+September 02, 2021
+
+Table 3-19g
+  - Problem: Contains 2 extra rows after the header
+  - Action: Remove the extra rows
+  - Problem: Ethiopia row contains shifted values and extra " characters
+  - Action: Shift the row appropriately and remove extra " characters
+
+Table 3-20g
+  - Problem: Contains 2 extra rows after the header
+  - Action: Remove the extra rows
+  - Problem: first data row contains shifted values and missing Ethiopia region 
+  - Action: Shift the row appropriately and add Ethiopia in the region 
+
+Table 3-23d
+  - Problem: Extra empty column on column C
+  - Action: Shift the number data 1 column to the left
+
+--- End of 2018 notes ---
