@@ -46,6 +46,8 @@ Table 3-23c
  - Action: manually fix by shifting the columns by 2 to the right and adding region name
  - Problem: Dire Dawa is missing a column
  - Action: move last full column to the right by 1 and add 32035 to the empty cell
+ - Problem: Dire Dawa is also missing first data column
+ - Action: replace empty with -1
 
 Table 3-24
   - Problem: The table data is offset
