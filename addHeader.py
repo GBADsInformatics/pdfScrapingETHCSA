@@ -5,7 +5,7 @@
 # 
 # Author: Rehan Nagoor & Maxim Brochin
 # 
-# Last Update: September 1, 2021
+# Last Update: September 3, 2021
 # 
 # Actions:
 # - Add the corresponding Headers to the tables
@@ -54,12 +54,16 @@ def main ( argv ):
         f.write("Region,Zone,Total,Male <6 Months,Male 6 Mo - <1 yr,Male 1 yr - <3 yrs,Male 3 - <10 yrs,Male 10 yrs & Over,Female <6 Months,Female 6 Mo - <1 yr,Female 1 yr - <3 yrs,Female 3 - <10 yrs,Female 10 yrs & Over\n")
     elif "3-3." in input_file or "3-4." in input_file:
         f.write("Region,Zone,Total,Male <6 Months,Male 6 Mo - <1 yr,Male 1 yr - <2 yrs,Male 2 yrs & Over,Female <6 Months,Female 6 Mo - <1 yr,Female 1 yr - <2 yrs,Female 2 yrs & Over\n")
+    elif "3-6." in input_file:
+        f.write(",,,Mules,,,,Camels,,,,\nRegion,Zone,Total,Male <3 Years,Male 3 Years and Older,Female <3 Years,Female 3 Years and Older,Total,Male <4 Years,Male 4 Years and Older,Female <4 Years,Female 4 Years and Older\n")
     elif "3-7." in input_file:
         f.write("Region,Zone,Total,Male Draught,Male Beef,Male Breeding,Male Other,Female Milk,Female Draught,Female Beef,Female Breeding,Female Other\n")
     elif "3-8." in input_file:
         f.write("Region,Zone,Total,Male Mutton/Meat,Male Wool,Male Breeding,Male Other,Female Mutton/Meat,Female Wool,Female Breeding,Female Other\n")
     elif "3-9." in input_file:
         f.write("Region,Zone,Total,Male Meat,Male Breeding,Male Other,Female Meat,Female Milk,Female Breeding,Female Other\n")
+    elif "3-13." in input_file:
+        f.write("Region,Zone,Total,Male Transportation,Male Meat,Male Draught,Male Other,Female Transportation,Female Meat,Female Draught,Female Milk,Female Other\n")
     elif "3-14." in input_file:
         if year == "2003":
             f.write("Region,Zone,Total Poultry,Cocks,Cockerels,Pullets,Non-Laying Hens,Chicks,Laying Hens\n")
@@ -83,13 +87,13 @@ def main ( argv ):
         f.write("Region,Zone,Total Poultry,Cocks,Cockerels,Pullets,Non-Laying Hens,Chicks,Laying Hens\n")
     elif ("3-18." in input_file or "3-19." in input_file or "3-20." in input_file) and year == "2003":
         f.write("Region,Zone,Total,Male Indigenous,Male Hybrid,Male Exotic,Female Indigenous,Female Hybrid,Female Exotic\n")
-    elif "3-19a." in input_file or "3-19b." in input_file or "3-19c." in input_file:
+    elif "3-19a." in input_file or "3-19b." in input_file or "3-19c." in input_file or "3-19g." in input_file:
         f.write(",,Number Of Births,,,Number Of Purchases,,,Acquired By Any Other Means,,\nRegion,Zone,Total,Male,Female,Total,Male,Female,Total,Male,Female\n")
     elif "3-19h." in input_file:
         f.write("Region,Zone,Total Number of Births,Total Number of Purchases,Total Acquired by Other Means\n")
     elif "3-20." in input_file and year == "2004":
         f.write("Region,Zone,Number Of Dairy Cows,Number Of Milking Cows,Average Daily Milk Prod.,Average Lactation Period (Months),Total Milk Production (LT),Number Of Dairy Camels,Number Of Milking Camels,Average Daily Milk Prod.,Average Lactation Period (Months),Total Milk Production\n")
-    elif "3-20a." in input_file or "3-20b." in input_file or "3-20c." in input_file:
+    elif "3-20a." in input_file or "3-20b." in input_file or "3-20c." in input_file or "3-20g." in input_file:
         f.write(",,Number Of Sales,,,Number Of Slaughters,,,Number Of Deaths,,,Offerings,,\nRegion,Zone,Total,Male,Female,Total,Male,Female,Total,Male,Female,Total,Male,Female\n")
     elif "3-20h." in input_file:
         f.write("Region,Zone,Total Number of Sales,Total Number of Slaughters,Total Number of Deaths,Offerings\n")
@@ -104,7 +108,7 @@ def main ( argv ):
         f.write("Region,Zone,Cattle,Sheep,Goats,Draught Animals,Camels,Poultry\n")
     elif "3-22a." in input_file or "3-22b." in input_file or "3-22c." in input_file:
         f.write("Region,Zone,Total Laying Hens,Average Number of Egg-Laying Period/Year,Average Length of a Period,Average Number of Eggs/Hen/Period,Total Egg Production (Number)\n")
-    elif "3-23a." in input_file or "3-23b." in input_file or "3-23c." in input_file:
+    elif "3-23a." in input_file or "3-23b." in input_file or "3-23c." in input_file or "3-23d." in input_file or "3-23e." in input_file:
         if int(year) >= 2006 and int(year) <= 2009:
             f.write("Region,Zone,Total Vaccinated,Anthrax,Blackleg,Pleuro-Pneumonia,Hemorrhagic Septicemia,Rinderpest,Others\n")
         else:
@@ -113,11 +117,13 @@ def main ( argv ):
         f.write("Region,Zone,Total Vaccinated\n")
     elif "3-24." in input_file or "3-25." in input_file or "3-25a." in input_file or "3-25b." in input_file:
         f.write("Region,Zone,Cattle,Sheep,Goats,Draught Animals,Camels,Poultry\n")
-    elif "3-26a." in input_file or "3-26b." in input_file or "3-26c." in input_file:
+    elif "3-26a." in input_file or "3-26b." in input_file or "3-26c." in input_file or "3-26e." in input_file:
         if year == "2004" and "3-26b." in input_file:
             f.write("Region,Zone,Holdings With No Sheep,1-4 Head,5-9 Head,10-49 Head,50-99 Head,100-199 Head,200-499 Head,>=500 Head\n")
         elif year == "2004" and "3-26c." in input_file:
             f.write("Region,Zone,Holdings With No Goats,1-4 Head,5-9 Head,10-49 Head,50-99 Head,100-199 Head,200-499 Head,>=500 Head\n")
+        elif year == "2004" and "3-26e." in input_file:
+            f.write(",,Mules,,,,,Camels,,,,\nRegion,Zone,Holdings With No Mules,1-2 Head,3-4 Head,5-9 Head,>=10 Head,Holdings With No Camels,1-2 Head,3-4 Head,5-9 Head,>=10 Head\n")
         elif year == "2004":
             f.write("Region,Zone,Holdings With No Cattle,1-2 Head,3-4 Head,5-9 Head,10-19 Head,20-49 Head,50-99 Head,100-199 Head,>=200 Head\n")
         else:
@@ -137,6 +143,8 @@ def main ( argv ):
             f.write("Region,Zone,All Holdings,Holding With No Goats,1-4 Head,5-9 Head,10-49 Head,50-99 Head,100-199 Head\n")
         else:
             f.write("Region,Zone,Holdings With No Goats,1-4 Head,5-9 Head,10-49 Head,50-99 Head,100-199 Head,200-499 Head,>=500 Head\n")
+    elif "3-27e." in input_file:
+        f.write(",,Mules,,,,,Camels,,,,\nRegion,Zone,Holdings With No Mules,1-2 Head,3-4 Head,5-9 Head,>=10 Head,Holdings With No Camels,1-2 Head,3-4 Head,5-9 Head,>=10 Head\n")
     elif "3-27f." in input_file or ("3-26f" in input_file and year == "2004"):
             f.write("Region,Zone,Holdings With No Poultry,1-9 Head,10-49 Head,50-99 Head,100-199 Head,>=200 Head\n")
 

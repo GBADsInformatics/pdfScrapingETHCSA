@@ -1,0 +1,39 @@
+Notes on the Tables produced by the Camels Pipeline - 2007
+
+September 3, 2021
+
+      81   147  3543 2007_Table_3-13.csv
+      82   147  3264 2007_Table_3-19g.csv
+      81   139  5591 2007_Table_3-1.csv
+      82   145  3817 2007_Table_3-20g.csv
+      81   168  5162 2007_Table_3-21.csv
+      81   140  2573 2007_Table_3-23d.csv
+      81   139  3853 2007_Table_3-24.csv
+      81   139  3490 2007_Table_3-25.csv
+      81   138  4502 2007_Table_3-26a.csv
+      81   138  4134 2007_Table_3-26b.csv
+      82   153  4702 2007_Table_3-27e.csv
+      82   163  4154 2007_Table_3-6.csv
+     976  1756 48785 total
+
+Table 3-1
+ - Problem: Two rows are offset
+   - Row 57 is offset because column D has a * that should be in the next column and not combined.
+   - Row 81 is offset because there is a - that was not recognised by the api on column F
+ - Action: Put the data in the right column. Remove the * and - and replace -1 and 0 respectively.
+
+Table 3-19g
+ - Problem: Last row has empty last column
+ - Action: change to 0
+
+Table 3-23d
+ - Problem: Argoba Special, Bench Maji, and Asosa row is missing most columns
+ - Action: change all missing values to 0
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 42 of the table
+  - Action: Delete the row with the note
+
+Argoba Special is spelt "Argoba S. W." for a lot of years, added sed command to pipeline as fix
+
+--- End of 2007 notes ---
