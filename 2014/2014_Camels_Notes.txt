@@ -1,0 +1,22 @@
+Notes on the Tables produced by the Camels Pipeline - 2014
+
+September 03, 2021
+
+Table 3-6
+ - Problem: Some rows contain empty data cells because the rows were shifted up
+ - Action: Shift the rows from SNNP to Alaba Sp. Wereda down by one and add the correct data to SNNP 
+	   and shift the rows from Gambela region to Mezhenger down by one add the correct data to Gambela Region
+
+Table 3-23d
+ - Problem: Data rows above Somale are shifted to the right by one
+ - Action: Shift them to the left by one cell
+ - Problem: Missing :row for Horoguduru Wellega after Kelem Wellega 
+ - Action Add the row with data from the pdf
+
+
+Table 3-24
+ - Problem: Table 24: at bottom of first page (page 134) there was the line: "Note: Draught animals in this table refer to 
+   Horses, Donkeys, and Mules." which added an extra row to the table. Thus instead of 76 lines there were 77.
+ - Action: remove the extra line.
+
+--- End of 2014 notes ---

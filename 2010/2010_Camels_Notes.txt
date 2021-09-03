@@ -1,0 +1,41 @@
+Notes on the Tables produced by the Camels Pipeline - 2010
+
+September 03, 2021
+
+Table 3-6
+ - Problem: Some rows contain empty data cells because the rows were shifted up
+ - Action: Banshangul-Gumuz, Mao Komo contains no row data so add 0's to the row
+ - Action: Shift the rows from SNNP to Alaba Sp. Wereda down by one and add the correct data to SNNP 
+	   and shift the rows from Gambela region to Mezhenger down by one add the correct data to Gambela Region
+
+Table 3-13
+ - Problem: Missing row for Benshangul-Gumuz, Pawe Special
+ - Action: add a row with empty 0's for the data rows
+
+Table 3-19g
+ - Problem: Missing row for Benshangul-Gumuz, Pawe Special
+ - Action: add a row with empty 0's for the data rows
+
+Table 3-20g
+ - Problem: Missing row for Benshangul-Gumuz, Pawe Special
+ - Action: add a row with empty 0's for the data rows
+
+Table 3-23d
+ - Problem: Data rows above Somale are shifted to the right by one
+ - Action: Shift them to the left by one cell
+ - Problem: Missing row for Horoguduru Wellega after Kelem Wellega 
+ - Action Add the row with data from the pdf
+ - Problem: Missing row for Benshangul-Gumuz, Pawe Special
+ - Action: add a row with empty 0's for the data rows
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 42 of the table
+  - Action: Delete the row
+
+Table 3-27e
+ - Problem: Missing row for Benshangul-Gumuz, Pawe Special
+ - Action: add a row with empty 0's for the data rows
+
+Pawe Special is missing from most tables, added it after Kemeshi row with cells containing zeroes
+
+--- End of 2010 notes ---

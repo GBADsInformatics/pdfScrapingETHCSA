@@ -1,0 +1,22 @@
+Notes on the Tables produced by the Camels Pipeline - 2016
+
+September 02, 2021
+
+Table 3-6
+ - Problem: Some rows contain empty data cells because the rows were shifted up
+ - Action: Shift the rows from SNNP to Alaba Sp. Wereda down by one and add the correct data to SNNP 
+	   and shift the rows from Gambela region to Mezhenger down by one add the correct data to Gambela Region
+
+Table 3-23d
+ - Problem: Data rows above Somale are shifted to the right by one
+ - Action: Shift the rows to the left by once
+
+Table 3-24
+ - Problem: Extra line at bottom of first page: "Draught animals in this table refer to Horses, Donkeys, and, Mules"
+ - Action: removed line
+
+Table 3-27e
+ - Problem: First row contains combined data 
+ - Action: shift and enter the right data in the cells based on the pdf, replace - with 0
+
+--- End of 2016 notes ---

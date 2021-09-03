@@ -1,0 +1,32 @@
+Notes on the Tables produced by the Camels Pipeline - 2017
+
+September 02, 2021
+
+Table 3-1
+ - Problem: Ethiopia row has all data columns after 4th shifted by one.
+ - Action: manually re-shift back.
+
+Table 3-19g
+  - Problem: Contains 2 extra rows after the header
+  - Action: Remove the extra rows
+  - Problem: Ethiopia row contains shifted values and extra " characters
+  - Action: Shift the row appropriately and remove extra " characters
+
+Table 3-20g
+  - Problem: Contains 2 extra rows after the header
+  - Action: Remove the extra rows
+  - Problem: first data row contains shifted values and missing Ethiopia region 
+  - Action: Shift the row appropriately and add Ethiopia in the region 
+
+Table 3-23d
+ - Problem: empty column for all rows
+ - Action: remove empty column for all rows
+
+Problem: Gambela Region is spelt 2 ways which causes errors:
+   - Gambela region
+   - Gambela
+Action: The addition of 2 sed command corrects the problems that the typos cause. Replace for Gambela and then for Gambela Region.
+Note: the sed commands are of the form: sed -i '' "s/Gambela region/Gambela/g" <filename> because this was developed under
+Mac OS X.  On a Linux system they need to be of the form sed -i "s/Gambela region/Gambela/g" <filename>.
+
+--- End of 2017 notes ---
