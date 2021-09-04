@@ -12,7 +12,7 @@ Main directory contains:
 * `compareTables.py` is used for finding absolute error differences in cattle data
 
 Each year folder contains:
-* Data for cattle, poultry, sheep and goats
+* Data for cattle, poultry, sheep, goats and camels
 * TAR files containing meta data and cleaned-up tables
 * Flags for cattle data (error of > 5%)
 * Region-zone csv files
