@@ -1,0 +1,28 @@
+Notes on the Tables produced by the Horses Pipeline - 2017
+
+September 27,2021
+
+Table 3-1
+ - Problem: Ethiopia row has all data columns after 4th shifted by one.
+ - Action: manually re-shift back.
+
+Table 3-5
+  - Problem: first row contains combined data
+  - Action: split and shift the data accordingly to the pdf
+
+Table 3-10
+  - Problem: The data values are shifted to the right by one
+  - Action: Shift the data values to the left by one
+
+Table 3-19d
+  - Problem: some data rows are shifted to the right by one
+  - Action: Shift the appropriate rows to the left by one
+
+Problem: Gambela Region is spelt 2 ways which causes errors:
+   - Gambela region
+   - Gambela
+Action: The addition of 2 sed command corrects the problems that the typos cause. Replace for Gambela and then for Gambela Region.
+Note: the sed commands are of the form: sed -i '' "s/Gambela region/Gambela/g" <filename> because this was developed under
+Mac OS X.  On a Linux system they need to be of the form sed -i "s/Gambela region/Gambela/g" <filename>.
+
+--- End of 2017 notes ---

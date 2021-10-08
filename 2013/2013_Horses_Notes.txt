@@ -1,0 +1,10 @@
+Notes on the Tables produced by the Horses Pipeline - 2013
+
+September 28, 2021
+
+Table 3-10
+ - Problem: "Argoba special" is misspelled in region column
+ - Action: replace "Argoba special" with "Argoba Special"
+
+
+--- End of 2013 notes ---

@@ -154,4 +154,8 @@ Table 3-27a
 	58	17%
 	61	38%
 
+Table 3-27d
+ - Problem: rows from Somale have empty column in the pdf leading to offset column and no row data
+ - Action: offset the column to the right position and add 0's for the empty column
+
 Table 3-22a doesnt contain data for some rows

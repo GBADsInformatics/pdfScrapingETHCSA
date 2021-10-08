@@ -1,6 +1,9 @@
 Flagged Errors and inconsistencies in the files - 2008
 
-July 22, 2021
+September 29, 2021
+
+Table 3-5
+  - Problem: Harari row contains empty no data
 
 Table 3-23a
   - Most of the rows of the table add up to a number greater than the total listed

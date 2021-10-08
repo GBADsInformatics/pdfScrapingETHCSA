@@ -1,0 +1,17 @@
+Notes on the Tables produced by the Horses Pipeline - 2011
+
+September 28, 2021
+
+Table 3-5
+ It is named for Draught Animals, we considered it to be only Camel data like the other years
+ - Problem: Table contains shifted data cells
+ - Action: shift the data cells to the appropriate places
+
+Table 3-10
+  - Problem: table contains empty last column for data from Somale
+  - Action: Replace the missing data with 0's
+ - Problem: "Argoba special" is misspelled in region column
+ - Action: replace "Argoba special" with "Argoba Special"
+
+
+--- End of 2011 notes ---

@@ -1,6 +1,9 @@
 Flagged Errors and inconsistencies in the files - 2010
 
-August 17, 2021
+September 28, 2021
+
+Table 3-5
+ - Problem: Row Harari contains no data
 
 Table 3-22a and Table 3-22c
  - Data contains shifted rows and blank row on Afar row 3

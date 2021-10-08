@@ -1,0 +1,17 @@
+Notes on the Tables produced by the Horses Pipeline - 2015
+
+September 27, 2021
+
+Table 3-5, 3-10
+ - Problem: "Mezhenge r" is spelled incorrectly
+ - Action: replace with "Mezhenger"
+
+Table 3-10
+ - Problem: "Argoba special" is misspelled in region column
+ - Action: replace "Argoba special" with "Argoba Special"
+
+Table 3-13
+ - Problem: "Mezhenge r" is spelled incorrectly
+ - Action: replace with "Mezhenger"
+
+--- End of 2015 notes ---

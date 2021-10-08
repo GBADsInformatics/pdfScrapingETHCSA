@@ -1,0 +1,43 @@
+Notes on the Tables produced by the Horses Pipeline - 2020
+
+September 27, 2021
+
+% wc 2020_T*.csv 
+
+ - Problem: several tables have "Oromiya Special Zon" typo (3-23d, 3-24, 3-25, 3-26a, 3-26b, 3-27e)
+ - Action: correct to "Oromiya Special Zone"
+
+Table 3-1
+ - Problem: Zone 5 has a shifted data cell
+ - Action: shift it back to the appropriate position
+
+Table 3-5
+ - Problem: first row contains offset data cells
+ - Action: re-shift them back
+
+Table 3-10
+ - Problem: missing row for Oromiya,West Guji
+ - Action: Add the row after Oromiya,Guji with 0's for the row data
+
+Table 3-20d
+ - Problem: South Western Tigra is misspelled
+ - Action: Change spelling to South Western Tigray
+ - Problem: row 45 and 26, zone is spelt wrong: "Oromiya Special Zon"
+ - Action: change to "Oromiya Special Zone"
+
+Table 3-27d
+ - Problem: row 45, zone is spelt wrong: "Oromiya Special Zon"
+ - Action: change to "Oromiya Special Zone"
+ - Problem: rows from Somale have empty column in the pdf leading to offset column and no row data
+ - Action: offset the column to the right position and add 0's for the empty column
+ - Problem: "Oromiya Special Zones" is misspelled in region column
+ - Action: replace "Oromiya Special Zones" with "Oromiya Special Zone"
+
+Noticed that some files had (Kelbetiresu instead of (Kelbetiresu)
+2020_Table_3-20d.csv:Afar,Zone_2 (Kelbetiresu
+2020_Table_3-26a.csv:Afar,Zone_2 (Kelbetiresu,9549,142766,361075,0,1764,0,9776,9776
+2020_Table_3-26b.csv:Afar,Zone_2 (Kelbetiresu,4806,49457,203705,4806,49457,203705,4806,4806
+2020_Table_3-27d.csv:Afar,Zone_2 (Kelbetiresu
+ - all typos corrected
+
+--- End of 2020 notes ---

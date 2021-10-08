@@ -1,0 +1,9 @@
+Notes on the Tables produced by the Horses Pipeline - 2004
+
+September 30, 2021
+
+Table 3-1
+ - Problem: Ethiopia's sheep and goats columns are combined, creating a large number and shift in columns
+ - Action: correct the number, add to the missing column and shift the columns back in place (Goats is 14,858,646)
+
+--- End of 2004 notes ---

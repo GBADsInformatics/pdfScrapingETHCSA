@@ -1,0 +1,17 @@
+Notes on the Tables produced by the Horses Pipeline - 2018
+
+September 27, 2021
+
+Table 3-5
+  - Problem: first row contains combined data
+  - Action: split and shift the data according to how it is in the pdf
+
+Table 3-1
+  - Problem: table contains empty column 
+  - shift the the data rows 1 column to the left
+
+Table 3-20d
+  - Problem: Some of the rows are shifted to the right by one
+  - Action: shift the appropriate rows to the left by one
+
+--- End of 2018 notes ---
