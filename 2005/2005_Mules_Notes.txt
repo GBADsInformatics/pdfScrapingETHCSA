@@ -1,0 +1,14 @@
+Notes on the Tables produced by the Mules Pipeline - 2005
+
+November 21, 2021
+
+Table 3-23e
+ - Problem: row 40 has an empty cell near the end
+ - Action: make sure -1 is last column and fill in empty cell from shift with 0
+
+Table 3-24
+ - Problem: Table 24: at bottom of first page (page 133) there was the line: "Note: Draught animals in this table refer to 
+   Horses, Donkeys, and Mules." which added an extra row to the table. Thus instead of 72 lines there were 73.
+ - Action: remove the extra line.
+
+--- End of 2005 notes ---

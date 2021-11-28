@@ -1,0 +1,22 @@
+Notes on the Tables produced by the Donkeys Pipeline - 2018
+
+November 10, 2021
+
+Table 3-5
+  - Problem: first row contains combined data
+  - Action: split and shift the data according to how it is in the pdf
+
+Table 3-1
+  - Problem: table contains empty column 
+  - shift the the data rows 1 column to the left
+
+Table 3-19e
+  - Problem: Contains 2 extra columns after header and shifted cells
+  - Action: Removed 2 extra cells after header and shifted the cells appropriately and removed extre " characters
+
+Table 3-20e
+  - Problem: Contains 2 extra columns after header and shifted cells
+  - Action: Removed 2 extra cells after header and shifted the cells appropriately and removed extre " characters
+
+
+--- End of 2018 notes ---

@@ -62,3 +62,6 @@ Table 3-27a
 	54	16%
 	55	7%
 	60	15%
+
+Table 3-20f
+  - Contains missing data in hte last 7 rows

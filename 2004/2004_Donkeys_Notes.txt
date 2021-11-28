@@ -1,0 +1,16 @@
+Notes on the Tables produced by the Donkeys Pipeline - 2004
+
+Donkeys are called asses in this year
+
+November 13, 2021
+
+Table 3-1
+ - Problem: Ethiopia's sheep and goats columns are combined, creating a large number and shift in columns
+ - Action: correct the number, add to the missing column and shift the columns back in place (Goats is 14,858,646)
+
+Tables 3-5
+ - Problem: Table contains missing cells as some cells have -- and **
+ - Action: Remove -- and replace with 0's for the empty cells in that row.
+	   Remove ** and replace with -1'for the empty cells in that row.
+
+--- End of 2004 notes ---

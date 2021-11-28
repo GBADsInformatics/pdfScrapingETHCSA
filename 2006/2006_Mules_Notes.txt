@@ -1,0 +1,14 @@
+Notes on the Tables produced by the Mules Pipeline - 2006
+
+November 21, 2020
+
+Table 3-23e
+ - Problem: Metekel row has a missing column
+ - Action: add zero to missing column
+
+Table 3-24
+ - Problem: Table 24: at bottom of first page (page 133) there was the line: "Note: Draught animals in this table refer to 
+   Horses, Donkeys, and Mules." which added an extra row to the table. Thus instead of 75 lines there were 76.
+ - Action: remove the extra line.
+
+--- End of 2006 notes ---

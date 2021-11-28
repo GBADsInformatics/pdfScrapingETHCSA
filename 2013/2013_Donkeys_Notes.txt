@@ -1,0 +1,9 @@
+Notes on the Tables produced by the Donkeys Pipeline - 2013
+
+November 11, 2021
+
+Table 3-20e
+ - Problem: Contains missing and shifted rows
+ - Action: shift the rows to the appropriate position and add values for missing cell data based on the pdf
+
+--- End of 2013 notes ---

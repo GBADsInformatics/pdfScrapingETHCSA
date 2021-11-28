@@ -1,0 +1,15 @@
+Notes on the Tables produced by the Donkeys Pipeline - 2007
+
+November 11, 2021
+
+Table 3-1
+ - Problem: Two rows are offset
+   - Row 57 is offset because column D has a * that should be in the next column and not combined.
+   - Row 81 is offset because there is a - that was not recognised by the api on column F
+ - Action: Put the data in the right column. Remove the * and - and replace -1 and 0 respectively.
+
+Table 3-5
+ - Problem: "Pawe Specila" is misspelled in region column
+ - Action: replace "Pawe Specila" with "Pawe Special"
+
+--- End of 2007 notes ---

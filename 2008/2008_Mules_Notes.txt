@@ -1,0 +1,23 @@
+Notes on the Tables produced by the Mules Pipeline - 2008
+
+November 21, 2021
+
+       81   147  3522 2008_Table_3-13.csv
+        82   147  3269 2008_Table_3-19g.csv
+        81   139  5597 2008_Table_3-1.csv
+        82   145  3860 2008_Table_3-20g.csv
+        81   168  5398 2008_Table_3-21.csv
+        81   140  2705 2008_Table_3-23d.csv
+        81   139  3850 2008_Table_3-24.csv
+        81   139  3493 2008_Table_3-25.csv
+        81   138  4570 2008_Table_3-26a.csv
+        81   138  4176 2008_Table_3-26b.csv
+        82   153  4380 2008_Table_3-27e.csv
+        82   163  4124 2008_Table_3-6.csv
+       976  1756 48944 total
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 42 of the table
+  - Action: Delete the row with the note
+
+--- End of 2008 notes ---

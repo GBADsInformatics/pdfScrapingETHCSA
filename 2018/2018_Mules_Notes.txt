@@ -1,0 +1,13 @@
+Notes on the Tables produced by the Mules Pipeline - 2018
+
+November 20, 2021
+
+Table 3-20g
+  - Problem: some rows are shifted 
+  - Action: Shift the row appropriately
+
+Table 3-23d
+  - Problem: Extra empty column on column C
+  - Action: Shift the number data 1 column to the left
+
+--- End of 2018 notes ---

@@ -1,0 +1,21 @@
+Notes on the Tables produced by the Mules Pipeline - 2007
+
+November 21, 2021
+
+Table 3-1
+ - Problem: Two rows are offset
+   - Row 57 is offset because column D has a * that should be in the next column and not combined.
+   - Row 81 is offset because there is a - that was not recognised by the api on column F
+ - Action: Put the data in the right column. Remove the * and - and replace -1 and 0 respectively.
+
+Table 3-23d
+ - Problem: Argoba Special, Bench Maji, and Asosa row is missing most columns
+ - Action: change all missing values to 0
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 42 of the table
+  - Action: Delete the row with the note
+
+Argoba Special is spelt "Argoba S. W." for a lot of years, added sed command to pipeline as fix
+
+--- End of 2007 notes ---

@@ -1,0 +1,35 @@
+Notes on the Tables produced by the Horses Pipeline - 2010
+
+September 28, 2021
+
+Table 3-1
+ - Problem: There is combined data and this offsets the row
+ - Action: edit the data appropriately to contain the correct data from the pdf
+
+Table 3-5
+ - Problem: Missing row for Benshangul-Gumuz, Pawe Special
+ - Action: add a row with empty 0's for the data rows
+ - Problem: Data contains shiifted data rows
+ - Action: shift the data rows to the appropriate location
+ - Problem: Row Harari contains no data
+ - Action: add 0's in the data rows
+
+Table 3-11
+ - Problem: Missing row for Benshangul-Gumuz, Pawe Special
+ - Action: add a row with empty 0's for the data rows
+
+Table 3-19e
+ - Problem: Missing row for Benshangul-Gumuz, Pawe Special
+ - Action: add a row with empty 0's for the data rows
+
+Table 3-20e
+ - Problem: Missing row for Benshangul-Gumuz, Pawe Special
+ - Action: add a row with empty 0's for the data rows
+
+Table 3-27d
+ - Problem: Missing row for Benshangul-Gumuz, Pawe Special
+ - Action: add a row with empty 0's for the data rows
+
+Pawe Special is missing from most tables, added it after Kemeshi row with cells containing zeroes
+
+--- End of 2010 notes ---

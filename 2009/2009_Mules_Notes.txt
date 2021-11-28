@@ -1,0 +1,96 @@
+Notes on the Tables produced by the MulesPipeline - 2009
+
+November 21, 2021
+
+      12   23  626 2009_Table_3-13.csv
+      15   26  639 2009_Table_3-19g.csv
+      12   14  807 2009_Table_3-1.csv
+      15   24  783 2009_Table_3-20g.csv
+      12   44  953 2009_Table_3-21.csv
+      12   16  382 2009_Table_3-23d.csv
+      12   15  589 2009_Table_3-24.csv
+      12   15  529 2009_Table_3-25.csv
+      12   14  667 2009_Table_3-26a.csv
+      12   14  613 2009_Table_3-26b.csv
+      13   29  716 2009_Table_3-27e.csv
+      13   39  746 2009_Table_3-6.csv
+     152  273 8050 total
+
+  - Problem: Oromia appears as a zone in all tables
+  - Action: Make Oromia the Region and remove zone cell data
+
+Table 3-1
+  - Problem: Missing data rows and - appended to the end rather than on its own cell
+  - Action: Edit file appropriatly. Copy, paste the appropriate rows from the meta file. Usually the appropriate rows are above the region name, replace * with -1 and - with 0
+
+Table 3-6
+ - Problem: Table inconsistent and innacurate values, as well as missing columns
+ - Action: Enter correct values to the table from the pdf/meta and shift any columns
+
+Table 3-12
+ - Problem: some columns are shifted and some cells contain *,-
+ - Action: change * to -1 and - to 0 and shift columns back in place
+ - Problem: SSNP is a zone but should be a region
+ - Action: change SNNP to the region and remove extra "" characters 
+
+Table 3-19f
+ - Problem: Afar row contains shifted values and missing data cell
+ - Action: Shift the data appropriately based on the pdf and add the appropriate missing value
+ - Problem: Last row contains no data
+ - Action: Add the 0's to the last row
+
+Table 3-20f
+ - Problem: All rows are shifted to the right by one
+ - Action: shift them back in place
+ - Problem: Table contains missing and shifted values
+ - Action: Shift the values and add the correct data according to the pdf. Add 0's on missing values in the pdf
+
+Table 3-21
+  - Problem: Table inconsistent and innacurate values
+  - Action: Enter correct values to the table from the pdf/meta and correct incosistencies such as extra "
+
+Table 3-23d
+ - Problem: columns are shifted to the right by 1
+ - Action: shift to the left by 1
+
+Table 3-24
+  - Problem: The table data is offset
+  - Action: Shift the table data 1 column left
+  - Problem: Contains a note from the bottom of the pdf in the last line
+  - Action: Delete last row
+  - Problem: Dire Dawa is not correctly on the next line
+  - Action: cut paste in the next line. and use a file editor to remove extra all " characters
+  - Problem: Table contains inconsistent and innacurate values in Row 2 and 11
+  - Action: Enter correct values to the table from the pdf/meta and correct incosistencies such as extra "
+
+Table 3-25
+  - Problem: The table data is offset
+  - Action: Shift the table data 1 column left
+  - Problem: Harari and Dire Dawa are supposed to be the region
+  - Action: Correct the region and remove the zone data
+  - Problem: Table contains missing and innacurate values in Row 10 and 11
+  - Action: Enter correct values to the table from the pdf/meta and correct incosistencies such as extra "
+
+Table 3-26a
+  - Problem: Benshangul-Gumuz is supposed to be in region in Row 9
+  - Action: Make it the region and delete the zone cell and row 8
+  - Problem: SNNP missing
+  - Action: add a row after Benshangul-Gumuz for SNNP and paste the extra values from the benshangul-Gumuz row
+  - Problem: Dire Dawa missing
+  - Action: add a row at the end for Dire Dawa and paste the extra values from the Harari row.
+  - Problem: Table contains inconsistent and innacurate values
+  - Action: Enter correct values to the table from the pdf/meta and correct incosistencies such as extra "
+
+Table 3-26b
+  - Problem: SNNP missing
+  - Action: add a row after Benshangul-Gumuz for SNNP and paste the extra values from the Benshangul-Gumuz row
+  - Problem: Harari missing
+  - Action: add a row after Gambela Region for Harari and paste the extra values from the Gambela Region row. Open the file in a editor to remove extra "
+  - Problem: Table contains inconsistent and innacurate values
+  - Action: Enter correct values to the table from the pdf/meta and correct incosistencies such as extra "
+
+Table 3-27e
+ - Problem: most rows are missing values and some values contain -
+ - Action: use PDF to manually fix values and remove incosistencies
+
+--- End of 2009 notes ---

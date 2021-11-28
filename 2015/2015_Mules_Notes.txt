@@ -1,0 +1,26 @@
+Notes on the Tables produced by the Mules Pipeline - 2015
+
+November 20, 2021
+
+Table 3-6
+ - Problem: Some rows contain empty data cells because the rows were shifted up
+ - Action: Shift the rows from SNNP to Alaba Sp. Wereda down by one and add the correct data to SNNP 
+	   and shift the rows from Gambela region to Mezhenger down by one add the correct data to Gambela Region
+ - Problem: "Mezhenge r" is spelled incorrectly
+ - Action: replace with "Mezhenger"
+
+Table 3-12
+ - Problem: "Mezhenge r" is spelled incorrectly
+ - Action: replace with "Mezhenger"
+
+Table 3-23d
+ - Problem: Data rows above Somale are shifted to the right by one
+ - Action: Shift them to the left by one cell
+ - Problem: Missing row for Horoguduru Wellega after Kelem Wellega 
+ - Action Add the row with data from the pdf
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 42 of the table
+  - Action: Delete the row
+
+--- End of 2015 notes ---

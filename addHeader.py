@@ -64,8 +64,8 @@ def main ( argv ):
         f.write("Region,Zone,Total,Male Mutton/Meat,Male Wool,Male Breeding,Male Other,Female Mutton/Meat,Female Wool,Female Breeding,Female Other\n")
     elif "3-9." in input_file:
         f.write("Region,Zone,Total,Male Meat,Male Breeding,Male Other,Female Meat,Female Milk,Female Breeding,Female Other\n")
-    elif "3-10." in input_file:
-        f.write("Region,Zone,Total,Male Transportation,Male Graught,Male Other,Female Transportation,Female Draught,Female Other\n")
+    elif "3-10." in input_file or "3-11." in input_file or "3-12." in input_file:
+        f.write("Region,Zone,Total,Male Transportation,Male Draught,Male Other,Female Transportation,Female Draught,Female Other\n")
     elif "3-13." in input_file:
         f.write("Region,Zone,Total,Male Transportation,Male Meat,Male Draught,Male Other,Female Transportation,Female Meat,Female Draught,Female Milk,Female Other\n")
     elif "3-14." in input_file:
@@ -91,7 +91,7 @@ def main ( argv ):
         f.write("Region,Zone,Total Poultry,Cocks,Cockerels,Pullets,Non-Laying Hens,Chicks,Laying Hens\n")
     elif ("3-18." in input_file or "3-19." in input_file or "3-20." in input_file) and year == "2003":
         f.write("Region,Zone,Total,Male Indigenous,Male Hybrid,Male Exotic,Female Indigenous,Female Hybrid,Female Exotic\n")
-    elif "3-19a." in input_file or "3-19b." in input_file or "3-19c." in input_file or "3-19d." in input_file or "3-19g." in input_file:
+    elif "3-19a." in input_file or "3-19b." in input_file or "3-19c." in input_file or "3-19d." in input_file or "3-19e." in input_file or "3-19f." in input_file or "3-19g." in input_file:
         f.write(",,Number Of Births,,,Number Of Purchases,,,Acquired By Any Other Means,,\nRegion,Zone,Total,Male,Female,Total,Male,Female,Total,Male,Female\n")
     elif "3-19h." in input_file:
         f.write("Region,Zone,Total Number of Births,Total Number of Purchases,Total Acquired by Other Means\n")
@@ -99,7 +99,7 @@ def main ( argv ):
         f.write("Region,Zone,Number Of Dairy Cows,Number Of Milking Cows,Average Daily Milk Prod.,Average Lactation Period (Months),Total Milk Production (LT),Number Of Dairy Camels,Number Of Milking Camels,Average Daily Milk Prod.,Average Lactation Period (Months),Total Milk Production\n")
     elif "3-20a." in input_file or "3-20b." in input_file or "3-20c." in input_file or "3-20g." in input_file:
         f.write(",,Number Of Sales,,,Number Of Slaughters,,,Number Of Deaths,,,Offerings,,\nRegion,Zone,Total,Male,Female,Total,Male,Female,Total,Male,Female,Total,Male,Female\n")
-    elif "3-20d." in input_file:
+    elif "3-20d." in input_file or "3-20e." in input_file or "3-20f." in input_file:
         f.write(",,Number Of Sales,,,Number Of Deaths,,,Offerings,,\nRegion,Zone,Total,Male,Female,Total,Male,Female,Total,Male,Female\n")
     elif "3-20h." in input_file:
         f.write("Region,Zone,Total Number of Sales,Total Number of Slaughters,Total Number of Deaths,Offerings\n")

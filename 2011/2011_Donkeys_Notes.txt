@@ -1,0 +1,10 @@
+Notes on the Tables produced by the Donkeys Pipeline - 2011
+
+November 11, 2021
+
+Table 3-5
+ It is named for Draught Animals, we considered it to be only Camel data like the other years
+ - Problem: Table contains shifted data cells
+ - Action: shift the data cells to the appropriate places
+
+--- End of 2011 notes ---

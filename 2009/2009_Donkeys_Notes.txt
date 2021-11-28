@@ -1,0 +1,74 @@
+Notes on the Tables produced by the Donkeys Pipeline - 2009
+
+November 11, 2021
+
+      12   23  626 2009_Table_3-13.csv
+      15   26  639 2009_Table_3-19g.csv
+      12   14  807 2009_Table_3-1.csv
+      15   24  783 2009_Table_3-20g.csv
+      12   44  953 2009_Table_3-21.csv
+      12   16  382 2009_Table_3-23d.csv
+      12   15  589 2009_Table_3-24.csv
+      12   15  529 2009_Table_3-25.csv
+      12   14  667 2009_Table_3-26a.csv
+      12   14  613 2009_Table_3-26b.csv
+      13   29  716 2009_Table_3-27e.csv
+      13   39  746 2009_Table_3-6.csv
+     152  273 8050 total
+
+  - Problem: Oromia appears as a zone in all tables
+  - Action: Make Oromia the Region and remove zone cell data
+
+Table 3-1
+  - Problem: Missing data rows and - appended to the end rather than on its own cell
+  - Action: Edit file appropriatly. Copy, paste the appropriate rows from the meta file. Usually the appropriate rows are above the region name, replace * with -1 and - with 0
+
+Table 3-5
+ - Problem: All data cells re shifted to the right by one
+ - Action: Shift the data cells to the left by one
+ - Problem: Table inconsistent and innacurate values, as well as missing columns
+ - Action: Enter correct values to the table from the pdf/meta and shift any columns
+ - Problem: Harari appears as a zone in all tables
+ - Action: Make Harari the Region and remove zone cell data
+
+Table 3-11
+ - Problem: Table contains inconsistent and innacurate values, as well as missing columns
+ - Action: Enter correct values to the table from the pdf/meta and shift any cells appropriately
+
+Table 3-19e
+ - Problem: Table contains shifted rows
+ - Action: shift the rows to the correct places accordingly
+ - Problem: Table contain 2 extra rows after the header
+ - Action: Delete the 2 extra rows
+
+Table 3-20e
+ - Problem: Table contains shifted rows and missing Region for first row
+ - Action: shift the rows to the correct places accordingly and add Ethiopia for region of the first row
+ - Problem: Table contain 2 extra rows after the header
+ - Action: Delete the 2 extra rows
+
+Table 3-26a
+  - Problem: Benshangul-Gumuz is supposed to be in region in Row 9
+  - Action: Make it the region and delete the zone cell and row 8
+  - Problem: SNNP missing
+  - Action: add a row after Benshangul-Gumuz for SNNP and paste the extra values from the benshangul-Gumuz row
+  - Problem: Dire Dawa missing
+  - Action: add a row at the end for Dire Dawa and paste the extra values from the Harari row.
+  - Problem: Table contains inconsistent and innacurate values
+  - Action: Enter correct values to the table from the pdf/meta and correct incosistencies such as extra "
+
+Table 3-26b
+  - Problem: SNNP missing
+  - Action: add a row after Benshangul-Gumuz for SNNP and paste the extra values from the Benshangul-Gumuz row
+  - Problem: Harari missing
+  - Action: add a row after Gambela Region for Harari and paste the extra values from the Gambela Region row. Open the file in a editor to remove extra "
+  - Problem: Table contains inconsistent and innacurate values
+  - Action: Enter correct values to the table from the pdf/meta and correct incosistencies such as extra "
+
+Table 3-27d
+ - Problem: most rows are missing values and some values contain - and some are offset
+ - Action: use PDF to manually fix values and remove incosistencies
+ - Problem: Harari appears as a zone in all tables
+ - Action: Make Harari the Region and remove zone cell data
+
+--- End of 2009 notes ---

@@ -1,0 +1,15 @@
+Notes on the Tables produced by the Donkeys Pipeline - 2008
+
+November 11, 2021
+
+Table 3-5
+  - Problem: Harari row contains empty no data
+  - Action: fill the row with 0's
+ - Problem: "Pawe Specila" is misspelled in region column
+ - Action: replace "Pawe Specila" with "Pawe Special"
+
+Table 3-24
+  - Problem: The note at the bottom of the pdf page appears in row 42 of the table
+  - Action: Delete the row with the note
+
+--- End of 2008 notes ---
